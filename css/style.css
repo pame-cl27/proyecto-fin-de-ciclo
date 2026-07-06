@@ -1,14 +1,26 @@
 :root{
-	--main-color: rgba(34, 166, 179, 0.2);
-	--secondary-color: rgba(126, 214, 223, 0.5);
-	--shadow-color: rgba(48, 51, 107, 1);
+	--main-color: rgba(0, 74, 170, 0.2);
+	--secondary-color: rgba(0, 75, 189, 0.658);
+	--shadow-color: #1783ffa6;
 	--white-lit-color: rgba(255,255,255,0.4);
 	--white-color: #fff;
 }
 body{
-	background: url(../img/background.jpg) no-repeat;
+	background: url(../img/fondo-de-pagina-prin.webp) no-repeat;
 	background-size: cover;
 	letter-spacing: 0.2px;
+	/* Estilo para el texto debajo del logo */
+.logo-text {
+    color: #E0FFFF;
+    font-size: 14px;
+    font-weight: bold;       /* Hace que sea negrita */
+    font-style: italic;      /* ◄ Esto inclina el texto (cursiva) */
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+	/*  CAMBIA ESTA LÍNEA CON LAS FUENTES CON REMATES */
+    font-family: "Times New Roman", Times, "Georgia", Garamond, serif;
+}
 }
 /* PreLoeader Style */
 .lds-ripple {
@@ -113,14 +125,12 @@ body{
 	filter: blur(8px);
 }
 #wrapper #sidebar .logo{
-	width: 100px;
-	height: 100px;
+	width: 170px;
+	height: auto;
 	margin: 0 auto 50px auto;
-	padding: 5px;
-	border: 1px solid var(--secondary-color);
-	border-radius: 50%;
-	background-color: var(--white-lit-color);
-	box-shadow: 0 0 1px 5px var(--shadow-color);
+	padding: 0px;
+	background-color: transparent;
+
 }
 #wrapper #sidebar .logo img{
 	width: 100%;
