@@ -6,7 +6,7 @@
 	--white-color: #fff;
 }
 body{
-	background: url(../img/fondo-de-pagina-prin.webp) no-repeat;
+	background: url(/img/fondo-de-pagina-prin.webp) no-repeat center / cover;
 	background-size: cover;
 	letter-spacing: 0.2px;
 	/* Estilo para el texto debajo del logo */
