@@ -22,8 +22,8 @@ body{
     font-family: "Times New Roman", Times, "Georgia", Garamond, serif;
 }
 .logo-text1 {
-    color: #00d8ff; 
-    font-size: 18px;
+    color: #00d9ffab; 
+    font-size: 16px;
     font-weight: bold;       /* Hace que sea negrita */
     font-style: italic;      /*  Esto inclina el texto (cursiva) */
     margin-top: 8px;
@@ -33,7 +33,7 @@ body{
     font-family: "Times New Roman", Times, "Georgia", Garamond, serif;
 }
 .logo-text2 {
-    color: #00d8ff; 
+    color: #00d9ffab; 
     font-size: 16px;
     font-weight: bold;       /* Hace que sea negrita */
     font-style: italic;      /* Esto inclina el texto (cursiva) */
@@ -115,6 +115,8 @@ body{
 	right: 20px;
 	visibility: hidden;
 }
+
+/* SIDEBAR STYLE */
 #wrapper{
 	width: 100%;
 	height: auto;
@@ -125,7 +127,7 @@ body{
 	--webkit-backdrop-filter: blur(5px);
 	overflow: hidden;
 }
-/* SIDEBAR STYLE */
+
 #wrapper #sidebar{
 	color: var(--white-color);
 	height: auto;
@@ -147,17 +149,17 @@ body{
 	z-index: -1;
 	filter: blur(8px);
 }
-#wrapper #sidebar .logo{
-	width: 170px;
-	height: auto;
-	margin: 0 auto 50px auto;
-	padding: 0px;
-	background-color: transparent;
-
+#wrapper #sidebar .logo {
+    width: 100%;                  /* Cambiado de 170px a 100% */
+    height: auto;
+    margin: 0 auto 30px auto;     /* Reducido el margen inferior de 50px a 30px para que no quede tan separado */
+    padding: 0px;
+    background-color: transparent;
+    text-align: center;           /* Asegura que el logo y el texto sigan centrados */
 }
 #wrapper #sidebar .logo img{
-	width: 100%;
-	height: 100%;
+	width: 70%;
+	height: auto;
 	object-fit: cover;
 }
 #wrapper #sidebar a{
