@@ -729,13 +729,20 @@ body{
 }
 
 
-/* Permite scroll suave en el área derecha sin deformar el layout */
-#main-area {
-    overflow-y: auto;
-    max-height: 90vh;
-    padding-bottom: 30px;
+/* Quita el scroll interno feo y ajusta el contenedor principal */
+#wrapper #main-area,
+.col-md-9 {
+    max-height: none !important;
+    overflow-y: visible !important;
 }
 
+/* Fuerza a que el footer fluya después del contenido y NO flote encima */
+.footer {
+    position: relative !important;
+    bottom: auto !important;
+    margin-top: 40px !important;
+    clear: both !important;
+}
 /* Quita el fondo negro de las tablas y ajusta los colores */
 .card-info .table,
 .card-info .table-dark {
@@ -767,4 +774,18 @@ body{
 /* Color de las líneas divisoras dentro de la tabla */
 .table td, .table th {
     border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Fuerza el estilo de cristal/traslúcido en las tarjetas de contacto */
+.contact-card,
+.card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+    color: #ffffff !important;
+}
+
+/* Fuerza a que los textos y títulos dentro de las tarjetas sean blancos */
+.card h2, .card h5, .card p, .card label {
+    color: #ffffff !important;
 }
