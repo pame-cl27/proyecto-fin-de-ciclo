@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags -->
+    <head>
     <meta charset="UTF-8">
     <meta name="description" content="KM Online Works">
     <meta name="keywords" content="KM Online Works">
     <meta name="author" content="Kamran Mubarik">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- CSS Links -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Contact</title>
+    <title>Contáctanos</title>
+
+    <style>
+        /* Al pasar el mouse sobre el elemento li con clase dropdown, el menú se muestra automáticamente */
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; /* Evita saltos visuales incómodos */
+        }
+    </style>
 </head>
 <body>
-    <!-- 
-      Se removió el bloque del preloader. Sin la librería JavaScript activa, 
-      el elemento original se quedaría estático bloqueando la visibilidad del sitio.
-    -->
-
     <div class="container" id="wrapper">
         <div class="row">
-            <!-- Sidebar Izquierdo (Menú de Navegación) -->
             <div class="col-md-3" id="sidebar">
+                <!-- imagen del logo -->
                 <div class="logo">
-                    <img src="img/km-logo.png" alt="logo">
+                    <img src="img/logo-instituto.png" alt="logo">
+                    <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
+                     <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
+                      <p class="logo-text2"><strong></strong>UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
+
                 </div>
                 <ul class="nav flex-column">
-                    <li class="nav-item">                        
-                        <a class="nav-link" href="index.html"><i class="fal fa-home-alt"></i> Home</a>
+                    <li class="nav-item">       
+                        <a class="nav-link active" href="index.html"><i class="fal fa-home"></i> Nosotros</a>
                     </li>
-                    <li class="nav-item">                        
-                        <a class="nav-link" href="portfolio.html"><i class="fal fa-tasks"></i> Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html"><i class="fal fa-info"></i> About</a>
+                    <li class="nav-item">        
+                        <a class="nav-link" href="aprendizaje-automatico.html"><i class="fal fa-robot"></i> Aprendizaje Automático</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html"><i class="fal fa-address-card"></i> Contact</a>
+                        <a class="nav-link" href="red-neur.html"><i class="fal fa-info"></i> Redes Neuronales</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="download.html"><i class="fal fa-download"></i> Download</a>
+                        <a class="nav-link" href="contact.html"><i class="fal fa-envelope"></i> Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proc-len-nat.html"><i class="fal fa-comments"></i> Procesamiento del lenguaje natural</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vis-comp.html"><i class="fal fa-eye"></i> Visión por computadora</a>
                     </li>
                 </ul>
                 <i class="far fa-ellipsis-v"></i>
                 <div class="copyright">
-                    <p>&copy; 2021 | KM Online Works</p>
+                    <p>&copy; 2026 | ISTP Argentina</p>
                 </div>
             </div>
 
@@ -60,17 +70,17 @@
                             <div class="col-md-5 order-md-2">
                                 <div class="card" style="width: 100%;">
                                     <div class="card-body">
-                                        <h5 class="card-title">For Web Development</h5>
-                                        <img src="img/km-logo.png" alt="km online works">
-                                        <p class="card-text"><i class="fal fa-envelope"></i> <a href="mailto:kmonlineworks@gmail.com" style="color:#fff;">kmonlineworks@gmail.com</a></p>
+                                        <h5 class="card-title">Atención e Información Institucional</h5>
+                                        <img src="img/logo-instituto-blanco.png" alt="Instituto Argentina" class="card-img-top" style="width: 100px; height: auto; margin-bottom: 10px;">
+                                        <p class="card-text"><i class="fal fa-envelope"></i> <a href="webmaster@istpargentina.edu.pe" style="color:#fff;">webmaster@istpargentina.edu.pe</a></p>
                                         <p class="card-text">
-                                            <a href="https://www.facebook.com/kmonlineworks" style="color: white;">
-                                                <i class="fab fa-facebook"></i> Follow Facebook Page
+                                            <a href="https://web.facebook.com/instituto.argentina" style="color: white;">
+                                                <i class="fab fa-facebook"></i> Síguenos en Facebook
                                             </a>
                                         </p>
                                         <p class="card-text">
-                                            <a href="https://www.fiverr.com/kamranmubarik" style="color: white;">
-                                                <i class="fal fa-globe"></i> Order on Fiverr
+                                            <a href="https://istpargentina.edu.pe" style="color: white;">
+                                                <i class="fal fa-globe"></i> Visítanos en nuestra página web
                                             </a>
                                         </p>
                                      </div>
@@ -81,23 +91,23 @@
                             <div class="col-lg-7 col-md-7 order-lg-1">
                                 <div class="card" style="width: 100%;">
                                     <div class="section-description">
-                                        <h2 class="display-4"><i class="fal fa-pencil"></i> Get in Touch</h2>
+                                        <h2 class="display-4"><i class="fal fa-pencil"></i> Estamos para ayudarte</h2>
                                     </div>
                                     <form>
                                       <div class="form-group">
-                                        <label>Your Name</label>
+                                        <label>¿Cómo te llamas?</label>
                                         <input type="text" class="form-control">
                                       </div>
                                       <div class="form-group">
-                                        <label>Email address</label>
+                                        <label>Correo electrónico de contacto</label>
                                         <input type="email" class="form-control">
-                                        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        <small class="form-text text-muted">Tu información está segura con nosotros.</small>
                                       </div>
                                       <div class="form-group">
-                                        <label>Message</label>
+                                        <label>¿En qué te podemos colaborar hoy?</label>
                                         <textarea class="form-control" rows="4"></textarea>
                                       </div>                                      
-                                      <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                                      <button type="submit" class="btn btn-primary btn-sm">Enviar consulta</button><!-- Botón no habilitado -->
                                     </form>
                                 </div>
                             </div>
@@ -110,14 +120,14 @@
                             <div class="col-lg-4 col-md-12 order-lg-2"></div>
                             <div class="col-lg-8 col-md-12 order-lg-1 social-links">
                                 <div class="social-links">
-                                    <a href="https://kmonlineworks.blogspot.com">
-                                        <i class="fas fa-globe"></i> Website
+                                    <a href="https://istpargentina.edu.pe/">
+                                        <i class="fas fa-globe"></i> ISTP "Argentina"
                                     </a>
-                                    <a href="mailto:kmonlineworks@gmail.com">
-                                        <i class="fal fa-envelope"></i> Email
+                                    <a href="##">
+                                        <i class="fal fa-envelope"></i> jair.morenom@istpargentina.edu.pe
                                     </a>
-                                    <a href="https://web.facebook.com/kmonlineworks">
-                                        <i class="fab fa-facebook"></i> Facebook
+                                    <a href="##">
+                                        <i class="fal fa-envelope"></i> pamela.tipulah@istpargentina.edu.pe
                                     </a>
                                 </div>                                             
                             </div>  

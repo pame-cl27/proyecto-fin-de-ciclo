@@ -164,20 +164,22 @@ body{
 }
 #wrapper #sidebar a{
 	width: 80%;
-	font-size: 14px;
-	color: var(--white-color);
-	border: 1px solid transparent;
-	padding: 5px 15px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 auto 20px auto;
-	border-radius: 15px;
-	background-color: transparent;
-	box-shadow: 0 0 1px transparent;
-	text-transform: uppercase;
-	transition: 0.5s;
-	position: relative;
+    font-size: 14px;
+    color: var(--white-color);
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: flex-start; /* ◄ CAMBIADO: Junta el icono y el texto al inicio */
+    align-items: center;
+    gap: 12px;                  /* ◄ AÑADIDO: Espacio exacto entre el icono y el texto */
+    margin: 0 auto 20px auto;
+    border-radius: 15px;
+    background-color: transparent;
+    box-shadow: 0 0 1px transparent;
+    text-transform: uppercase;
+    transition: 0.5s;
+    position: relative;
+    text-align: left;
 }
 #wrapper #sidebar a:before{
 	content: "";
@@ -199,11 +201,7 @@ body{
 	background-color: var(--white-lit-color);
 	opacity: 1;
 }
-#wrapper #sidebar a:hover, #wrapper #sidebar .active{
-	border: 1px solid var(--main-color);
-	background-color: var(--white-lit-color);
-	box-shadow: 0 0 1px 5px var(--shadow-color);
-}
+
 #wrapper #sidebar a i{
 	margin-right: 10px;
 }
@@ -217,14 +215,10 @@ body{
 }
 /* MAIN AREA STYLE */
 #wrapper #main-area{
-	height: calc(100% - 40px);
-	padding: 10px 20px;
-	margin: 20px 5px;
-	box-sizing: border-box;
-	border-right: 2px solid var(--main-color);
-	border-top: 2px solid var(--main-color);
-	border-bottom: 2px solid var(--main-color);
-	border-radius: 20px;
+    height: calc(100% - 40px);
+    padding: 10px 20px;
+    margin: 20px 5px;
+    box-sizing: border-box;
 }
 #wrapper #main-area .header-section{
 	margin-bottom: 20px;
@@ -304,7 +298,7 @@ body{
 	left: 90px;
 	top: 30px;
 }
-#wrapper #main-area .content-section.single .card-title,
+#wrapper #main-area .content-section.single .le,
 #wrapper #main-area .content-section.about .card-title,
 #wrapper #main-area .content-section.contact .card-title{
 	color: var(--white-color);
@@ -319,51 +313,90 @@ body{
 #wrapper #main-area .content-section.contact .section-description{
 	margin-top: 20px;
 }
-#wrapper #main-area .content-section .card{
-	background-color: transparent;
-	box-shadow: 0 0 10px 3px var(--shadow-color);
-	cursor: pointer;
-	transition: 0.5s;
-	margin-bottom: 10px;
+.card-info {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--white-lit-color);
+    border-radius: 15px;
+    padding: 20px 25px;
+    margin-top: 20px;
+    color: var(--white-color);
 }
-#wrapper #main-area .content-section .card:hover{
-	box-shadow: 0 0 15px 5px var(--shadow-color);
+
+.card-info h2 {
+    font-size: 18px;
+    color: #00d8ff;
+    margin-bottom: 10px;
 }
-#wrapper #main-area .content-section .card:before{
-	content: "";
-	width: 10%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 10px;
-	background-color: rgba(255,255,255,0);
-	transition: 0.5s;
-	border-radius: 10px;
-	filter: blur(5px);
-	transform: rotate(15deg);
+
+.card-info p {
+    font-size: 14px;
+    line-height: 1.6;
 }
-#wrapper #main-area .content-section .card:hover:before{
-	left: 90%;
-	width: 0;
-	background-color: var(--white-lit-color);
-	opacity: 1;
+
+
+/* Transparencia para las tarjetas de la página de contacto */
+#wrapper #main-area .contact .card,
+#wrapper #main-area .contact .content-section,
+#wrapper #main-area .contact-form-wrapper,
+#wrapper #main-area .content-section {
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid var(--white-lit-color) !important;
+    border-radius: 15px;
+    color: var(--white-color) !important;
 }
-#wrapper #main-area .content-section h2{
-	font-size: 24px;
-	color: var(--white-color);
+
+/* 1. Todos los textos dentro del área principal de contacto en blanco */
+#wrapper #main-area h1,
+#wrapper #main-area h2,
+#wrapper #main-area h3,
+#wrapper #main-area h4,
+#wrapper #main-area h5,
+#wrapper #main-area label,
+#wrapper #main-area p,
+#wrapper #main-area span,
+#wrapper #main-area small,
+#wrapper #main-area .form-text {
+    color: #ffffff !important;
 }
-#wrapper #main-area .content-section p{
-	font-size: 14px;
-	color: var(--white-color);
+
+/* 2. Todos los enlaces (links) de las tarjetas laterales e íconos en blanco */
+#wrapper #main-area a,
+#wrapper #main-area i {
+    color: #ffffff !important;
 }
-#wrapper #main-area .content-section .jumbotron{
-	background-color: transparent;
-	box-shadow: 0 0 5px 2px var(--shadow-color);
-	color: var(--white-lit-color);
+
+/* Cambiar color al pasar el mouse por encima de los enlaces */
+#wrapper #main-area a:hover {
+    color: #00d8ff !important;
+}
+
+/* 3. Transparencia suave para cajas de texto (inputs y textarea) */
+#wrapper #main-area input,
+#wrapper #main-area textarea {
+    background: rgba(255, 255, 255, 0.096) !important;
+    border: 1px solid var(--white-lit-color) !important;
+    color: #ffffff !important;
+}
+
+/* Texto de ayuda dentro de las cajas de texto (Placeholder) */
+#wrapper #main-area input::placeholder,
+#wrapper #main-area textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Color del texto al seleccionarlo/resaltarlo */
+#wrapper #main-area ::selection {
+    background: rgba(23, 131, 255, 0.548);
+    color: #ffffff;
+}
+
 
 	/*Pie de página*/
 
-}
+
 #wrapper #main-area .footer{
 	width: calc(100% - 70px);
 	position: absolute;
@@ -467,11 +500,14 @@ body{
 	#wrapper #sidebar .logo{
 		margin-bottom: 30px;
 	}
-	.nav{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+	.nav-link {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el icono y el texto */
+    text-align: left;    /* Asegura que el texto comience a la izquierda */
+    justify-content: flex-start; /* Fuerza todo el contenido al inicio a la izquierda */
+    gap: 12px;           /* Espacio uniforme entre el icono y el texto */
+    width: 100%;         /* Asegura que el enlace ocupe todo el ancho disponible */
+    }
 	#wrapper #sidebar a {
 		width: unset !important;
 		margin-bottom: 10px;
@@ -668,4 +704,67 @@ body{
 	#wrapper #main-area .content-section.single .section-description{
 		margin-top: 5px;
 	}
+}
+
+/* Badges de tecnología: Fondo transparente, borde y letra con color */
+.badge-tech {
+    background-color: transparent !important;
+    color: #00f2fe !important; /* Color turquesa/neón de las letras */
+    border: 1.5px solid #00f2fe !important; /* Color del borde */
+    padding: 7px 14px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: all 0.3s ease; /* Transición suave para el efecto hover */
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el cursor (Hover) */
+.badge-tech:hover {
+    background-color: #00f2fe !important; /* El fondo se llena de color */
+    color: #0a1128 !important; /* La letra cambia a un tono oscuro contrastante */
+    box-shadow: 0 0 12px rgba(0, 242, 254, 0.6); /* Brillito neón */
+    transform: translateY(-2px); /* Pequeña elevación */
+}
+
+
+/* Permite scroll suave en el área derecha sin deformar el layout */
+#main-area {
+    overflow-y: auto;
+    max-height: 90vh;
+    padding-bottom: 30px;
+}
+
+/* Quita el fondo negro de las tablas y ajusta los colores */
+.card-info .table,
+.card-info .table-dark {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+.card-info table th,
+.card-info table td {
+    background: transparent !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Corrección para que la tabla sea transparente y combine con el diseño */
+.table, 
+.table > :not(caption) > * > * {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+/* Fuerza el estilo de tarjeta con borde azul en la tabla */
+.card-glass,
+.card-info {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+}
+
+/* Color de las líneas divisoras dentro de la tabla */
+.table td, .table th {
+    border-color: rgba(255, 255, 255, 0.1) !important;
 }
