@@ -61,58 +61,135 @@
                 </div>
             </div>
 
+            
             <!-- Área de Contenido Principal -->
             <div class="col-md-9">
                 <div id="main-area">
                     <div>                       
                         <div class="row">
+
+                            <div class="col-12 mb-3">
+                            <div class="card-info p-3 d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <i class="fal fa-headset fa-2x text-info me-3"></i>
+                                    <div>
+                                        <h6 class="text-white mb-0">Atención e Informes en Línea</h6>
+                                        <small class="text-light">Resolvemos tus dudas en tiempo real dentro del horario académico.</small>
+                                    </div>
+                                </div>
+                                <span class="badge bg-success">En línea</span>
+                            </div>
+                        </div>
+
                             <!-- Columna Derecha: Tarjeta informativa de contacto externo -->
-                            <div class="col-md-5 order-md-2">
-                                <div class="card" style="width: 100%;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Atención e Información Institucional</h5>
-                                        <img src="img/logo-instituto-blanco.png" alt="Instituto Argentina" class="card-img-top" style="width: 100px; height: auto; margin-bottom: 10px;">
-                                        <p class="card-text"><i class="fal fa-envelope"></i> <a href="webmaster@istpargentina.edu.pe" style="color:#fff;">webmaster@istpargentina.edu.pe</a></p>
-                                        <p class="card-text">
-                                            <a href="https://web.facebook.com/instituto.argentina" style="color: white;">
-                                                <i class="fab fa-facebook"></i> Síguenos en Facebook
-                                            </a>
-                                        </p>
-                                        <p class="card-text">
-                                            <a href="https://istpargentina.edu.pe" style="color: white;">
-                                                <i class="fal fa-globe"></i> Visítanos en nuestra página web
-                                            </a>
-                                        </p>
-                                     </div>
+                            <!-- Columna Derecha: Tarjeta informativa y Mapa -->
+                        <div class="col-md-5 order-md-2">
+                            
+                            <!-- 1. Tarjeta de Contacto -->
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Atención e Información Institucional</h5>
+                                    <img src="img/logo-instituto-blanco.png" alt="Instituto Argentina" class="card-img-top" style="width: 100px; height: auto;">
+                                    <p class="card-text">
+                                        <i class="fal fa-envelope"></i> <a href="mailto:webmaster@istpargentina.edu.pe" style="color: #fff;">webmaster@istpargentina.edu.pe</a>
+                                    </p>
+                                    <p class="card-text">
+                                        <a href="https://web.facebook.com/instituto.argentina" style="color: white;">
+                                            <i class="fab fa-facebook"></i> Síguenos en Facebook
+                                        </a>
+                                    </p>
+                                    <p class="card-text">
+                                        <a href="https://istpargentina.edu.pe" style="color: white;">
+                                            <i class="fal fa-globe"></i> Visítanos en nuestra página web
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
 
-                            <!-- Columna Izquierda: Formulario de contacto directo -->
-                            <div class="col-lg-7 col-md-7 order-lg-1">
-                                <div class="card" style="width: 100%;">
-                                    <div class="section-description">
-                                        <h2 class="display-4"><i class="fal fa-pencil"></i> Estamos para ayudarte</h2>
-                                    </div>
-                                    <form>
-                                      <div class="form-group">
-                                        <label>¿Cómo te llamas?</label>
-                                        <input type="text" class="form-control">
-                                      </div>
-                                      <div class="form-group">
-                                        <label>Correo electrónico de contacto</label>
-                                        <input type="email" class="form-control">
-                                        <small class="form-text text-muted">Tu información está segura con nosotros.</small>
-                                      </div>
-                                      <div class="form-group">
-                                        <label>¿En qué te podemos colaborar hoy?</label>
-                                        <textarea class="form-control" rows="4"></textarea>
-                                      </div>                                      
-                                      <button type="submit" class="btn btn-primary btn-sm">Enviar consulta</button><!-- Botón no habilitado -->
-                                    </form>
+                            <!-- 2. Mapa en la misma columna (Justo debajo) -->
+                            <div class="card mt-3" style="width: 100%;">
+                                <div class="card-body">
+                                    <h6 class="text-white mb-2">
+                                        <i class="fal fa-map-marker-alt text-info me-2"></i>Ubicación
+                                    </h6>
+                                    <p class="small text-light mb-2">Av. Alfonso Ugarte 9, Lima</p>
+                                        <div class="mapa-oscuro">
+                                            <iframe 
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.4705030225648!2d-77.0418768!3d-12.0523304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8cf7f857d4f%3A0xa442b001cf5154c6!2sInstituto%20de%20Educaci%C3%B3n%20Superior%20Tecnol%C3%B3gico%20P%C3%BAblico%20Argentina!5e0!3m2!1ses!2spe!4v1721836320000!5m2!1ses!2spe" 
+                                                width="100%" 
+                                                height="200" 
+                                                style="border:0; border-radius: 8px;" 
+                                                allowfullscreen="" 
+                                                loading="lazy" 
+                                                referrerpolicy="no-referrer-when-downgrade">
+                                            </iframe>
+                                        </div>
                                 </div>
                             </div>
-                        </div>                      
+
+                        </div> <!-- Fin de la Columna Derecha -->
+                            
+                            <!-- Columna Izquierda: Formulario de contacto directo -->
+                            <div class="col-lg-7 col-md-7 order-lg-1">
+                                
+                                <div class="card p-3 p-md-4" style="width: 100%;">
+                                    <div class="card-body p-0">
+                                        
+                                        <!-- Título con el formato original (grande y destacado) -->
+                                        <div class="section-description mb-3">
+                                            <h2 class="display-4"><i class="fal fa-pencil"></i> Estamos para ayudarte</h2>
+                                        </div>
+
+                                        <form>
+                                            <div class="form-group mb-3">
+                                                <label>¿Cómo te llamas?</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <label>Correo electrónico de contacto</label>
+                                                <input type="email" class="form-control">
+                                                <small class="form-text text-muted">Tu información está segura con nosotros.</small>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <label>¿En qué te podemos colaborar hoy?</label>
+                                                <textarea class="form-control" rows="4"></textarea>
+                                            </div>
+
+                                            <div class="text-center mt-3">
+                                                <button type="submit" class="btn btn-primary btn-sm">Enviar consulta</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        
                     </div> <!-- Content Section End -->
+
+                            <div class="row mt-4">
+                                <div class="col-md-4 mb-3">
+                                    <div class="card-info p-3">
+                                        <h6 class="text-info">¿Tiempo de respuesta?</h6>
+                                        <p class="small text-light">Respondemos todas las consultas en un plazo máximo de 24 a 48 horas hábiles.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card-info p-3">
+                                        <h6 class="text-info">¿Proceso de Admisión?</h6>
+                                        <p class="small text-light">Puedes solicitar información detallada seleccionando la opción en el formulario.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card-info p-3">
+                                        <h6 class="text-info">Atención Presencial</h6>
+                                        <p class="small text-light">Puedes acudir a nuestras instalaciones respetando el horario de atención institucional.</p>
+                                    </div>
+                                </div>
+                            </div>
+
 
                     <!-- Pie de Página (Redes Sociales) -->
                     <div class="footer">

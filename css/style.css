@@ -5,11 +5,19 @@
 	--white-lit-color: rgba(255,255,255,0.4);
 	--white-color: #fff;
 }
-body{
-	background: url(/img/fondo-de-pagina-prin.webp) no-repeat center / cover;
-	background-size: cover;
-	letter-spacing: 0.2px;
+body {
+    background-image: url('../img/fondo-de-pagina-prin.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #03081e; /* Color oscuro de respaldo por si acaso */
+}
 	/* Estilo para el texto debajo del logo */
+
+	
 .logo-text {
     color: #00d8ff; 
     font-size: 22px;
@@ -44,7 +52,7 @@ body{
     font-family: "Times New Roman", Times, "Georgia", Garamond, serif;
 }
 
-}
+
 /* PreLoeader Style */
 .lds-ripple {
   display: inline-block;
@@ -220,6 +228,7 @@ body{
     margin: 20px 5px;
     box-sizing: border-box;
 }
+
 #wrapper #main-area .header-section{
 	margin-bottom: 20px;
 }
@@ -273,6 +282,8 @@ body{
 	align-items: center;
 	margin-bottom: 40px;
 }
+
+
 #wrapper #main-area .content-section .section-heading.single{
 	margin-bottom: 20px;	
 }
@@ -788,4 +799,33 @@ body{
 /* Fuerza a que los textos y títulos dentro de las tarjetas sean blancos */
 .card h2, .card h5, .card p, .card label {
     color: #ffffff !important;
+}
+
+/* Contenedor del menú vertical */
+.sidebar-menu, ul.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Controla la distancia EXACTA e igual entre cada opción */
+    padding: 0;
+    margin: 0;
+}
+
+/* Elemento individual de la lista */
+.sidebar-menu li, ul.nav li {
+    margin: 0 !important; /* Elimina márgenes antiguos desiguales */
+}
+
+/* Enlaces del menú */
+.sidebar-menu a, ul.nav a.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    line-height: 1.2; /* Mantiene apretados los textos de 2 líneas */
+    font-size: 0.85rem;
+}
+
+/* color mapa */
+.mapa-oscuro iframe {
+    filter: invert(90%) hue-rotate(180deg) contrast(120%) brightness(90%);
+    border-radius: 8px; /* Para mantener los bordes redondeados */
 }

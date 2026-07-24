@@ -63,29 +63,27 @@
             <div class="col-md-9">
                 <div id="main-area">
                     <div class="header-section">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">                        
-                                <a class="nav-link active" href="category.html">Category 1</a>
+                        <ul class="nav d-flex flex-row gap-4 mb-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-white p-0" href="#">CATEGORÍA ACADÉMICA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="category.html">Category 2</a>
+                                <a class="nav-link text-white p-0" href="#">CARRERA Y PLAN</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="category.html">Category 3</a>
+                                <a class="nav-link text-white p-0" href="#">PROYECTOS E INNOVACIÓN</a>
                             </li>
-                            
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
-                                    Dropdown
+                                <a class="nav-link dropdown-toggle text-white p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    OPCIONES
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Acción 1</a>
+                                    <a class="dropdown-item" href="#">Acción 2</a>
                                 </div>
                             </li>
                         </ul>
+                        
                         
                         <div class="input-group col-md-6 offset-md-3 search-box">                       
                             <input type="text" class="form-control" id="search" placeholder="Search" required autocomplete="off">
@@ -94,9 +92,55 @@
                             </div>
                             <div class="invalid-tooltip">Please choose a unique and valid username.</div>
                         </div>
-                    </div> <div class="content-section">
+          
+                        
+
+                        <div class="row mt-4">
+                        <div class="col-12 mb-3 text-center text-md-start">
+                            <h5 class="text-white fw-bold">
+                                    <i class="fal fa-chart-line text-info me-2"></i>Métricas estándar para evaluar la calidad en traducción automática y resumen de texto.
+                                </h5>
+                            </div>
+                        </div>
+
+                        <!-- Fila Horizontal con los 3 sectores -->
+                        <div class="row text-center mb-4">
+                            
+                            <!-- Sector 1: BLEU / ROUGE -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card-info p-3 h-100">
+                                    <h6 class="text-info">BLEU / ROUGE</h6>
+                                    <p class="small text-light mb-0">Métricas estándar para evaluar la calidad en traducción automática y resumen de texto.</p>
+                                </div>
+                            </div>
+
+                            <!-- Sector 2: Perplejidad -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card-info p-3 h-100">
+                                    <h6 class="text-info">Perplejidad (Perplexity)</h6>
+                                    <p class="small text-light mb-0">Mide qué tan bien un modelo de lenguaje predice una muestra de texto.</p>
+                                </div>
+                            </div>
+
+                            <!-- Sector 3: F1-Score / Accuracy -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card-info p-3 h-100">
+                                    <h6 class="text-info">F1-Score / Accuracy</h6>
+                                    <p class="small text-light mb-0">Evaluación de precisión en tareas de clasificación de texto y análisis de sentimiento.</p>
+                                </div>
+                            </div>
+
+                        </div>
                       
                         <!-- 1. Tarjetas Principales: Fases del Procesamiento de Texto -->
+
+                        <div class="col-12 mb-3 mt-2 text-center text-md-start">
+                            <h5 class="text-white fw-bold">
+                                <i class="fal fa-layer-group text-info me-2"></i>Conceptos Clave de PLN
+                            </h5>
+                        </div>
+
+
                             <div class="row text-center mt-4">
                                 <!-- Preprocesamiento -->
                                 <div class="col-lg-4 col-md-6 mb-4">
@@ -138,17 +182,36 @@
                                 </div>
                             </div>
 
-                            <!-- 2. Badges de Librerías y Frameworks de PLN -->
-                            <div class="mt-3 text-center">
-                                <small class="text-uppercase text-light d-block mb-3" style="letter-spacing: 1px;">
-                                    <i class="fal fa-brackets-curly"></i> Herramientas Esenciales de PLN
-                                </small>
-                                
-                                <span class="badge-tech m-1">NLTK</span>
-                                <span class="badge-tech m-1">spaCy</span>
-                                <span class="badge-tech m-1">Hugging Face</span>
-                                <span class="badge-tech m-1">LangChain</span>
-                            </div>
+                                       <!-- PIPELINE -->
+                                            <div class="row text-center mt-4">
+                                            <div class="col-12 mb-2">
+                                                <h5 class="text-white">Pipeline Clásico de PLN</h5>
+                                            </div>
+                                            <div class="col-md-3 mb-2">
+                                                <div class="p-2 border rounded">
+                                                    <strong class="d-block text-info">1. Tokenización</strong>
+                                                    <span class="small text-light">División del texto en unidades mínimas (palabras o subpalabras).</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-2">
+                                                <div class="p-2 border rounded">
+                                                    <strong class="d-block text-info">2. Normalización</strong>
+                                                    <span class="small text-light">Minúsculas, eliminación de signos y *stemming* / lematización.</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-2">
+                                                <div class="p-2 border rounded">
+                                                    <strong class="d-block text-info">3. Vectorización</strong>
+                                                    <span class="small text-light">Transformación a representación numérica (Embeddings).</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-2">
+                                                <div class="p-2 border rounded">
+                                                    <strong class="d-block text-info">4. Inferencia / Modelo</strong>
+                                                    <span class="small text-light">Predicción con transformers o modelos estadísticos.</span>
+                                                </div>
+                                            </div>
+                                            </div>
 
                             <!-- 3. Aplicaciones Reales de PLN -->
                             <div class="mt-4 p-3 card-info mb-5">
@@ -178,6 +241,9 @@
                                 </div>
                             </div>
 
+                            
+
+
                         <!-- Pie de página -->
                     </div> <div class="footer">
                         <div class="row">                                                                           
@@ -192,10 +258,15 @@
                                     </a>
                                     <a href="##">
                                         <i class="fal fa-envelope"></i> pamela.tipulah@istpargentina.edu.pe
-                                    </a>
-                                </div>                                             
+                                     </a>
+                                </div>                                                            
                             </div>  
                         </div>
-                    </div> </div>
-            </div> </div> </div> </body>
+                    </div> 
+
+                </div> <!-- Fin #main-area -->
+            </div> 
+        </div> 
+    </div> 
+</body>
 </html>
