@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="KM Online Works">
+    <meta name="keywords" content="KM Online Works">
+    <meta name="author" content="Kamran Mubarik">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Visión por computadora</title>
+
+    <style>
+        /* Al pasar el mouse sobre el elemento li con clase dropdown, el menú se muestra automáticamente */
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; /* Evita saltos visuales incómodos */
+        }
+    </style>
+</head>
+<body>
+     <div class="container" id="wrapper">
+        <div class="row">
+            <div class="col-md-3" id="sidebar">
+                <!-- imagen del logo -->
+                <div class="logo">
+                    <img src="img/logo-instituto.png" alt="logo-instituto-argentina">
+                    <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
+                     <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
+                      <p class="logo-text2"><strong></strong>UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
+
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">       
+                        <a class="nav-link active" href="index.html"><i class="fal fa-home"></i> Nosotros</a>
+                    </li>
+                    <li class="nav-item">        
+                        <a class="nav-link" href="aprendizaje-automatico.html"><i class="fal fa-robot"></i> Aprendizaje Automático</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="red-neur.html"><i class="fal fa-info"></i> Redes Neuronales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fal fa-envelope"></i> Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proc-len-nat.html"><i class="fal fa-comments"></i> Procesamiento del lenguaje natural</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vis-comp.html"><i class="fal fa-eye"></i> Visión por computadora</a>
+                    </li>
+                </ul>
+                <i class="far fa-ellipsis-v"></i>
+                <div class="copyright">
+                    <p>&copy; 2026 | ISTP Argentina</p>
+                </div>
+            </div>
+
+                                    <div class="col-md-9">
+                            <div id="main-area">
+                                <div class="header-section">
+                                    
+                                            <!-- Menú Superior con Espaciado Completo -->
+                                                <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+                                                    <a href="documentos/Fundamentos-IW.pdf" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">SÍLABO Y PLAN DE ESTUDIO</a>
+                                                    <a href="libreria-ia.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">LIBRERIA DE IA</a>
+                                                    <a href="proy-innov.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">PROYECTOS E INNOVACIÓN</a>
+                                                    
+                                                <!-- Menú Desplegable con Transparencia Estilo Cristal (100% HTML + CSS) -->
+                                                <details class="position-relative d-inline-block">
+                                                    <summary class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">
+                                                        PROGRAMAS DE ESTUDIOS ▾
+                                                    </summary>
+                                                    <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3" 
+                                                        style="min-width: 170px; 
+                                                                background: rgba(10, 25, 47, 0.75); 
+                                                                backdrop-filter: blur(10px); 
+                                                                -webkit-backdrop-filter: blur(10px); 
+                                                                border: 1px solid rgba(0, 210, 255, 0.4); 
+                                                                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
+                                                        
+                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="vis-comp.html">Visión por Computadora</a>
+                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="proc-len-nat.html">Procesamiento del Lenguaje Natural</a>
+                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="red-neur.html">Redes Neuronales y Deep Learning</a>
+                                                        <hr class="my-1" style="border-color: rgba(0, 210, 255, 0.25);">
+                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="malla-curr.html">Malla Curricular DSI</a>
+                                                        
+                                                        <hr class="my-1" style="border-color: rgba(0, 162, 255, 0.25);">
+                                                        
+                                                        <a class="dropdown-item-cristal py-1.5 px-3 rounded text-decoration-none d-block fs-7" href="mas.html">Más</a>
+                                                    </div>
+                                                </details>
+                                                </div>
+                                                    <!-- BUSCADOR -->
+                                                    <form action="index.html" method="GET" class="input-group search-box">
+                                                        <input type="text" 
+                                                            name="q" 
+                                                            class="form-control" 
+                                                            placeholder="Buscar..." 
+                                                            required 
+                                                            autocomplete="off">
+                                                        <button type="submit" class="btn btn-outline-info">
+                                                            <i class="fal fa-search"></i>
+                                                        </button>
+                                                    </form>
+
+
+                                                <!-- FIN DE MENU -->
+
+                                                <!-- Sección de APIs e Integraciones de IA -->
+                                                <div class="row mt-4 mb-4">
+                                                    <div class="col-12 text-center text-md-start mb-3">
+                                                        <h5 class="text-white fw-bold">
+                                                            <i class="fal fa-plug text-info me-2"></i>APIs e Integraciones de IA Web
+                                                        </h5>
+                                                    </div>
+
+                                                    <!-- 1. Roboflow API -->
+                                                    <div class="col-md-4 col-sm-6 mb-3">
+                                                        <div class="card h-100 shadow-lg" 
+                                                            style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                                                            <div class="card-body d-flex flex-column justify-content-between">
+                                                                <div>
+                                                                    <h5 class="card-title text-white fw-bold mb-2">
+                                                                        <i class="fal fa-eye text-info me-2"></i>Roboflow API
+                                                                    </h5>
+                                                                    <p class="card-text text-white-50 fs-7">
+                                                                        API para consumir modelos de Visión Computacional personalizados y datasets etiquetados para la web.
+                                                                    </p>
+                                                                </div>
+                                                                <a href="https://universe.roboflow.com/" target="_blank" rel="noopener noreferrer" 
+                                                                class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100" 
+                                                                style="border: 1px solid #00d2ff !important;">
+                                                                Roboflow Hub <i class="fal fa-external-link ms-1"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 2. Google Cloud Vision -->
+                                                    <div class="col-md-4 col-sm-6 mb-3">
+                                                        <div class="card h-100 shadow-lg" 
+                                                            style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                                                            <div class="card-body d-flex flex-column justify-content-between">
+                                                                <div>
+                                                                    <h5 class="card-title text-white fw-bold mb-2">
+                                                                        <i class="fal fa-cloud text-info me-2"></i>Cloud Vision API
+                                                                    </h5>
+                                                                    <p class="card-text text-white-50 fs-7">
+                                                                        Servicio en la nube de Google para OCR (reconocimiento de texto), detección facial y etiquetado automático.
+                                                                    </p>
+                                                                </div>
+                                                                <a href="https://cloud.google.com/vision" target="_blank" rel="noopener noreferrer" 
+                                                                class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100" 
+                                                                style="border: 1px solid #00d2ff !important;">
+                                                                Ver Cloud Vision <i class="fal fa-external-link ms-1"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 3. Replicate API -->
+                                                    <div class="col-md-4 col-sm-6 mb-3">
+                                                        <div class="card h-100 shadow-lg" 
+                                                            style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                                                            <div class="card-body d-flex flex-column justify-content-between">
+                                                                <div>
+                                                                    <h5 class="card-title text-white fw-bold mb-2">
+                                                                        <i class="fal fa-terminal text-info me-2"></i>Replicate API
+                                                                    </h5>
+                                                                    <p class="card-text text-white-50 fs-7">
+                                                                        Plataforma para correr modelos de IA de código abierto en la nube con una API REST rápida para aplicaciones web.
+                                                                    </p>
+                                                                </div>
+                                                                <a href="https://replicate.com/" target="_blank" rel="noopener noreferrer" 
+                                                                class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100" 
+                                                                style="border: 1px solid #00d2ff !important;">
+                                                                Probar Replicate <i class="fal fa-external-link ms-1"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <!-- Sección de Librerías y Frameworks de IA -->
+                                                <div class="row mt-4 mb-4">
+                                                    <div class="col-12 text-center text-md-start mb-3">
+                                                        <h5 class="text-white fw-bold">
+                                                            <i class="fal fa-boxes text-info me-2"></i>Librerías y Frameworks de IA
+                                                        </h5>
+                                                    </div>
+
+                                                    <!-- 1. OpenCV -->
+                                                    <div class="col-md-4 col-sm-6 mb-3">
+                                                        <div class="card h-100 shadow-lg" 
+                                                            style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                                                            <div class="card-body d-flex flex-column justify-content-between">
+                                                                <div>
+                                                                    <h5 class="card-title text-white fw-bold mb-2">
+                                                                        <i class="fal fa-camera-retro text-info me-2"></i>OpenCV
+                                                                    </h5>
+                                                                    <p class="card-text text-white-50 fs-7">
+                                                                        Librería líder en procesamiento de imágenes en tiempo real, detección de bordes, filtros y visión computacional.
+                                                                    </p>
+                                                                </div>
+                                                                <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer" 
+                                                                class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100" 
+                                                                style="border: 1px solid #00d2ff !important;">
+                                                                Documentación <i class="fal fa-external-link ms-1"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 2. Ultralytics YOLOv8 -->
+                                                    <div class="col-md-4 col-sm-6 mb-3">
+                                                        <div class="card h-100 shadow-lg" 
+                                                            style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                                                            <div class="card-body d-flex flex-column justify-content-between">
+                                                                <div>
+                                                                    <h5 class="card-title text-white fw-bold mb-2">
+                                                                        <i class="fal fa-object-group text-info me-2"></i>YOLOv8
+                                                                    </h5>
+                                                                    <p class="card-text text-white-50 fs-7">
+                                                                        Modelo de última generación para detección de objetos, segmentación de instancias y estimación de poses a alta velocidad.
+                                                                    </p>
+                                                                </div>
+                                                                <a href="https://docs.ultralytics.com/" target="_blank" rel="noopener noreferrer" 
+                                                                class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100" 
+                                                                style="border: 1px solid #00d2ff !important;">
+                                                                Ver YOLOv8 <i class="fal fa-external-link ms-1"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 3. PyTorch / Torchvision -->
+                                                    <div class="col-md-4 col-sm-6 mb-3">
+                                                        <div class="card h-100 shadow-lg" 
+                                                            style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                                                            <div class="card-body d-flex flex-column justify-content-between">
+                                                                <div>
+                                                                    <h5 class="card-title text-white fw-bold mb-2">
+                                                                        <i class="fal fa-brain text-info me-2"></i>Torchvision
+                                                                    </h5>
+                                                                    <p class="card-text text-white-50 fs-7">
+                                                                        Paquete con arquitecturas preentrenadas (ResNet, ViT), datasets estándar y transformaciones para Deep Learning.
+                                                                    </p>
+                                                                </div>
+                                                                <a href="https://pytorch.org/vision/stable/" target="_blank" rel="noopener noreferrer" 
+                                                                class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100" 
+                                                                style="border: 1px solid #00d2ff !important;">
+                                                                Explorar API <i class="fal fa-external-link ms-1"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 4. TensorFlow.js -->
+                                                    <div class="col-md-6 col-sm-6 mb-3">
+                                                        <div class="card h-100 shadow-lg" 
+                                                            style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                                                            <div class="card-body d-flex flex-column justify-content-between">
+                                                                <div>
+                                                                    <h5 class="card-title text-white fw-bold mb-2">
+                                                                        <i class="fal fa-code text-info me-2"></i>TensorFlow.js
+                                                                    </h5>
+                                                                    <p class="card-text text-white-50 fs-7">
+                                                                        Permite entrenar y ejecutar modelos de Machine Learning e Inteligencia Artificial directamente dentro del navegador web.
+                                                                    </p>
+                                                                </div>
+                                                                <a href="https://www.tensorflow.org/js" target="_blank" rel="noopener noreferrer" 
+                                                                class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100" 
+                                                                style="border: 1px solid #00d2ff !important;">
+                                                                Aprender TF.js <i class="fal fa-external-link ms-1"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 5. Hugging Face -->
+                                                    <div class="col-md-6 col-sm-12 mb-3">
+                                                        <div class="card h-100 shadow-lg" 
+                                                            style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                                                            <div class="card-body d-flex flex-column justify-content-between">
+                                                                <div>
+                                                                    <h5 class="card-title text-white fw-bold mb-2">
+                                                                        <i class="fal fa-smile text-info me-2"></i>Hugging Face
+                                                                    </h5>
+                                                                    <p class="card-text text-white-50 fs-7">
+                                                                        Repositorio principal para acceder a miles de modelos open-source de Procesamiento del Lenguaje Natural (PLN) y Visión.
+                                                                    </p>
+                                                                </div>
+                                                                <a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer" 
+                                                                class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100" 
+                                                                style="border: 1px solid #00d2ff !important;">
+                                                                Hub de Modelos <i class="fal fa-external-link ms-1"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                    <!-- Pie de página horizontal  -->
+                                                    <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
+                                                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                                            
+                                                            <!-- nombre del instituto -->
+                                                            <div class="d-flex flex-wrap align-items-center gap-3 fs-7 text-white-50">
+                                                                <span class="d-flex align-items-center">
+                                                                    <i class="fal fa-university text-info me-1"></i> ISTP "Argentina"
+                                                                </span>
+                                                                
+                                                                <a href="mailto:jair.morenom@istpargentina.edu.pe" class="text-white-50 text-decoration-none d-flex align-items-center">
+                                                                    <i class="fal fa-envelope text-info me-1"></i> jair.morenom@istpargentina.edu.pe
+                                                                </a>
+                                                                
+                                                                <a href="mailto:pamela.tipulah@istpargentina.edu.pe" class="text-white-50 text-decoration-none d-flex align-items-center">
+                                                                    <i class="fal fa-envelope text-info me-1"></i> pamela.tipulah@istpargentina.edu.pe
+                                                                </a>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </footer>
+            </div> </div> </div> </body>
+</html>
+</body>
+</html>

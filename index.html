@@ -38,7 +38,7 @@
             <div class="col-md-3" id="sidebar">
                 <!-- Imagen del logo -->
                 <div class="logo">
-                    <img src="img/logo-instituto.png" alt="logo">
+                    <img src="img/logo-instituto.png" alt="logo-instituto-argentina">
                     <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
                     <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
                     <p class="logo-text2">UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
@@ -71,40 +71,57 @@
                 </div>
             </div>
 
-            <!-- Área Principal -->
-            <div class="col-md-9">
-                <div id="main-area">
-                    <!-- Menú superior y buscador -->
-                    <div class="header-section">
-                        <ul class="nav d-flex flex-row gap-4 mb-3">
-                            <li class="nav-item">
-                                <a class="nav-link text-white p-0" href="#">CATEGORÍA ACADÉMICA</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white p-0" href="#">CARRERA Y PLAN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white p-0" href="#">PROYECTOS E INNOVACIÓN</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    OPCIONES
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Acción 1</a>
-                                    <a class="dropdown-item" href="#">Acción 2</a>
-                                </div>
-                            </li>
-                        </ul>
-                        
-                        <div class="input-group col-md-6 offset-md-3 search-box">       
-                            <input type="text" class="form-control" id="search" placeholder="Search" required autocomplete="off">
-                            <div class="input-group-prepend">
-                                <i class="fal fa-search" id="searchPrepend"></i>
-                            </div>
-                            <div class="invalid-tooltip">Please choose a unique and valid username.</div>
-                        </div>
-                    </div> 
+                                    <div class="col-md-9">
+                            <div id="main-area">
+                                <div class="header-section">
+                                    
+                                            <!-- Menú Superior con Espaciado Completo -->
+                                                <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+                                                    <a href="documentos/Fundamentos-IW.pdf" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">SÍLABO Y PLAN DE ESTUDIO</a>
+                                                    <a href="libreria-ia.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">LIBRERIA DE IA</a>
+                                                    <a href="proy-innov.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">PROYECTOS E INNOVACIÓN</a>
+                                                    
+                                                <!-- Menú Desplegable con Transparencia Estilo Cristal (100% HTML + CSS) -->
+                                                <details class="position-relative d-inline-block">
+                                                    <summary class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">
+                                                        PROGRAMAS DE ESTUDIOS ▾
+                                                    </summary>
+                                                    <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3" 
+                                                        style="min-width: 170px; 
+                                                                background: rgba(10, 25, 47, 0.75); 
+                                                                backdrop-filter: blur(10px); 
+                                                                -webkit-backdrop-filter: blur(10px); 
+                                                                border: 1px solid rgba(0, 210, 255, 0.4); 
+                                                                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
+                                                        
+                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="vis-comp.html">Visión por Computadora</a>
+                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="proc-len-nat.html">Procesamiento del Lenguaje Natural</a>
+                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="red-neur.html">Redes Neuronales y Deep Learning</a>
+                                                        <hr class="my-1" style="border-color: rgba(0, 210, 255, 0.25);">
+                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="malla-curr.html">Malla Curricular DSI</a>
+                                                        
+                                                        <hr class="my-1" style="border-color: rgba(0, 162, 255, 0.25);">
+                                                        
+                                                        <a class="dropdown-item-cristal py-1.5 px-3 rounded text-decoration-none d-block fs-7" href="mas.html">Más</a>
+                                                    </div>
+                                                </details>
+                                                </div>
+                                                    <!-- BUSCADOR -->
+                                                    <form action="index.html" method="GET" class="input-group search-box">
+                                                        <input type="text" 
+                                                            name="q" 
+                                                            class="form-control" 
+                                                            placeholder="Buscar..." 
+                                                            required 
+                                                            autocomplete="off">
+                                                        <button type="submit" class="btn btn-outline-info">
+                                                            <i class="fal fa-search"></i>
+                                                        </button>
+                                                    </form>
+
+
+                                                <!-- FIN DE MENU -->
+
 
                     <!-- Sección de Contenido en 3 Columnas (Grid de Bootstrap) -->
                     <div class="mt-4">
@@ -203,25 +220,30 @@
                                 </div>
                             </div>
                             
-                    <!-- Pie de página -->
-                    <div class="footer mt-4">
-                        <div class="row">                                                                                                                  
-                            <div class="col-lg-4 col-md-12 order-lg-2"></div>
-                            <div class="col-lg-8 col-md-12 order-lg-1 social-links">
-                                <div class="social-links">
-                                    <a href="https://istpargentina.edu.pe/" target="_blank">
-                                        <i class="fas fa-globe"></i> ISTP "Argentina"
-                                    </a>
-                                    <a href="jair.morenom@istpargentina.edu.pe">
-                                        <i class="fal fa-envelope"></i> jair.morenom@istpargentina.edu.pe
-                                    </a>
-                                    <a href="pamela.tipulah@istpargentina.edu.pe">
-                                        <i class="fal fa-envelope"></i> pamela.tipulah@istpargentina.edu.pe
-                                    </a>
-                                </div>                                                            
-                            </div>  
-                        </div>
-                    </div> 
+
+                                    <!-- Pie de página horizontal  -->
+                                    <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                            
+                                            <!-- nombre del instituto -->
+                                            <div class="d-flex flex-wrap align-items-center gap-3 fs-7 text-white-50">
+                                                <span class="d-flex align-items-center">
+                                                    <i class="fal fa-university text-info me-1"></i> ISTP "Argentina"
+                                                </span>
+                                                
+                                                <a href="mailto:jair.morenom@istpargentina.edu.pe" class="text-white-50 text-decoration-none d-flex align-items-center">
+                                                    <i class="fal fa-envelope text-info me-1"></i> jair.morenom@istpargentina.edu.pe
+                                                </a>
+                                                
+                                                <a href="mailto:pamela.tipulah@istpargentina.edu.pe" class="text-white-50 text-decoration-none d-flex align-items-center">
+                                                    <i class="fal fa-envelope text-info me-1"></i> pamela.tipulah@istpargentina.edu.pe
+                                                </a>
+                                            </div>
+
+
+                                        </div>
+                                    </footer>
+
 
                 </div> <!-- Fin #main-area -->
             </div> 

@@ -826,6 +826,191 @@ body {
 
 /* color mapa */
 .mapa-oscuro iframe {
-    filter: invert(90%) hue-rotate(180deg) contrast(120%) brightness(90%);
-    border-radius: 8px; /* Para mantener los bordes redondeados */
+    /* Convierte la imagen a escala azulada e invierte colores con contraste neón */
+    filter: invert(90%) hue-rotate(190deg) brightness(85%) contrast(110%) sepia(20%) saturate(150%);
+    border-radius: 8px;
+    opacity: 0.85; /* Permite integrarse mejor con la transparencia del contenedor */
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.mapa-oscuro iframe:hover {
+    opacity: 1;
+    filter: invert(90%) hue-rotate(190deg) brightness(95%) contrast(120%) saturate(180%);
+}
+
+/* Permite que la silueta neón se dibuje completa sin recortes */
+.header-section {
+    overflow: visible !important;
+    height: auto !important;
+}
+
+/* Fuerza el alto completo en los botones */
+.header-section .btn {
+    line-height: 1.5 !important;
+    box-sizing: border-box !important;
+}
+
+/* --- ESTILOS JUEGO DE 12 TARJETAS --- */
+.game-check {
+    display: none;
+}
+
+.game-board-12 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Columnas */
+    gap: 12px;
+}
+
+.game-card {
+    height: 85px;
+    background: rgba(0, 210, 255, 0.1);
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.game-card:hover {
+    background: rgba(0, 210, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.card-back {
+    display: none;
+}
+
+/* MOSTRAR CONTENIDO AL HACER CLIC (12 CARTAS) */
+#card1:checked ~ .game-board-12 .card-1 .card-front,
+#card2:checked ~ .game-board-12 .card-2 .card-front,
+#card3:checked ~ .game-board-12 .card-3 .card-front,
+#card4:checked ~ .game-board-12 .card-4 .card-front,
+#card5:checked ~ .game-board-12 .card-5 .card-front,
+#card6:checked ~ .game-board-12 .card-6 .card-front,
+#card7:checked ~ .game-board-12 .card-7 .card-front,
+#card8:checked ~ .game-board-12 .card-8 .card-front,
+#card9:checked ~ .game-board-12 .card-9 .card-front,
+#card10:checked ~ .game-board-12 .card-10 .card-front,
+#card11:checked ~ .game-board-12 .card-11 .card-front,
+#card12:checked ~ .game-board-12 .card-12 .card-front {
+    display: none;
+}
+
+#card1:checked ~ .game-board-12 .card-1 .card-back,
+#card2:checked ~ .game-board-12 .card-2 .card-back,
+#card3:checked ~ .game-board-12 .card-3 .card-back,
+#card4:checked ~ .game-board-12 .card-4 .card-back,
+#card5:checked ~ .game-board-12 .card-5 .card-back,
+#card6:checked ~ .game-board-12 .card-6 .card-back,
+#card7:checked ~ .game-board-12 .card-7 .card-back,
+#card8:checked ~ .game-board-12 .card-8 .card-back,
+#card9:checked ~ .game-board-12 .card-9 .card-back,
+#card10:checked ~ .game-board-12 .card-10 .card-back,
+#card11:checked ~ .game-board-12 .card-11 .card-back,
+#card12:checked ~ .game-board-12 .card-12 .card-back {
+    display: inline;
+}
+
+/* Efecto de borde iluminado cuando la carta está descubierta */
+#card1:checked ~ .game-board-12 .card-1,
+#card2:checked ~ .game-board-12 .card-2,
+#card3:checked ~ .game-board-12 .card-3,
+#card4:checked ~ .game-board-12 .card-4,
+#card5:checked ~ .game-board-12 .card-5,
+#card6:checked ~ .game-board-12 .card-6,
+#card7:checked ~ .game-board-12 .card-7,
+#card8:checked ~ .game-board-12 .card-8,
+#card9:checked ~ .game-board-12 .card-9,
+#card10:checked ~ .game-board-12 .card-10,
+#card11:checked ~ .game-board-12 .card-11,
+#card12:checked ~ .game-board-12 .card-12 {
+    border-color: #00d2ff;
+    box-shadow: 0 0 12px rgba(0, 210, 255, 0.6);
+    background: rgba(0, 210, 255, 0.2);
+}
+
+/* --- LABERINTO COMPLEJO Y LIMPIO --- */
+
+/* Base de los tramos */
+.maze-board .maze-path {
+    background: rgba(0, 210, 255, 0.25);
+    position: absolute;
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+    user-select: none;
+}
+
+/* 1. Al pasar por INICIO (.p-start) */
+.p-start:hover {
+    background: #00d2ff !important;
+    box-shadow: 0 0 15px #00d2ff;
+}
+
+/* 2. Iluminación en cadena progresiva */
+.p-start:hover ~ .p-down-1,  .p-down-1:hover  { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-down-1:hover ~ .p-right-1, .p-right-1:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-right-1:hover ~ .p-up-1,   .p-up-1:hover    { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-up-1:hover ~ .p-right-2,   .p-right-2:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-right-2:hover ~ .p-down-2, .p-down-2:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-down-2:hover ~ .p-left-1,  .p-left-1:hover  { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-left-1:hover ~ .p-down-3,  .p-down-3:hover  { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-down-3:hover ~ .p-right-3, .p-right-3:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-right-3:hover ~ .p-up-2,   .p-up-2:hover    { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+
+/* Meta / Fin */
+.p-finish {
+    background: rgba(40, 167, 69, 0.4) !important;
+    border-radius: 50%;
+    border: 2px solid #28a745;
+}
+
+.p-up-2:hover ~ .p-finish,
+.p-finish:hover {
+    background: #28a745 !important;
+    box-shadow: 0 0 25px #28a745, 0 0 40px rgba(40, 167, 69, 0.9) !important;
+}
+
+/* --- COORDENADAS Y MEDIDAS EXACTAS DE LOS TRAMOS --- */
+.p-start  { top: 15px;  left: 15px;  width: 75px;  height: 35px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: #fff; }
+.p-down-1 { top: 15px;  left: 65px;  width: 25px;  height: 110px; }
+.p-right-1{ top: 100px; left: 65px;  width: 110px; height: 25px;  }
+.p-up-1   { top: 35px;  left: 150px; width: 25px;  height: 90px;  }
+.p-right-2{ top: 35px;  left: 150px; width: 140px; height: 25px;  }
+.p-down-2 { top: 35px;  left: 265px; width: 25px;  height: 180px; }
+.p-left-1 { top: 190px; left: 120px; width: 170px; height: 25px;  }
+.p-down-3 { top: 190px; left: 120px; width: 25px;  height: 85px;  }
+.p-right-3{ top: 250px; left: 120px; width: 220px; height: 25px;  }
+.p-up-2   { top: 130px; left: 315px; width: 25px;  height: 145px; }
+.p-finish { top: 105px; left: 350px; width: 75px;  height: 75px;  display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: bold; color: #fff; }
+
+
+
+/* Estilo base del gusano/bug */
+.bug {
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    animation: moveBug 4s infinite alternate ease-in-out;
+}
+
+/* Posiciones de inicio */
+.bug-1 { top: 30px; left: 40px; animation-delay: 0s; }
+.bug-2 { top: 70px; right: 50px; animation-delay: 1.2s; }
+.bug-3 { bottom: 80px; left: 150px; animation-delay: 2.4s; }
+
+/* REGLA CLAVE: Al marcar el checkbox, oculta el label (gusano) correspondiente */
+.bug-check:checked + .bug {
+    display: none !important;
+}
+
+/* Animación de movimiento */
+@keyframes moveBug {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(30px, 20px) scale(1.1); }
+    100% { transform: translate(-20px, 35px) scale(0.95); }
 }
