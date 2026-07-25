@@ -3,17 +3,16 @@
 <head>
     <head>
     <meta charset="UTF-8">
-    <meta name="description" content="KM Online Works">
-    <meta name="keywords" content="KM Online Works">
-    <meta name="author" content="Kamran Mubarik">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Librería IA - Carrera de Desarrollo de Sistemas e Información">
+    <meta name="keywords" content="Librería IA, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
+    <meta name="author" content="ISTP Argentina">
+    <title>Librería IA | DSI - ISTP Argentina</title>
     
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Visión por computadora</title>
 
     <style>
         /* Al pasar el mouse sobre el elemento li con clase dropdown, el menú se muestra automáticamente */
@@ -96,19 +95,28 @@
                                                     </div>
                                                 </details>
                                                 </div>
-                                                    <!-- BUSCADOR -->
-                                                    <form action="index.html" method="GET" class="input-group search-box">
-                                                        <input type="text" 
-                                                            name="q" 
-                                                            class="form-control" 
-                                                            placeholder="Buscar..." 
-                                                            required 
-                                                            autocomplete="off">
-                                                        <button type="submit" class="btn btn-outline-info">
-                                                            <i class="fal fa-search"></i>
-                                                        </button>
-                                                    </form>
+                                        <!-- PANEL DE ESTADO INTERACTIVO  -->
+                                        <details class="dropdown-menu-portal">
+                                        <summary class="btn-buscador-custom">
+                                        <span><i class="fas fa-server me-2 text-info"></i>Estado del Portal</span>
+                                        <span class="badge bg-success ms-2">Activo</span>
+                                        </summary>
 
+                                        <div class="menu-desplegable-content p-3 text-white-50 fs-7">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span><i class="fas fa-microchip me-1 text-info"></i> Servidor IA:</span>
+                                            <strong class="text-white">100% Activo</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span><i class="fas fa-code-branch me-1 text-info"></i> Versión Web:</span>
+                                            <strong class="text-white">v2.4 HTML5</strong>
+                                        </div>
+                                        <hr class="my-2" style="border-color: rgba(0, 153, 255, 0.308);">
+                                        <div class="text-center text-info small mt-1">
+                                            <i class="fas fa-shield-alt me-1"></i> ISTP Argentina • 2026
+                                        </div>
+                                        </div>
+                                        </details>
 
                                                 <!-- FIN DE MENU -->
 
@@ -308,28 +316,35 @@
                                                     </div>
                                                 </div>
 
-                                                    <!-- Pie de página horizontal  -->
-                                                    <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
-                                                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
-                                                            
-                                                            <!-- nombre del instituto -->
-                                                            <div class="d-flex flex-wrap align-items-center gap-3 fs-7 text-white-50">
-                                                                <span class="d-flex align-items-center">
-                                                                    <i class="fal fa-university text-info me-1"></i> ISTP "Argentina"
-                                                                </span>
-                                                                
-                                                                <a href="mailto:jair.morenom@istpargentina.edu.pe" class="text-white-50 text-decoration-none d-flex align-items-center">
-                                                                    <i class="fal fa-envelope text-info me-1"></i> jair.morenom@istpargentina.edu.pe
-                                                                </a>
-                                                                
-                                                                <a href="mailto:pamela.tipulah@istpargentina.edu.pe" class="text-white-50 text-decoration-none d-flex align-items-center">
-                                                                    <i class="fal fa-envelope text-info me-1"></i> pamela.tipulah@istpargentina.edu.pe
-                                                                </a>
-                                                            </div>
+                                    <!-- Pie de página horizontal  -->
+                                    <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                    <div class="row w-100 justify-content-center text-center g-3 my-1">
+                                            
+                                            <!-- Jair -->
+                                            <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
+                                            <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
+                                                <i class="fas fa-user-graduate text-info me-2"></i>Jair Moreno Moreyra
+                                            </div>
+                                            <div class="text-white-50 d-flex align-items-center fs-7">
+                                                <i class="fal fa-envelope text-info me-2"></i>jair.morenom@istpargentina.edu.pe
+                                            </div>
+                                            </div>
 
+                                            <!-- Pamela -->
+                                            <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
+                                            <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
+                                                <i class="fas fa-user-graduate text-info me-2"></i>Pamela Tipula Huaman
+                                            </div>
+                                            <div class="text-white-50 d-flex align-items-center fs-7">
+                                                <i class="fal fa-envelope text-info me-2"></i>pamela.tipulah@istpargentina.edu.pe
+                                            </div>
+                                            </div>
 
-                                                        </div>
-                                                    </footer>
+                                        </div>
+
+                                        </div>
+                                    </footer>
             </div> </div> </div> </body>
 </html>
 </body>

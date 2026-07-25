@@ -108,21 +108,7 @@ body {
 	background-color: var(--main-color);
 	border-color: var(--secondary-color);
 }
-.social-links a:hover > .fa-facebook{
-	color: #3b5998;
-}
-.social-links a:hover > .fa-youtube{
-	color: #ff0000;
-}
-.social-links a:hover > .fa-pinterest{
-	color: #cb2027;
-}
-.fa-ellipsis-v{
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	visibility: hidden;
-}
+
 
 /* SIDEBAR STYLE */
 #wrapper{
@@ -222,6 +208,43 @@ body {
 	font-size: 14px;
 }
 /* MAIN AREA STYLE */
+
+
+
+/* Estilo base para los enlaces del menú lateral */
+
+/* 1. EFECTO CELESTRE/TRANSPARENTE AL PASAR EL MOUSE POR LOS BOTONES DEL MENÚ IZQUIERDO */
+.nav-item:hover {
+  color: #ffffff;
+  background: rgba(84, 155, 248, 0.24); /* Fondo translúcido */
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.3); /* Sombra luminosa */
+  transform: translateX(4px); /* Ligero desplazamiento interactivo */
+}
+
+/* 2. ESTADO SELECCIONADO / PÁGINA ACTUAL (Active) */
+.nav-item.active {
+  color: #ffffff;
+  font-weight: bold;
+  background: rgba(103, 171, 219, 0.658);
+  border-left: 4px solid #00d4ff; /* Barra lateral indicadora */
+  box-shadow: inset 0 0 10px rgba(136, 227, 245, 0.74), 
+              0 0 20px rgba(94, 188, 255, 0.603); /* Sombra interna y externa */
+}
+
+/* 3. EFECTO AL HACER CLIC (Active del click) */
+.nav-item:active {
+  transform: scale(0.98);
+}
+
+/* Limita el ancho de la barra y la mantiene centrada */
+.search-container {
+  max-width: 450px !important; /* Ajusta este número si la quieres más o menos corta */
+  width: 100%;
+}
+
+
+
+
 #wrapper #main-area{
     height: calc(100% - 40px);
     padding: 10px 20px;
@@ -259,7 +282,12 @@ body {
 #wrapper #main-area .header-section .search-box{
 	padding: 0;
 	box-shadow: 0 0 15px 5px var(--shadow-color); 
-}
+	max-width: 500px; /* Ajusta este valor para definir la medida deseada */
+	width: 100%;       /* Para que sea responsive en pantallas más pequeñas */
+	margin: 0 auto;    /* Centra el contenedor horizontalmente */
+	display: flex;     /* Mantiene el input y el botón alineados */
+	}
+
 #wrapper #main-area input,
 #wrapper #main-area textarea{
 	color: var(--white-color);
@@ -989,7 +1017,7 @@ body {
 
 
 
-/* Estilo base del gusano/bug */
+/* JUEGO DEL GUSANO */
 .bug {
     position: absolute;
     font-size: 2rem;
@@ -1014,3 +1042,11 @@ body {
     50% { transform: translate(30px, 20px) scale(1.1); }
     100% { transform: translate(-20px, 35px) scale(0.95); }
 }
+
+/* Oculta los tres puntos en todas las páginas del sitio */
+.fa-ellipsis-v,
+#sidebar .fa-ellipsis-v {
+  display: none !important;
+  visibility: hidden !important;
+}
+

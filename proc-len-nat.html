@@ -2,38 +2,35 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="KM Online Works">
-    <meta name="keywords" content="KM Online Works">
-    <meta name="author" content="Kamran Mubarik">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal educativo de Procesamiento del Lenguaje Natural - Carrera de Desarrollo de Sistemas e Información">
+    <meta name="keywords" content="Procesamiento del Lenguaje Natural, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
+    <meta name="author" content="ISTP Argentina">
+    <title>Procesamiento del Lenguaje Natural | DSI - ISTP Argentina</title>
     
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Bootstrap 5 CSS (Únicamente para utilidades de diseño y maquetación) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Procesamiento del lenguaje natural</title>
-
-    <style>
-        /* Al pasar el mouse sobre el elemento li con clase dropdown, el menú se muestra automáticamente */
-        .nav-item.dropdown:hover .dropdown-menu {
-            display: block;
-            margin-top: 0; /* Evita saltos visuales incómodos */
-        }
-    </style>
 </head>
 <body>
     <div class="container" id="wrapper">
         <div class="row">
+            <!-- Sidebar / Menú Lateral -->
             <div class="col-md-3" id="sidebar">
-                <!-- imagen del logo -->
+                <!-- Imagen del logo -->
                 <div class="logo">
                     <img src="img/logo-instituto.png" alt="logo-instituto-argentina">
                     <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
-                     <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
-                      <p class="logo-text2"><strong></strong>UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
-
+                    <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
+                    <p class="logo-text2"><strong>UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</strong></p>
                 </div>
+
                 <ul class="nav flex-column">
                     <li class="nav-item">       
                         <a class="nav-link active" href="index.html"><i class="fal fa-home"></i> Nosotros</a>
@@ -54,76 +51,80 @@
                         <a class="nav-link" href="vis-comp.html"><i class="fal fa-eye"></i> Visión por computadora</a>
                     </li>
                 </ul>
+
                 <i class="far fa-ellipsis-v"></i>
                 <div class="copyright">
                     <p>&copy; 2026 | ISTP Argentina</p>
                 </div>
             </div>
 
-                                    <div class="col-md-9">
-                            <div id="main-area">
-                                <div class="header-section">
+            <!-- Área Principal -->
+            <div class="col-md-9">
+                <div id="main-area">
+                    <div class="header-section">
+                        
+                        <!-- Menú Superior con Espaciado Completo -->
+                        <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+                            <a href="documentos/Fundamentos-IW.pdf" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">SÍLABO Y PLAN DE ESTUDIO</a>
+                            <a href="libreria-ia.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">LIBRERIA DE IA</a>
+                            <a href="proy-innov.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">PROYECTOS E INNOVACIÓN</a>
+                            
+                            <!-- Menú Desplegable NATIVO (100% HTML + CSS sin JS) -->
+                            <details class="position-relative d-inline-block">
+                                <summary class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important; list-style: none;">
+                                    PROGRAMAS DE ESTUDIOS ▾
+                                </summary>
+                                <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3" 
+                                     style="min-width: 170px; 
+                                            background: rgba(10, 25, 47, 0.95); 
+                                            backdrop-filter: blur(10px); 
+                                            -webkit-backdrop-filter: blur(10px); 
+                                            border: 1px solid rgba(0, 210, 255, 0.4); 
+                                            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
                                     
-                                            <!-- Menú Superior con Espaciado Completo -->
-                                                <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
-                                                    <a href="documentos/Fundamentos-IW.pdf" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">SÍLABO Y PLAN DE ESTUDIO</a>
-                                                    <a href="libreria-ia.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">LIBRERIA DE IA</a>
-                                                    <a href="proy-innov.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">PROYECTOS E INNOVACIÓN</a>
-                                                    
-                                                <!-- Menú Desplegable con Transparencia Estilo Cristal (100% HTML + CSS) -->
-                                                <details class="position-relative d-inline-block">
-                                                    <summary class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">
-                                                        PROGRAMAS DE ESTUDIOS ▾
-                                                    </summary>
-                                                    <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3" 
-                                                        style="min-width: 170px; 
-                                                                background: rgba(10, 25, 47, 0.75); 
-                                                                backdrop-filter: blur(10px); 
-                                                                -webkit-backdrop-filter: blur(10px); 
-                                                                border: 1px solid rgba(0, 210, 255, 0.4); 
-                                                                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
-                                                        
-                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="vis-comp.html">Visión por Computadora</a>
-                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="proc-len-nat.html">Procesamiento del Lenguaje Natural</a>
-                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="red-neur.html">Redes Neuronales y Deep Learning</a>
-                                                        <hr class="my-1" style="border-color: rgba(0, 210, 255, 0.25);">
-                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="malla-curr.html">Malla Curricular DSI</a>
-                                                        
-                                                        <hr class="my-1" style="border-color: rgba(0, 162, 255, 0.25);">
-                                                        
-                                                        <a class="dropdown-item-cristal py-1.5 px-3 rounded text-decoration-none d-block fs-7" href="mas.html">Más</a>
-                                                    </div>
-                                                </details>
-                                                </div>
-                                                    <!-- BUSCADOR -->
-                                                    <form action="index.html" method="GET" class="input-group search-box">
-                                                        <input type="text" 
-                                                            name="q" 
-                                                            class="form-control" 
-                                                            placeholder="Buscar..." 
-                                                            required 
-                                                            autocomplete="off">
-                                                        <button type="submit" class="btn btn-outline-info">
-                                                            <i class="fal fa-search"></i>
-                                                        </button>
-                                                    </form>
-
-
-                                                <!-- FIN DE MENU -->
-                        
-                        <div class="input-group col-md-6 offset-md-3 search-box">                       
-                            <input type="text" class="form-control" id="search" placeholder="Search" required autocomplete="off">
-                            <div class="input-group-prepend">
-                                <i class="fal fa-search" id="searchPrepend"></i>
-                            </div>
-                            <div class="invalid-tooltip">Please choose a unique and valid username.</div>
+                                    <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="vis-comp.html">Visión por Computadora</a>
+                                    <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="proc-len-nat.html">Procesamiento del Lenguaje Natural</a>
+                                    <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="red-neur.html">Redes Neuronales y Deep Learning</a>
+                                    
+                                    <hr class="my-1" style="border-color: rgba(0, 210, 255, 0.25);">
+                                    
+                                    <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="malla-curr.html">Malla Curricular DSI</a>
+                                    
+                                    <hr class="my-1" style="border-color: rgba(0, 162, 255, 0.25);">
+                                    
+                                    <a class="dropdown-item-cristal py-1.5 px-3 rounded text-decoration-none d-block fs-7" href="mas.html">Más</a>
+                                </div>
+                            </details>
                         </div>
-          
                         
+                        <!-- PANEL DE ESTADO INTERACTIVO NATIVO -->
+                        <details class="dropdown-menu-portal">
+                            <summary class="btn-buscador-custom" style="list-style: none;">
+                                <span><i class="fas fa-server me-2 text-info"></i>Estado del Portal</span>
+                                <span class="badge bg-success ms-2">Activo</span>
+                            </summary>
+
+                            <div class="menu-desplegable-content p-3 text-white-50 fs-7">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="fas fa-microchip me-1 text-info"></i> Servidor IA:</span>
+                                    <strong class="text-white">100% Activo</strong>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span><i class="fas fa-code-branch me-1 text-info"></i> Versión Web:</span>
+                                    <strong class="text-white">v2.4 HTML5</strong>
+                                </div>
+                                <hr class="my-2" style="border-color: rgba(0, 153, 255, 0.308);">
+                                <div class="text-center text-info small mt-1">
+                                    <i class="fas fa-shield-alt me-1"></i> ISTP Argentina • 2026
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- FIN DE MENU -->
 
                         <div class="row mt-4">
-                        <div class="col-12 mb-3 text-center text-md-start">
-                            <h5 class="text-white fw-bold">
+                            <div class="col-12 mb-3 text-center text-md-start">
+                                <h5 class="text-white fw-bold">
                                     <i class="fal fa-chart-line text-info me-2"></i>Métricas estándar para evaluar la calidad en traducción automática y resumen de texto.
                                 </h5>
                             </div>
@@ -131,7 +132,6 @@
 
                         <!-- Fila Horizontal con los 3 sectores -->
                         <div class="row text-center mb-4">
-                            
                             <!-- Sector 1: BLEU / ROUGE -->
                             <div class="col-md-4 mb-3">
                                 <div class="card-info p-3 h-100">
@@ -155,142 +155,145 @@
                                     <p class="small text-light mb-0">Evaluación de precisión en tareas de clasificación de texto y análisis de sentimiento.</p>
                                 </div>
                             </div>
-
                         </div>
                       
-                        <!-- 1. Tarjetas Principales: Fases del Procesamiento de Texto -->
-
+                        <!-- Conceptos Clave de PLN -->
                         <div class="col-12 mb-3 mt-2 text-center text-md-start">
                             <h5 class="text-white fw-bold">
                                 <i class="fal fa-layer-group text-info me-2"></i>Conceptos Clave de PLN
                             </h5>
                         </div>
 
-
-                            <div class="row text-center mt-4">
-                                <!-- Preprocesamiento -->
-                                <div class="col-lg-4 col-md-6 mb-4">
-                                    <div class="card-info p-3">
-                                        <div class="mb-3">
-                                            <i class="fal fa-filter fa-2x text-info"></i>
-                                        </div>
-                                        <h5 class="text-white">Preprocesamiento</h5>
-                                        <p class="small text-light">
-                                            Limpieza de texto mediante tokenización, eliminación de <i>stop words</i>, lematización y normalización de caracteres.
-                                        </p>
+                        <div class="row text-center mt-4">
+                            <!-- Preprocesamiento -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card-info p-3">
+                                    <div class="mb-3">
+                                        <i class="fal fa-filter fa-2x text-info"></i>
                                     </div>
-                                </div>
-
-                                <!-- Representación (Embeddings) -->
-                                <div class="col-lg-4 col-md-6 mb-4">
-                                    <div class="card-info p-3">
-                                        <div class="mb-3">
-                                            <i class="fal fa-code-branch fa-2x text-info"></i>
-                                        </div>
-                                        <h5 class="text-white">Embeddings de Texto</h5>
-                                        <p class="small text-light">
-                                            Conversión de palabras a vectores numéricos densos (Word2Vec, TF-IDF) para preservar las relaciones semánticas.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- Modelos del Lenguaje -->
-                                <div class="col-lg-4 col-md-6 mb-4">
-                                    <div class="card-info p-3">
-                                        <div class="mb-3">
-                                            <i class="fal fa-robot fa-2x text-info"></i>
-                                        </div>
-                                        <h5 class="text-white">Modelos LLM & Transformers</h5>
-                                        <p class="small text-light">
-                                            Arquitecturas basadas en mecanismos de atención (BERT, GPT) capaces de comprender contexto complejo.
-                                        </p>
-                                    </div>
+                                    <h5 class="text-white">Preprocesamiento</h5>
+                                    <p class="small text-light">
+                                        Limpieza de texto mediante tokenización, eliminación de <i>stop words</i>, lematización y normalización de caracteres.
+                                    </p>
                                 </div>
                             </div>
 
-                                       <!-- PIPELINE -->
-                                            <div class="row text-center mt-4">
-                                            <div class="col-12 mb-2">
-                                                <h5 class="text-white">Pipeline Clásico de PLN</h5>
-                                            </div>
-                                            <div class="col-md-3 mb-2">
-                                                <div class="p-2 border rounded">
-                                                    <strong class="d-block text-info">1. Tokenización</strong>
-                                                    <span class="small text-light">División del texto en unidades mínimas (palabras o subpalabras).</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 mb-2">
-                                                <div class="p-2 border rounded">
-                                                    <strong class="d-block text-info">2. Normalización</strong>
-                                                    <span class="small text-light">Minúsculas, eliminación de signos y *stemming* / lematización.</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 mb-2">
-                                                <div class="p-2 border rounded">
-                                                    <strong class="d-block text-info">3. Vectorización</strong>
-                                                    <span class="small text-light">Transformación a representación numérica (Embeddings).</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 mb-2">
-                                                <div class="p-2 border rounded">
-                                                    <strong class="d-block text-info">4. Inferencia / Modelo</strong>
-                                                    <span class="small text-light">Predicción con transformers o modelos estadísticos.</span>
-                                                </div>
-                                            </div>
-                                            </div>
-
-                            <!-- 3. Aplicaciones Reales de PLN -->
-                            <div class="mt-4 p-3 card-info mb-5">
-                                <h6 class="text-white text-center mb-3">
-                                    <i class="fal fa-comments"></i> Aplicaciones del Procesamiento de Lenguaje Natural
-                                </h6>
-                                
-                                <div class="row text-start small">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="p-2 border border-secondary rounded">
-                                            <strong style="color: #00f2fe;"><i class="fal fa-smile me-1"></i> Análisis de Sentimientos:</strong>
-                                            <p class="mb-0 text-light mt-1">Clasificación de comentarios y opiniones como positivas, neutras o negativas.</p>
-                                        </div>
+                            <!-- Representación (Embeddings) -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card-info p-3">
+                                    <div class="mb-3">
+                                        <i class="fal fa-code-branch fa-2x text-info"></i>
                                     </div>
-                                    <div class="col-md-4 mb-2">
-                                        <div class="p-2 border border-secondary rounded">
-                                            <strong style="color: #00f2fe;"><i class="fal fa-language me-1"></i> Traducción Automática:</strong>
-                                            <p class="mb-0 text-light mt-1">Sistemas como Google Translate respaldados por modelos secuenciales.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-2">
-                                        <div class="p-2 border border-secondary rounded">
-                                            <strong style="color: #00f2fe;"><i class="fal fa-user-robot me-1"></i> Chatbots Conversacionales:</strong>
-                                            <p class="mb-0 text-light mt-1">Asistentes virtuales interactivos orientados a atención al cliente y soporte.</p>
-                                        </div>
-                                    </div>
+                                    <h5 class="text-white">Embeddings de Texto</h5>
+                                    <p class="small text-light">
+                                        Conversión de palabras a vectores numéricos densos (Word2Vec, TF-IDF) para preservar las relaciones semánticas.
+                                    </p>
                                 </div>
                             </div>
 
+                            <!-- Modelos del Lenguaje -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card-info p-3">
+                                    <div class="mb-3">
+                                        <i class="fal fa-robot fa-2x text-info"></i>
+                                    </div>
+                                    <h5 class="text-white">Modelos LLM &amp; Transformers</h5>
+                                    <p class="small text-light">
+                                        Arquitecturas basadas en mecanismos de atención (BERT, GPT) capaces de comprender contexto complejo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PIPELINE -->
+                        <div class="row text-center mt-4">
+                            <div class="col-12 mb-2">
+                                <h5 class="text-white">Pipeline Clásico de PLN</h5>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <div class="p-2 border rounded">
+                                    <strong class="d-block text-info">1. Tokenización</strong>
+                                    <span class="small text-light">División del texto en unidades mínimas (palabras o subpalabras).</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <div class="p-2 border rounded">
+                                    <strong class="d-block text-info">2. Normalización</strong>
+                                    <span class="small text-light">Minúsculas, eliminación de signos y <i>stemming</i> / lematización.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <div class="p-2 border rounded">
+                                    <strong class="d-block text-info">3. Vectorización</strong>
+                                    <span class="small text-light">Transformación a representación numérica (Embeddings).</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <div class="p-2 border rounded">
+                                    <strong class="d-block text-info">4. Inferencia / Modelo</strong>
+                                    <span class="small text-light">Predicción con transformers o modelos estadísticos.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Aplicaciones Reales de PLN -->
+                        <div class="mt-4 p-3 card-info mb-5">
+                            <h6 class="text-white text-center mb-3">
+                                <i class="fal fa-comments"></i> Aplicaciones del Procesamiento de Lenguaje Natural
+                            </h6>
                             
-                                    <!-- Pie de página horizontal  -->
-                                    <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
-                                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
-                                            
-                                            <!-- nombre del instituto -->
-                                            <div class="d-flex flex-wrap align-items-center gap-3 fs-7 text-white-50">
-                                                <span class="d-flex align-items-center">
-                                                    <i class="fal fa-university text-info me-1"></i> ISTP "Argentina"
-                                                </span>
-                                                
-                                                <a href="mailto:jair.morenom@istpargentina.edu.pe" class="text-white-50 text-decoration-none d-flex align-items-center">
-                                                    <i class="fal fa-envelope text-info me-1"></i> jair.morenom@istpargentina.edu.pe
-                                                </a>
-                                                
-                                                <a href="mailto:pamela.tipulah@istpargentina.edu.pe" class="text-white-50 text-decoration-none d-flex align-items-center">
-                                                    <i class="fal fa-envelope text-info me-1"></i> pamela.tipulah@istpargentina.edu.pe
-                                                </a>
-                                            </div>
+                            <div class="row text-start small">
+                                <div class="col-md-4 mb-2">
+                                    <div class="p-2 border border-secondary rounded">
+                                        <strong style="color: #00f2fe;"><i class="fal fa-smile me-1"></i> Análisis de Sentimientos:</strong>
+                                        <p class="mb-0 text-light mt-1">Clasificación de comentarios y opiniones como positivas, neutras o negativas.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <div class="p-2 border border-secondary rounded">
+                                        <strong style="color: #00f2fe;"><i class="fal fa-language me-1"></i> Traducción Automática:</strong>
+                                        <p class="mb-0 text-light mt-1">Sistemas como Google Translate respaldados por modelos secuenciales.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <div class="p-2 border border-secondary rounded">
+                                        <strong style="color: #00f2fe;"><i class="fal fa-user-robot me-1"></i> Chatbots Conversacionales:</strong>
+                                        <p class="mb-0 text-light mt-1">Asistentes virtuales interactivos orientados a atención al cliente y soporte.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-
+                        <!-- Pie de página horizontal -->
+                        <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                <div class="row w-100 justify-content-center text-center g-3 my-1">
+                                    
+                                    <!-- Jair -->
+                                    <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
+                                            <i class="fas fa-user-graduate text-info me-2"></i>Jair Moreno Moreyra
                                         </div>
-                                    </footer> 
+                                        <div class="text-white-50 d-flex align-items-center fs-7">
+                                            <i class="fal fa-envelope text-info me-2"></i>jair.morenom@istpargentina.edu.pe
+                                        </div>
+                                    </div>
 
+                                    <!-- Pamela -->
+                                    <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
+                                        <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
+                                            <i class="fas fa-user-graduate text-info me-2"></i>Pamela Tipula Huaman
+                                        </div>
+                                        <div class="text-white-50 d-flex align-items-center fs-7">
+                                            <i class="fal fa-envelope text-info me-2"></i>pamela.tipulah@istpargentina.edu.pe
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </footer>
+
+                    </div> <!-- Fin .header-section -->
                 </div> <!-- Fin #main-area -->
             </div> 
         </div> 
