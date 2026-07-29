@@ -2,16 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="KM Online Works">
-    <meta name="keywords" content="KM Online Works">
-    <meta name="author" content="Kamran Mubarik">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nosotros - Carrera de Desarrollo de Sistemas e Información">
+    <meta name="keywords" content="Nosotros, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
+    <meta name="author" content="ISTP Argentina">
+    <title>Nosotros | DSI - ISTP Argentina</title>
     
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Home</title>
 
     <style>
         /* Al pasar el mouse sobre el elemento li con clase dropdown, el menú se muestra automáticamente */
@@ -19,132 +19,251 @@
             display: block;
             margin-top: 0; /* Evita saltos visuales incómodos */
         }
+        
+        /* Ajustes opcionales para la maquetación de tarjetas */
+        .card-info {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
     </style>
 </head>
 <body>
+    
     <div class="container" id="wrapper">
         <div class="row">
+            <!-- Sidebar -->
             <div class="col-md-3" id="sidebar">
-                <!-- imagen del logo -->
+                <!-- Imagen del logo -->
                 <div class="logo">
-                    <img src="img/logo-instituto.png" alt="logo">
+                    <img src="img/logo-instituto.png" alt="logo-instituto-argentina">
                     <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
-                     <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
-                      <p class="logo-text2"><strong></strong>UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
-
+                    <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
+                    <p class="logo-text2">UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
                 </div>
+                
                 <ul class="nav flex-column">
-                    <li class="nav-item">                        
-                        <a class="nav-link active" href="index.html"><i class="fal fa-home-alt"></i> Inicio</a>
+                    <li class="nav-item">       
+                        <a class="nav-link active" href="index.html"><i class="fal fa-home"></i> Nosotros</a>
                     </li>
-                    <li class="nav-item">                        
-                        <a class="nav-link" href="aprendizaje-automatico.html"><i class="fal fa-tasks"></i> Aprendizaje Automático</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html"><i class="fal fa-info"></i> About</a>
+                    <li class="nav-item">        
+                        <a class="nav-link" href="aprendizaje-automatico.html"><i class="fal fa-robot"></i> Aprendizaje Automático</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html"><i class="fal fa-address-card"></i> Contact</a>
+                        <a class="nav-link" href="red-neur.html"><i class="fal fa-info"></i> Redes Neuronales</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="download.html"><i class="fal fa-download"></i> Download</a>
+                        <a class="nav-link" href="contact.html"><i class="fal fa-envelope"></i> Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proc-len-nat.html"><i class="fal fa-comments"></i> Procesamiento del lenguaje natural</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vis-comp.html"><i class="fal fa-eye"></i> Visión por computadora</a>
                     </li>
                 </ul>
+                
                 <i class="far fa-ellipsis-v"></i>
                 <div class="copyright">
                     <p>&copy; 2026 | ISTP Argentina</p>
                 </div>
             </div>
 
-            <div class="col-md-9">
-                <div id="main-area">
-                    <div class="header-section">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">                        
-                                <a class="nav-link active" href="category.html">Category 1</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="category.html">Category 2</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="category.html">Category 3</a>
-                            </li>
+                                    <div class="col-md-9">
+                            <div id="main-area">
+                                <div class="header-section">
+                                    
+                                    <!-- Menú Superior con Espaciado Completo -->
+                                        <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+                                            <a href="documentos/Fundamentos-IW.pdf" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">SÍLABO Y PLAN DE ESTUDIO</a>
+                                            <a href="libreria-ia.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">LIBRERIA DE IA</a>
+                                            <a href="proy-innov.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">PROYECTOS E INNOVACIÓN</a>
+                                            
+                                        <!-- Menú Desplegable con Transparencia Estilo Cristal (100% HTML + CSS) -->
+                                        <details class="position-relative d-inline-block">
+                                            <summary class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">
+                                                PROGRAMAS DE ESTUDIOS ▾
+                                            </summary>
+                                            <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3" 
+                                                style="min-width: 170px; 
+                                                        background: rgba(10, 25, 47, 0.75); 
+                                                        backdrop-filter: blur(10px); 
+                                                        -webkit-backdrop-filter: blur(10px); 
+                                                        border: 1px solid rgba(0, 210, 255, 0.4); 
+                                                        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
+                                                
+                                                <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="vis-comp.html">Visión por Computadora</a>
+                                                <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="proc-len-nat.html">Procesamiento del Lenguaje Natural</a>
+                                                <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="red-neur.html">Redes Neuronales y Deep Learning</a>
+                                                <hr class="my-1" style="border-color: rgba(0, 210, 255, 0.25);">
+                                                <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="malla-curr.html">Malla Curricular DSI</a>
+                                                
+                                                <hr class="my-1" style="border-color: rgba(0, 162, 255, 0.25);">
+                                                
+                                                <a class="dropdown-item-cristal py-1.5 px-3 rounded text-decoration-none d-block fs-7" href="mas.html">Más</a>
+                                            </div>
+                                        </details>
+                                        </div>
+                                        
+                                        <!-- PANEL DE ESTADO INTERACTIVO  -->
+                                        <details class="dropdown-menu-portal">
+                                        <summary class="btn-buscador-custom">
+                                        <span><i class="fas fa-server me-2 text-info"></i>Estado del Portal</span>
+                                        <span class="badge bg-success ms-2">Activo</span>
+                                        </summary>
+
+                                        <div class="menu-desplegable-content p-3 text-white-50 fs-7">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span><i class="fas fa-microchip me-1 text-info"></i> Servidor IA:</span>
+                                            <strong class="text-white">100% Activo</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span><i class="fas fa-code-branch me-1 text-info"></i> Versión Web:</span>
+                                            <strong class="text-white">v2.4 HTML5</strong>
+                                        </div>
+                                        <hr class="my-2" style="border-color: rgba(0, 153, 255, 0.308);">
+                                        <div class="text-center text-info small mt-1">
+                                            <i class="fas fa-shield-alt me-1"></i> ISTP Argentina • 2026
+                                        </div>
+                                        </div>
+                                        </details>
+
+                                                <!-- FIN DE MENU -->
+
+
+                    <!-- Sección de Contenido en 3 Columnas (Grid de Bootstrap) -->
+                    <div class="mt-4">
+                        <div class="row text-center">
                             
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
-                                    Dropdown
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                        </ul>
-                        
-                        <div class="input-group col-md-6 offset-md-3 search-box">                       
-                            <input type="text" class="form-control" id="search" placeholder="Search" required autocomplete="off">
-                            <div class="input-group-prepend">
-                                <i class="fal fa-search" id="searchPrepend"></i>
-                            </div>
-                            <div class="invalid-tooltip">Please choose a unique and valid username.</div>
-                        </div>
-                    </div> <div class="content-section">
-                        <div class="section-heading">
-                            <h2 class="display-4">Latest Videos <i class="fal fa-play small"></i></h2>
-                            <a href="videos.html"><i class="fal fa-list"></i> All</a>
-                        </div>                      
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card" style="width: 100%;">
-                                    <a href="single.html">
-                                        <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
-                                    </a>
-                                    <div class="card-body">
-                                        <p class="card-text text-truncate">Some quick example text to build on the card title.</p>
+                            <!-- Columna 1: Proyecto -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card-info p-3">
+                                    <div class="mb-3">
+                                        <i class="fal fa-laptop-code fa-3x"></i>
                                     </div>
+                                    <h2>Proyecto Educativo e Innovación</h2>
+                                    <p>
+                                        Portal de Divulgación Académica sobre Inteligencia Artificial: de los fundamentos de interfaces web a la vanguardia tecnológica (Machine Learning, PNL, Visión por Computadora).
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card" style="width: 100%;">
-                                    <a href="single.html">
-                                        <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
-                                    </a>
-                                    <div class="card-body">
-                                        <p class="card-text text-truncate">Some quick example text to build on the card title.</p>
+
+                            <!-- Columna 2: Carrera -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card-info p-3">
+                                    <div class="mb-3">
+                                        <i class="fal fa-graduation-cap fa-3x"></i>
                                     </div>
+                                    <h2>Liderazgo en Sistemas e Información</h2>
+                                    <p>
+                                        Formación de Excelencia: Carrera de Desarrollo de Sistemas e Información. Desarrollando técnicos líderes con visión global, equipados con herramientas para impulsar la transformación digital.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card" style="width: 100%;">
-                                    <a href="single.html">
-                                        <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
-                                    </a>
-                                    <div class="card-body">
-                                        <p class="card-text text-truncate">Some quick example text to build on the card title.</p>
+
+                            <!-- Columna 3: Innovación / Alianzas -->
+                            <div class="col-lg-4 col-md-12 mb-4">
+                                <div class="card-info p-3">
+                                    <div class="mb-3">
+                                        <i class="fal fa-globe fa-3x"></i>
                                     </div>
+                                    <h2>Alianza Tecnológica Global</h2>
+                                    <p>
+                                        Conexiones que Transforman: Alianzas estratégicas con la industria tecnológica para pasantías, investigación y desarrollo de proyectos conjuntos. ¡Innova con nosotros!
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> 
+
+                    <!-- Lista de Tecnologías -->
+                        <!-- Tecnologías con fondo transparente y efecto Hover -->
+                            <div class="mt-4 text-center">
+                                <small class="text-uppercase text-light d-block mb-3" style="letter-spacing: 1px;">Tecnologías Abordadas en el Curso</small>
+                                
+                                <span class="badge-tech m-1">Python</span>
+                                <span class="badge-tech m-1">HTML5 & CSS3</span>
+                                <span class="badge-tech m-1">JavaScript</span>
+                                <span class="badge-tech m-1">Git / GitHub</span>
+                            </div>
+                    <!-- Misión y Visión -->
+                        <div class="row text-center mt-5">
+                            <div class="col-md-4 mb-3">
+                                <div class="card-info p-3">
+                                    <i class="fal fa-bullseye fa-2x mb-2 text-info"></i>
+                                    <h5>Misión</h5>
+                                    <p class="small">Formar profesionales técnicos de excelencia en desarrollo de sistemas, con ética, capacidad de innovación y adaptabilidad a las nuevas tecnologías.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card-info p-3">
+                                    <i class="fal fa-eye fa-2x mb-2 text-info"></i>
+                                    <h5>Visión</h5>
+                                    <p class="small">Ser el instituto tecnológico público líder en la enseñanza de tecnologías de la información e inteligencia artificial aplicada a nivel nacional.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card-info p-3">
+                                    <i class="fal fa-star fa-2x mb-2 text-info"></i>
+                                    <h5>Valores</h5>
+                                    <p class="small">Innovación continua, trabajo en equipo, rigor académico, responsabilidad social e inclusión tecnológica.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Pie de página -->
-                    </div> <div class="footer">
-                        <div class="row">                                                                           
-                            <div class="col-lg-4 col-md-12 order-lg-2"></div>
-                            <div class="col-lg-8 col-md-12 order-lg-1 social-links">
-                                <div class="social-links">
-                                    <a href="https://istpargentina.edu.pe/">
-                                        <i class="fas fa-globe"></i> ISTP "Argentina"
-                                    </a>
-                                    <a href="jair.morenom@istpargentina.edu.pe">
-                                        <i class="fal fa-envelope"></i> Jair Moreno Moreyra
-                                    </a>
-                                    <a href="pamela.tipulah@istpargentina.edu.pe">
-                                        <i class="fal fa-envelope"></i> Pamela Tipula Huaman
-                                    </a>
-                                </div>                                             
-                            </div>  
-                        </div>
-                    </div> </div>
-            </div> </div> </div> </body>
+
+                        <!-- Sección de Logros / Cifras -->
+                            <div class="row text-center my-4 py-3 align-items-center" style="background: rgba(255, 255, 255, 0.03); border-radius: 12px;">
+                                <div class="col-4">
+                                    <h3 class="fw-bold text-white mb-0">+500</h3>
+                                    <small class="text-light">Estudiantes Formados</small>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="fw-bold text-white mb-0">100%</h3>
+                                    <small class="text-light">Proyectos Prácticos</small>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="fw-bold text-white mb-0">IA & Web</h3>
+                                    <small class="text-light">Especialización Tecnológica</small>
+                                </div>
+                            </div>
+                            
+
+                                    <!-- Pie de página horizontal  -->
+                                    <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                    <div class="row w-100 justify-content-center text-center g-3 my-1">
+                                            
+                                            <!-- Jair -->
+                                            <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
+                                            <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
+                                                <i class="fas fa-user-graduate text-info me-2"></i>Jair Moreno Moreyra
+                                            </div>
+                                            <div class="text-white-50 d-flex align-items-center fs-7">
+                                                <i class="fal fa-envelope text-info me-2"></i>jair.morenom@istpargentina.edu.pe
+                                            </div>
+                                            </div>
+
+                                            <!-- Pamela -->
+                                            <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
+                                            <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
+                                                <i class="fas fa-user-graduate text-info me-2"></i>Pamela Tipula Huaman
+                                            </div>
+                                            <div class="text-white-50 d-flex align-items-center fs-7">
+                                                <i class="fal fa-envelope text-info me-2"></i>pamela.tipulah@istpargentina.edu.pe
+                                            </div>
+                                            </div>
+
+                                        </div>
+
+                                        </div>
+                                    </footer>
+
+
+                </div> <!-- Fin #main-area -->
+            </div> 
+        </div> 
+    </div> 
+</body>
 </html>

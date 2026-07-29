@@ -5,11 +5,19 @@
 	--white-lit-color: rgba(255,255,255,0.4);
 	--white-color: #fff;
 }
-body{
-	background: url(/img/fondo-de-pagina-prin.webp) no-repeat center / cover;
-	background-size: cover;
-	letter-spacing: 0.2px;
+body {
+    background-image: url('../img/fondo-de-pagina-prin.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #03081e; /* Color oscuro de respaldo por si acaso */
+}
 	/* Estilo para el texto debajo del logo */
+
+	
 .logo-text {
     color: #00d8ff; 
     font-size: 22px;
@@ -44,7 +52,7 @@ body{
     font-family: "Times New Roman", Times, "Georgia", Garamond, serif;
 }
 
-}
+
 /* PreLoeader Style */
 .lds-ripple {
   display: inline-block;
@@ -100,21 +108,7 @@ body{
 	background-color: var(--main-color);
 	border-color: var(--secondary-color);
 }
-.social-links a:hover > .fa-facebook{
-	color: #3b5998;
-}
-.social-links a:hover > .fa-youtube{
-	color: #ff0000;
-}
-.social-links a:hover > .fa-pinterest{
-	color: #cb2027;
-}
-.fa-ellipsis-v{
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	visibility: hidden;
-}
+
 
 /* SIDEBAR STYLE */
 #wrapper{
@@ -164,20 +158,22 @@ body{
 }
 #wrapper #sidebar a{
 	width: 80%;
-	font-size: 14px;
-	color: var(--white-color);
-	border: 1px solid transparent;
-	padding: 5px 15px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 auto 20px auto;
-	border-radius: 15px;
-	background-color: transparent;
-	box-shadow: 0 0 1px transparent;
-	text-transform: uppercase;
-	transition: 0.5s;
-	position: relative;
+    font-size: 14px;
+    color: var(--white-color);
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: flex-start; /* ◄ CAMBIADO: Junta el icono y el texto al inicio */
+    align-items: center;
+    gap: 12px;                  /* ◄ AÑADIDO: Espacio exacto entre el icono y el texto */
+    margin: 0 auto 20px auto;
+    border-radius: 15px;
+    background-color: transparent;
+    box-shadow: 0 0 1px transparent;
+    text-transform: uppercase;
+    transition: 0.5s;
+    position: relative;
+    text-align: left;
 }
 #wrapper #sidebar a:before{
 	content: "";
@@ -199,11 +195,7 @@ body{
 	background-color: var(--white-lit-color);
 	opacity: 1;
 }
-#wrapper #sidebar a:hover, #wrapper #sidebar .active{
-	border: 1px solid var(--main-color);
-	background-color: var(--white-lit-color);
-	box-shadow: 0 0 1px 5px var(--shadow-color);
-}
+
 #wrapper #sidebar a i{
 	margin-right: 10px;
 }
@@ -216,16 +208,50 @@ body{
 	font-size: 14px;
 }
 /* MAIN AREA STYLE */
-#wrapper #main-area{
-	height: calc(100% - 40px);
-	padding: 10px 20px;
-	margin: 20px 5px;
-	box-sizing: border-box;
-	border-right: 2px solid var(--main-color);
-	border-top: 2px solid var(--main-color);
-	border-bottom: 2px solid var(--main-color);
-	border-radius: 20px;
+
+
+
+/* Estilo base para los enlaces del menú lateral */
+
+/* 1. EFECTO CELESTRE/TRANSPARENTE AL PASAR EL MOUSE POR LOS BOTONES DEL MENÚ IZQUIERDO */
+.nav-item:hover {
+  color: #ffffff;
+  background: rgba(84, 155, 248, 0.24); /* Fondo translúcido */
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.3); /* Sombra luminosa */
+  transform: translateX(4px); /* Ligero desplazamiento interactivo */
 }
+
+/* 2. ESTADO SELECCIONADO / PÁGINA ACTUAL (Active) */
+.nav-item.active {
+  color: #ffffff;
+  font-weight: bold;
+  background: rgba(103, 171, 219, 0.658);
+  border-left: 4px solid #00d4ff; /* Barra lateral indicadora */
+  box-shadow: inset 0 0 10px rgba(136, 227, 245, 0.74), 
+              0 0 20px rgba(94, 188, 255, 0.603); /* Sombra interna y externa */
+}
+
+/* 3. EFECTO AL HACER CLIC (Active del click) */
+.nav-item:active {
+  transform: scale(0.98);
+}
+
+/* Limita el ancho de la barra y la mantiene centrada */
+.search-container {
+  max-width: 450px !important; /* Ajusta este número si la quieres más o menos corta */
+  width: 100%;
+}
+
+
+
+
+#wrapper #main-area{
+    height: calc(100% - 40px);
+    padding: 10px 20px;
+    margin: 20px 5px;
+    box-sizing: border-box;
+}
+
 #wrapper #main-area .header-section{
 	margin-bottom: 20px;
 }
@@ -256,7 +282,12 @@ body{
 #wrapper #main-area .header-section .search-box{
 	padding: 0;
 	box-shadow: 0 0 15px 5px var(--shadow-color); 
-}
+	max-width: 500px; /* Ajusta este valor para definir la medida deseada */
+	width: 100%;       /* Para que sea responsive en pantallas más pequeñas */
+	margin: 0 auto;    /* Centra el contenedor horizontalmente */
+	display: flex;     /* Mantiene el input y el botón alineados */
+	}
+
 #wrapper #main-area input,
 #wrapper #main-area textarea{
 	color: var(--white-color);
@@ -279,6 +310,8 @@ body{
 	align-items: center;
 	margin-bottom: 40px;
 }
+
+
 #wrapper #main-area .content-section .section-heading.single{
 	margin-bottom: 20px;	
 }
@@ -304,7 +337,7 @@ body{
 	left: 90px;
 	top: 30px;
 }
-#wrapper #main-area .content-section.single .card-title,
+#wrapper #main-area .content-section.single .le,
 #wrapper #main-area .content-section.about .card-title,
 #wrapper #main-area .content-section.contact .card-title{
 	color: var(--white-color);
@@ -319,51 +352,90 @@ body{
 #wrapper #main-area .content-section.contact .section-description{
 	margin-top: 20px;
 }
-#wrapper #main-area .content-section .card{
-	background-color: transparent;
-	box-shadow: 0 0 10px 3px var(--shadow-color);
-	cursor: pointer;
-	transition: 0.5s;
-	margin-bottom: 10px;
+.card-info {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--white-lit-color);
+    border-radius: 15px;
+    padding: 20px 25px;
+    margin-top: 20px;
+    color: var(--white-color);
 }
-#wrapper #main-area .content-section .card:hover{
-	box-shadow: 0 0 15px 5px var(--shadow-color);
+
+.card-info h2 {
+    font-size: 18px;
+    color: #00d8ff;
+    margin-bottom: 10px;
 }
-#wrapper #main-area .content-section .card:before{
-	content: "";
-	width: 10%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 10px;
-	background-color: rgba(255,255,255,0);
-	transition: 0.5s;
-	border-radius: 10px;
-	filter: blur(5px);
-	transform: rotate(15deg);
+
+.card-info p {
+    font-size: 14px;
+    line-height: 1.6;
 }
-#wrapper #main-area .content-section .card:hover:before{
-	left: 90%;
-	width: 0;
-	background-color: var(--white-lit-color);
-	opacity: 1;
+
+
+/* Transparencia para las tarjetas de la página de contacto */
+#wrapper #main-area .contact .card,
+#wrapper #main-area .contact .content-section,
+#wrapper #main-area .contact-form-wrapper,
+#wrapper #main-area .content-section {
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid var(--white-lit-color) !important;
+    border-radius: 15px;
+    color: var(--white-color) !important;
 }
-#wrapper #main-area .content-section h2{
-	font-size: 24px;
-	color: var(--white-color);
+
+/* 1. Todos los textos dentro del área principal de contacto en blanco */
+#wrapper #main-area h1,
+#wrapper #main-area h2,
+#wrapper #main-area h3,
+#wrapper #main-area h4,
+#wrapper #main-area h5,
+#wrapper #main-area label,
+#wrapper #main-area p,
+#wrapper #main-area span,
+#wrapper #main-area small,
+#wrapper #main-area .form-text {
+    color: #ffffff !important;
 }
-#wrapper #main-area .content-section p{
-	font-size: 14px;
-	color: var(--white-color);
+
+/* 2. Todos los enlaces (links) de las tarjetas laterales e íconos en blanco */
+#wrapper #main-area a,
+#wrapper #main-area i {
+    color: #ffffff !important;
 }
-#wrapper #main-area .content-section .jumbotron{
-	background-color: transparent;
-	box-shadow: 0 0 5px 2px var(--shadow-color);
-	color: var(--white-lit-color);
+
+/* Cambiar color al pasar el mouse por encima de los enlaces */
+#wrapper #main-area a:hover {
+    color: #00d8ff !important;
+}
+
+/* 3. Transparencia suave para cajas de texto (inputs y textarea) */
+#wrapper #main-area input,
+#wrapper #main-area textarea {
+    background: rgba(255, 255, 255, 0.096) !important;
+    border: 1px solid var(--white-lit-color) !important;
+    color: #ffffff !important;
+}
+
+/* Texto de ayuda dentro de las cajas de texto (Placeholder) */
+#wrapper #main-area input::placeholder,
+#wrapper #main-area textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Color del texto al seleccionarlo/resaltarlo */
+#wrapper #main-area ::selection {
+    background: rgba(23, 131, 255, 0.548);
+    color: #ffffff;
+}
+
 
 	/*Pie de página*/
 
-}
+
 #wrapper #main-area .footer{
 	width: calc(100% - 70px);
 	position: absolute;
@@ -467,11 +539,14 @@ body{
 	#wrapper #sidebar .logo{
 		margin-bottom: 30px;
 	}
-	.nav{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+	.nav-link {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el icono y el texto */
+    text-align: left;    /* Asegura que el texto comience a la izquierda */
+    justify-content: flex-start; /* Fuerza todo el contenido al inicio a la izquierda */
+    gap: 12px;           /* Espacio uniforme entre el icono y el texto */
+    width: 100%;         /* Asegura que el enlace ocupe todo el ancho disponible */
+    }
 	#wrapper #sidebar a {
 		width: unset !important;
 		margin-bottom: 10px;
@@ -669,3 +744,309 @@ body{
 		margin-top: 5px;
 	}
 }
+
+/* Badges de tecnología: Fondo transparente, borde y letra con color */
+.badge-tech {
+    background-color: transparent !important;
+    color: #00f2fe !important; /* Color turquesa/neón de las letras */
+    border: 1.5px solid #00f2fe !important; /* Color del borde */
+    padding: 7px 14px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: all 0.3s ease; /* Transición suave para el efecto hover */
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el cursor (Hover) */
+.badge-tech:hover {
+    background-color: #00f2fe !important; /* El fondo se llena de color */
+    color: #0a1128 !important; /* La letra cambia a un tono oscuro contrastante */
+    box-shadow: 0 0 12px rgba(0, 242, 254, 0.6); /* Brillito neón */
+    transform: translateY(-2px); /* Pequeña elevación */
+}
+
+
+/* Quita el scroll interno feo y ajusta el contenedor principal */
+#wrapper #main-area,
+.col-md-9 {
+    max-height: none !important;
+    overflow-y: visible !important;
+}
+
+/* Fuerza a que el footer fluya después del contenido y NO flote encima */
+.footer {
+    position: relative !important;
+    bottom: auto !important;
+    margin-top: 40px !important;
+    clear: both !important;
+}
+/* Quita el fondo negro de las tablas y ajusta los colores */
+.card-info .table,
+.card-info .table-dark {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+.card-info table th,
+.card-info table td {
+    background: transparent !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Corrección para que la tabla sea transparente y combine con el diseño */
+.table, 
+.table > :not(caption) > * > * {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+/* Fuerza el estilo de tarjeta con borde azul en la tabla */
+.card-glass,
+.card-info {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+}
+
+/* Color de las líneas divisoras dentro de la tabla */
+.table td, .table th {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Fuerza el estilo de cristal/traslúcido en las tarjetas de contacto */
+.contact-card,
+.card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+    color: #ffffff !important;
+}
+
+/* Fuerza a que los textos y títulos dentro de las tarjetas sean blancos */
+.card h2, .card h5, .card p, .card label {
+    color: #ffffff !important;
+}
+
+/* Contenedor del menú vertical */
+.sidebar-menu, ul.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Controla la distancia EXACTA e igual entre cada opción */
+    padding: 0;
+    margin: 0;
+}
+
+/* Elemento individual de la lista */
+.sidebar-menu li, ul.nav li {
+    margin: 0 !important; /* Elimina márgenes antiguos desiguales */
+}
+
+/* Enlaces del menú */
+.sidebar-menu a, ul.nav a.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    line-height: 1.2; /* Mantiene apretados los textos de 2 líneas */
+    font-size: 0.85rem;
+}
+
+/* color mapa */
+.mapa-oscuro iframe {
+    /* Convierte la imagen a escala azulada e invierte colores con contraste neón */
+    filter: invert(90%) hue-rotate(190deg) brightness(85%) contrast(110%) sepia(20%) saturate(150%);
+    border-radius: 8px;
+    opacity: 0.85; /* Permite integrarse mejor con la transparencia del contenedor */
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.mapa-oscuro iframe:hover {
+    opacity: 1;
+    filter: invert(90%) hue-rotate(190deg) brightness(95%) contrast(120%) saturate(180%);
+}
+
+/* Permite que la silueta neón se dibuje completa sin recortes */
+.header-section {
+    overflow: visible !important;
+    height: auto !important;
+}
+
+/* Fuerza el alto completo en los botones */
+.header-section .btn {
+    line-height: 1.5 !important;
+    box-sizing: border-box !important;
+}
+
+/* --- ESTILOS JUEGO DE 12 TARJETAS --- */
+.game-check {
+    display: none;
+}
+
+.game-board-12 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Columnas */
+    gap: 12px;
+}
+
+.game-card {
+    height: 85px;
+    background: rgba(0, 210, 255, 0.1);
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.game-card:hover {
+    background: rgba(0, 210, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.card-back {
+    display: none;
+}
+
+/* MOSTRAR CONTENIDO AL HACER CLIC (12 CARTAS) */
+#card1:checked ~ .game-board-12 .card-1 .card-front,
+#card2:checked ~ .game-board-12 .card-2 .card-front,
+#card3:checked ~ .game-board-12 .card-3 .card-front,
+#card4:checked ~ .game-board-12 .card-4 .card-front,
+#card5:checked ~ .game-board-12 .card-5 .card-front,
+#card6:checked ~ .game-board-12 .card-6 .card-front,
+#card7:checked ~ .game-board-12 .card-7 .card-front,
+#card8:checked ~ .game-board-12 .card-8 .card-front,
+#card9:checked ~ .game-board-12 .card-9 .card-front,
+#card10:checked ~ .game-board-12 .card-10 .card-front,
+#card11:checked ~ .game-board-12 .card-11 .card-front,
+#card12:checked ~ .game-board-12 .card-12 .card-front {
+    display: none;
+}
+
+#card1:checked ~ .game-board-12 .card-1 .card-back,
+#card2:checked ~ .game-board-12 .card-2 .card-back,
+#card3:checked ~ .game-board-12 .card-3 .card-back,
+#card4:checked ~ .game-board-12 .card-4 .card-back,
+#card5:checked ~ .game-board-12 .card-5 .card-back,
+#card6:checked ~ .game-board-12 .card-6 .card-back,
+#card7:checked ~ .game-board-12 .card-7 .card-back,
+#card8:checked ~ .game-board-12 .card-8 .card-back,
+#card9:checked ~ .game-board-12 .card-9 .card-back,
+#card10:checked ~ .game-board-12 .card-10 .card-back,
+#card11:checked ~ .game-board-12 .card-11 .card-back,
+#card12:checked ~ .game-board-12 .card-12 .card-back {
+    display: inline;
+}
+
+/* Efecto de borde iluminado cuando la carta está descubierta */
+#card1:checked ~ .game-board-12 .card-1,
+#card2:checked ~ .game-board-12 .card-2,
+#card3:checked ~ .game-board-12 .card-3,
+#card4:checked ~ .game-board-12 .card-4,
+#card5:checked ~ .game-board-12 .card-5,
+#card6:checked ~ .game-board-12 .card-6,
+#card7:checked ~ .game-board-12 .card-7,
+#card8:checked ~ .game-board-12 .card-8,
+#card9:checked ~ .game-board-12 .card-9,
+#card10:checked ~ .game-board-12 .card-10,
+#card11:checked ~ .game-board-12 .card-11,
+#card12:checked ~ .game-board-12 .card-12 {
+    border-color: #00d2ff;
+    box-shadow: 0 0 12px rgba(0, 210, 255, 0.6);
+    background: rgba(0, 210, 255, 0.2);
+}
+
+/* --- LABERINTO COMPLEJO Y LIMPIO --- */
+
+/* Base de los tramos */
+.maze-board .maze-path {
+    background: rgba(0, 210, 255, 0.25);
+    position: absolute;
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+    user-select: none;
+}
+
+/* 1. Al pasar por INICIO (.p-start) */
+.p-start:hover {
+    background: #00d2ff !important;
+    box-shadow: 0 0 15px #00d2ff;
+}
+
+/* 2. Iluminación en cadena progresiva */
+.p-start:hover ~ .p-down-1,  .p-down-1:hover  { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-down-1:hover ~ .p-right-1, .p-right-1:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-right-1:hover ~ .p-up-1,   .p-up-1:hover    { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-up-1:hover ~ .p-right-2,   .p-right-2:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-right-2:hover ~ .p-down-2, .p-down-2:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-down-2:hover ~ .p-left-1,  .p-left-1:hover  { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-left-1:hover ~ .p-down-3,  .p-down-3:hover  { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-down-3:hover ~ .p-right-3, .p-right-3:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-right-3:hover ~ .p-up-2,   .p-up-2:hover    { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+
+/* Meta / Fin */
+.p-finish {
+    background: rgba(40, 167, 69, 0.4) !important;
+    border-radius: 50%;
+    border: 2px solid #28a745;
+}
+
+.p-up-2:hover ~ .p-finish,
+.p-finish:hover {
+    background: #28a745 !important;
+    box-shadow: 0 0 25px #28a745, 0 0 40px rgba(40, 167, 69, 0.9) !important;
+}
+
+/* --- COORDENADAS Y MEDIDAS EXACTAS DE LOS TRAMOS --- */
+.p-start  { top: 15px;  left: 15px;  width: 75px;  height: 35px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: #fff; }
+.p-down-1 { top: 15px;  left: 65px;  width: 25px;  height: 110px; }
+.p-right-1{ top: 100px; left: 65px;  width: 110px; height: 25px;  }
+.p-up-1   { top: 35px;  left: 150px; width: 25px;  height: 90px;  }
+.p-right-2{ top: 35px;  left: 150px; width: 140px; height: 25px;  }
+.p-down-2 { top: 35px;  left: 265px; width: 25px;  height: 180px; }
+.p-left-1 { top: 190px; left: 120px; width: 170px; height: 25px;  }
+.p-down-3 { top: 190px; left: 120px; width: 25px;  height: 85px;  }
+.p-right-3{ top: 250px; left: 120px; width: 220px; height: 25px;  }
+.p-up-2   { top: 130px; left: 315px; width: 25px;  height: 145px; }
+.p-finish { top: 105px; left: 350px; width: 75px;  height: 75px;  display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: bold; color: #fff; }
+
+
+
+/* JUEGO DEL GUSANO */
+.bug {
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    animation: moveBug 4s infinite alternate ease-in-out;
+}
+
+/* Posiciones de inicio */
+.bug-1 { top: 30px; left: 40px; animation-delay: 0s; }
+.bug-2 { top: 70px; right: 50px; animation-delay: 1.2s; }
+.bug-3 { bottom: 80px; left: 150px; animation-delay: 2.4s; }
+
+/* REGLA CLAVE: Al marcar el checkbox, oculta el label (gusano) correspondiente */
+.bug-check:checked + .bug {
+    display: none !important;
+}
+
+/* Animación de movimiento */
+@keyframes moveBug {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(30px, 20px) scale(1.1); }
+    100% { transform: translate(-20px, 35px) scale(0.95); }
+}
+
+/* Oculta los tres puntos en todas las páginas del sitio */
+.fa-ellipsis-v,
+#sidebar .fa-ellipsis-v {
+  display: none !important;
+  visibility: hidden !important;
+}
+
