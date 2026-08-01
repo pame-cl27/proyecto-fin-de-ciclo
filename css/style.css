@@ -1,59 +1,55 @@
-:root{
-	--main-color: rgba(0, 74, 170, 0.2);
-	--secondary-color: rgba(0, 76, 189, 0.726);
-	--shadow-color: #1783ffa6;
-	--white-lit-color: rgba(255,255,255,0.4);
-	--white-color: #fff;
+:root {
+  --main-color: rgba(0, 74, 170, 0.2);
+  --secondary-color: rgba(0, 76, 189, 0.726);
+  --shadow-color: #1783ffa6;
+  --white-lit-color: rgba(255, 255, 255, 0.4);
+  --white-color: #fff;
 }
 body {
-    background-image: url('../img/fondo-de-pagina-prin.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #03081e; /* Color oscuro de respaldo por si acaso */
+  background-image: url("../img/fondo-de-pagina-prin.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #03081e;
 }
-	/* Estilo para el texto debajo del logo */
 
-	
 .logo-text {
-    color: #00d8ff; 
-    font-size: 22px;
-    font-weight: bold;       /* Hace que sea negrita */
-    font-style: italic;      /* ◄ Esto inclina el texto (cursiva) */
-    margin-top: 8px;
-    letter-spacing: 0.5px;
-    font-family: sans-serif;
-	/*  CAMBIA ESTA LÍNEA CON LAS FUENTES CON REMATES */
-    font-family: "Times New Roman", Times, "Georgia", Garamond, serif;
+  color: #00d8ff;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+  font-family: sans-serif;
+
+  font-family: "Times New Roman", Times, "Georgia", Garamond, serif;
 }
 .logo-text1 {
-    color: #00d9ffab; 
-    font-size: 16px;
-    font-weight: bold;       /* Hace que sea negrita */
-    font-style: italic;      /*  Esto inclina el texto (cursiva) */
-    margin-top: 8px;
-    letter-spacing: 0.5px;
-    font-family: sans-serif;
-	/*  CAMBIA ESTA LÍNEA CON LAS FUENTES CON REMATES */
-    font-family: "Times New Roman", Times, "Georgia", Garamond, serif;
+  color: #00d9ffab;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+  font-family: sans-serif;
+
+  font-family: "Times New Roman", Times, "Georgia", Garamond, serif;
 }
 .logo-text2 {
-    color: #00d9ffab; 
-    font-size: 16px;
-    font-weight: bold;       /* Hace que sea negrita */
-    font-style: italic;      /* Esto inclina el texto (cursiva) */
-    margin-top: 8px;
-    letter-spacing: 0.5px;
-    font-family: sans-serif;
-	/*  CAMBIA ESTA LÍNEA CON LAS FUENTES CON REMATES */
-    font-family: "Times New Roman", Times, "Georgia", Garamond, serif;
+  color: #00d9ffab;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+  font-family: sans-serif;
+
+  font-family: "Times New Roman", Times, "Georgia", Garamond, serif;
 }
 
-
-/* PreLoeader Style */
 .lds-ripple {
   display: inline-block;
   position: relative;
@@ -65,7 +61,6 @@ body {
   border: 4px solid #fff;
   opacity: 1;
   border-radius: 50%;
-
 }
 .lds-ripple div:nth-child(2) {
   animation-delay: -0.5s;
@@ -86,308 +81,289 @@ body {
     opacity: 0;
   }
 }
-#preloader{
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	background-color: var(--shadow-color);
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 2;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-/* PreLoeader Style End */
-.btn-primary{
-	background-color: var(--secondary-color);
-	border-color: var(--main-color);
-}
-.btn-primary:hover{
-	background-color: var(--main-color);
-	border-color: var(--secondary-color);
+#preloader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--shadow-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-/* SIDEBAR STYLE */
-#wrapper{
-	width: 100%;
-	height: auto;
-	margin: 20px auto;
-	border-radius: 20px;
-	background-color: var(--main-color);
-	backdrop-filter: blur(5px);
-	--webkit-backdrop-filter: blur(5px);
-	overflow: hidden;
+.btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--main-color);
+}
+.btn-primary:hover {
+  background-color: var(--main-color);
+  border-color: var(--secondary-color);
 }
 
-#wrapper #sidebar{
-	color: var(--white-color);
-	height: auto;
-	padding: 60px 20px;
-	box-sizing: border-box;
-	border-radius: 20px 0px 0px 20px;
-	background-color: var(--secondary-color);
-	text-align: center;
-	position: relative;
+#wrapper {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 20px;
+  background-color: var(--main-color);
+  backdrop-filter: blur(5px);
+  --webkit-backdrop-filter: blur(5px);
+  overflow: hidden;
 }
-#wrapper #sidebar:before{
-	content: "";
-	width: 2%;
-	height: 100%;
-	right: -2px;
-	top: 0;
-	position: absolute;
-	background-color: var(--shadow-color);
-	z-index: -1;
-	filter: blur(8px);
+
+#wrapper #sidebar {
+  color: var(--white-color);
+  height: auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  border-radius: 20px 0px 0px 20px;
+  background-color: var(--secondary-color);
+  text-align: center;
+  position: relative;
+}
+#wrapper #sidebar:before {
+  content: "";
+  width: 2%;
+  height: 100%;
+  right: -2px;
+  top: 0;
+  position: absolute;
+  background-color: var(--shadow-color);
+  z-index: -1;
+  filter: blur(8px);
 }
 #wrapper #sidebar .logo {
-    width: 100%;                  /* Cambiado de 170px a 100% */
-    height: auto;
-    margin: 0 auto 30px auto;     /* Reducido el margen inferior de 50px a 30px para que no quede tan separado */
-    padding: 0px;
-    background-color: transparent;
-    text-align: center;           /* Asegura que el logo y el texto sigan centrados */
+  width: 100%;
+  height: auto;
+  margin: 0 auto 30px auto;
+  padding: 0px;
+  background-color: transparent;
+  text-align: center;
 }
-#wrapper #sidebar .logo img{
-	width: 70%;
-	height: auto;
-	object-fit: cover;
+#wrapper #sidebar .logo img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
 }
-#wrapper #sidebar a{
-	width: 80%;
-    font-size: 14px;
-    color: var(--white-color);
-    border: 1px solid transparent;
-    padding: 8px 15px;
-    display: flex;
-    justify-content: flex-start; /* ◄ CAMBIADO: Junta el icono y el texto al inicio */
-    align-items: center;
-    gap: 12px;                  /* ◄ AÑADIDO: Espacio exacto entre el icono y el texto */
-    margin: 0 auto 20px auto;
-    border-radius: 15px;
-    background-color: transparent;
-    box-shadow: 0 0 1px transparent;
-    text-transform: uppercase;
-    transition: 0.5s;
-    position: relative;
-    text-align: left;
+#wrapper #sidebar a {
+  width: 80%;
+  font-size: 14px;
+  color: var(--white-color);
+  border: 1px solid transparent;
+  padding: 8px 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto 20px auto;
+  border-radius: 15px;
+  background-color: transparent;
+  box-shadow: 0 0 1px transparent;
+  text-transform: uppercase;
+  transition: 0.5s;
+  position: relative;
+  text-align: left;
 }
-#wrapper #sidebar a:before{
-	content: "";
-	width: 8%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: rgba(255,255,255,0);
-	transform: rotate(15deg);
-	transition: 0.5s;
-	border-radius: 15px;
-	z-index: -1;
-	filter: blur(3px);
+#wrapper #sidebar a:before {
+  content: "";
+  width: 8%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0);
+  transform: rotate(15deg);
+  transition: 0.5s;
+  border-radius: 15px;
+  z-index: -1;
+  filter: blur(3px);
 }
-#wrapper #sidebar a:hover:before{
-	left: 100%;
-	width: 0;
-	background-color: var(--white-lit-color);
-	opacity: 1;
+#wrapper #sidebar a:hover:before {
+  left: 100%;
+  width: 0;
+  background-color: var(--white-lit-color);
+  opacity: 1;
 }
 
-#wrapper #sidebar a i{
-	margin-right: 10px;
+#wrapper #sidebar a i {
+  margin-right: 10px;
 }
-.copyright{
-	width: calc(100% - 40px);
-	position: absolute; 
-	bottom: 0;
+.copyright {
+  width: calc(100% - 40px);
+  position: absolute;
+  bottom: 0;
 }
-.copyright p{
-	font-size: 14px;
+.copyright p {
+  font-size: 14px;
 }
-/* MAIN AREA STYLE */
 
-
-
-/* Estilo base para los enlaces del menú lateral */
-
-/* 1. EFECTO CELESTRE/TRANSPARENTE AL PASAR EL MOUSE POR LOS BOTONES DEL MENÚ IZQUIERDO */
 .nav-item:hover {
   color: #ffffff;
-  background: rgba(84, 155, 248, 0.24); /* Fondo translúcido */
-  box-shadow: 0 0 15px rgba(0, 212, 255, 0.3); /* Sombra luminosa */
-  transform: translateX(4px); /* Ligero desplazamiento interactivo */
+  background: rgba(84, 155, 248, 0.24);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+  transform: translateX(4px);
 }
 
-/* 2. ESTADO SELECCIONADO / PÁGINA ACTUAL (Active) */
 .nav-item.active {
   color: #ffffff;
   font-weight: bold;
   background: rgba(103, 171, 219, 0.658);
-  border-left: 4px solid #00d4ff; /* Barra lateral indicadora */
-  box-shadow: inset 0 0 10px rgba(136, 227, 245, 0.74), 
-              0 0 20px rgba(94, 188, 255, 0.603); /* Sombra interna y externa */
+  border-left: 4px solid #00d4ff;
+  box-shadow: inset 0 0 10px rgba(136, 227, 245, 0.74), 0 0 20px rgba(94, 188, 255, 0.603);
 }
 
-/* 3. EFECTO AL HACER CLIC (Active del click) */
 .nav-item:active {
   transform: scale(0.98);
 }
 
-/* Limita el ancho de la barra y la mantiene centrada */
 .search-container {
-  max-width: 450px !important; /* Ajusta este número si la quieres más o menos corta */
+  max-width: 450px !important;
   width: 100%;
 }
 
-
-
-
-#wrapper #main-area{
-    height: calc(100% - 40px);
-    padding: 10px 20px;
-    margin: 20px 5px;
-    box-sizing: border-box;
+#wrapper #main-area {
+  height: calc(100% - 40px);
+  padding: 10px 20px;
+  margin: 20px 5px;
+  box-sizing: border-box;
 }
 
-#wrapper #main-area .header-section{
-	margin-bottom: 20px;
+#wrapper #main-area .header-section {
+  margin-bottom: 20px;
 }
-#wrapper #main-area .header-section.single{
-	margin-bottom: 20px;
+#wrapper #main-area .header-section.single {
+  margin-bottom: 20px;
 }
 #wrapper #main-area .header-section a,
-#wrapper #main-area .header-section .dropdown-menu a{
-	font-size: 14px;
-	color: var(--white-color);
-	border-bottom: 1px solid transparent; 
-	padding: 5px 15px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	border-radius: 15px;
-	text-transform: uppercase;
-	transition: 0.5s;
+#wrapper #main-area .header-section .dropdown-menu a {
+  font-size: 14px;
+  color: var(--white-color);
+  border-bottom: 1px solid transparent;
+  padding: 5px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 #wrapper #main-area .header-section a:hover,
-#wrapper #main-area .header-section .dropdown-menu a.dropdown-item:hover{
-	border-bottom: 1px solid var(--main-color); 
-	background-color: transparent;
+#wrapper #main-area .header-section .dropdown-menu a.dropdown-item:hover {
+  border-bottom: 1px solid var(--main-color);
+  background-color: transparent;
 }
-#wrapper #main-area .header-section .dropdown-menu{
-	background-color: var(--secondary-color);
-	backdrop-filter: blur(2px);
+#wrapper #main-area .header-section .dropdown-menu {
+  background-color: var(--secondary-color);
+  backdrop-filter: blur(2px);
 }
-#wrapper #main-area .header-section .search-box{
-	padding: 0;
-	box-shadow: 0 0 15px 5px var(--shadow-color); 
-	max-width: 500px; /* Ajusta este valor para definir la medida deseada */
-	width: 100%;       /* Para que sea responsive en pantallas más pequeñas */
-	margin: 0 auto;    /* Centra el contenedor horizontalmente */
-	display: flex;     /* Mantiene el input y el botón alineados */
-	}
+#wrapper #main-area .header-section .search-box {
+  padding: 0;
+  box-shadow: 0 0 15px 5px var(--shadow-color);
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
 
 #wrapper #main-area input,
-#wrapper #main-area textarea{
-	color: var(--white-color);
-	background: transparent;
-	border: 1px solid var(--main-color);
+#wrapper #main-area textarea {
+  color: var(--white-color);
+  background: transparent;
+  border: 1px solid var(--main-color);
 }
-#wrapper #main-area input::placeholder{
-	color: var(--secondary-color);
+#wrapper #main-area input::placeholder {
+  color: var(--secondary-color);
 }
-#wrapper #main-area .header-section #searchPrepend{
-	color: var(--white-color);
-	background-color: var(--secondary-color);
-	border-radius: 0 .25rem .25rem 0;
-	border: 0;
-	padding: 10px;
+#wrapper #main-area .header-section #searchPrepend {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  border-radius: 0 0.25rem 0.25rem 0;
+  border: 0;
+  padding: 10px;
 }
-#wrapper #main-area .content-section .section-heading{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 40px;
+#wrapper #main-area .content-section .section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-
-#wrapper #main-area .content-section .section-heading.single{
-	margin-bottom: 20px;	
+#wrapper #main-area .content-section .section-heading.single {
+  margin-bottom: 20px;
 }
-#wrapper #main-area .content-section .section-heading a{
-	color: var(--white-color);
-	font-size: 14px;
+#wrapper #main-area .content-section .section-heading a {
+  color: var(--white-color);
+  font-size: 14px;
 }
 #wrapper #main-area .content-section.single,
-#wrapper #main-area .content-section.contact{
-	margin-top: 20px;
+#wrapper #main-area .content-section.contact {
+  margin-top: 20px;
 }
-#wrapper #main-area .content-section.single .related-video{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-	margin: 15px auto;
+#wrapper #main-area .content-section.single .related-video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 15px auto;
 }
-#wrapper #main-area .content-section.single .related-video .vid-date{
-	color: var(--white-lit-color);
-	font-size: 12px;
-	position: absolute;
-	left: 90px;
-	top: 30px;
+#wrapper #main-area .content-section.single .related-video .vid-date {
+  color: var(--white-lit-color);
+  font-size: 12px;
+  position: absolute;
+  left: 90px;
+  top: 30px;
 }
 #wrapper #main-area .content-section.single .le,
 #wrapper #main-area .content-section.about .card-title,
-#wrapper #main-area .content-section.contact .card-title{
-	color: var(--white-color);
+#wrapper #main-area .content-section.contact .card-title {
+  color: var(--white-color);
 }
-#wrapper #main-area .content-section.single .card-text{
-	margin-left: 10px;
+#wrapper #main-area .content-section.single .card-text {
+  margin-left: 10px;
 }
-#wrapper #main-area .content-section .card-body{
-	padding: 8px 15px;
+#wrapper #main-area .content-section .card-body {
+  padding: 8px 15px;
 }
 #wrapper #main-area .content-section.single .section-description,
-#wrapper #main-area .content-section.contact .section-description{
-	margin-top: 20px;
+#wrapper #main-area .content-section.contact .section-description {
+  margin-top: 20px;
 }
 .card-info {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(8px);
-    border: 1px solid var(--white-lit-color);
-    border-radius: 15px;
-    padding: 20px 25px;
-    margin-top: 20px;
-    color: var(--white-color);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--white-lit-color);
+  border-radius: 15px;
+  padding: 20px 25px;
+  margin-top: 20px;
+  color: var(--white-color);
 }
 
 .card-info h2 {
-    font-size: 18px;
-    color: #00d8ff;
-    margin-bottom: 10px;
+  font-size: 18px;
+  color: #00d8ff;
+  margin-bottom: 10px;
 }
 
 .card-info p {
-    font-size: 14px;
-    line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-
-/* Transparencia para las tarjetas de la página de contacto */
 #wrapper #main-area .contact .card,
 #wrapper #main-area .contact .content-section,
 #wrapper #main-area .contact-form-wrapper,
 #wrapper #main-area .content-section {
-    background: rgba(255, 255, 255, 0.08) !important;
-    backdrop-filter: blur(8px) !important;
-    -webkit-backdrop-filter: blur(8px) !important;
-    border: 1px solid var(--white-lit-color) !important;
-    border-radius: 15px;
-    color: var(--white-color) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid var(--white-lit-color) !important;
+  border-radius: 15px;
+  color: var(--white-color) !important;
 }
 
-/* 1. Todos los textos dentro del área principal de contacto en blanco */
 #wrapper #main-area h1,
 #wrapper #main-area h2,
 #wrapper #main-area h3,
@@ -398,521 +374,498 @@ body {
 #wrapper #main-area span,
 #wrapper #main-area small,
 #wrapper #main-area .form-text {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
-/* 2. Todos los enlaces (links) de las tarjetas laterales e íconos en blanco */
 #wrapper #main-area a,
 #wrapper #main-area i {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
-/* Cambiar color al pasar el mouse por encima de los enlaces */
 #wrapper #main-area a:hover {
-    color: #00d8ff !important;
+  color: #00d8ff !important;
 }
 
-/* 3. Transparencia suave para cajas de texto (inputs y textarea) */
 #wrapper #main-area input,
 #wrapper #main-area textarea {
-    background: rgba(255, 255, 255, 0.096) !important;
-    border: 1px solid var(--white-lit-color) !important;
-    color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.096) !important;
+  border: 1px solid var(--white-lit-color) !important;
+  color: #ffffff !important;
 }
 
-/* Texto de ayuda dentro de las cajas de texto (Placeholder) */
 #wrapper #main-area input::placeholder,
 #wrapper #main-area textarea::placeholder {
-    color: rgba(255, 255, 255, 0.7) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
-/* Color del texto al seleccionarlo/resaltarlo */
 #wrapper #main-area ::selection {
-    background: rgba(23, 131, 255, 0.548);
-    color: #ffffff;
+  background: rgba(23, 131, 255, 0.548);
+  color: #ffffff;
 }
 
-
-	/*Pie de página*/
-
-
-#wrapper #main-area .footer{
-	width: calc(100% - 70px);
-	position: absolute;
-	bottom: 30px;
+#wrapper #main-area .footer {
+  width: calc(100% - 70px);
+  position: absolute;
+  bottom: 30px;
 }
-#wrapper #main-area .footer .social-links{
-	width: 100%;
-	margin: 0 auto;
+#wrapper #main-area .footer .social-links {
+  width: 100%;
+  margin: 0 auto;
 }
-#wrapper #main-area .footer .social-links a{
-	font-size: 14px;
-	color: var(--white-color);
-	margin-right: 20px;
-	text-decoration: none;
+#wrapper #main-area .footer .social-links a {
+  font-size: 14px;
+  color: var(--white-color);
+  margin-right: 20px;
+  text-decoration: none;
 }
-#wrapper #main-area .footer .pagination{
-	float: right;
-	margin-right: 10px;
+#wrapper #main-area .footer .pagination {
+  float: right;
+  margin-right: 10px;
 }
-#wrapper #main-area .footer .pagination ul{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: unset;
+#wrapper #main-area .footer .pagination ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: unset;
 }
-#wrapper #main-area .footer .pagination ul li{
-	margin-right: 5px;
-	list-style: none;
+#wrapper #main-area .footer .pagination ul li {
+  margin-right: 5px;
+  list-style: none;
 }
-#wrapper #main-area .footer .pagination ul li a{
-	font-size: 14px;
-	color: var(--white-color);
-	border-radius: 3px;
-	border: 1px solid var(--secondary-color);
-	padding: 2px 8px;
-	text-decoration: none;
-	transition: 0.5s;
+#wrapper #main-area .footer .pagination ul li a {
+  font-size: 14px;
+  color: var(--white-color);
+  border-radius: 3px;
+  border: 1px solid var(--secondary-color);
+  padding: 2px 8px;
+  text-decoration: none;
+  transition: 0.5s;
 }
 #wrapper #main-area .footer .pagination ul li a:hover,
-#wrapper #main-area .footer .pagination .active{
-	border: 1px solid transparent;
-	background-color: var(--main-color);
+#wrapper #main-area .footer .pagination .active {
+  border: 1px solid transparent;
+  background-color: var(--main-color);
 }
 
-/* fin de footer */
-
-#wrapper #main-area .header-section.category{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: unset;
+#wrapper #main-area .header-section.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: unset;
 }
-#wrapper #main-area .header-section.category .category-heading h2{
-	font-size: 24px;
-	color: var(--white-color);
+#wrapper #main-area .header-section.category .category-heading h2 {
+  font-size: 24px;
+  color: var(--white-color);
 }
-#wrapper #main-area .content-section.contact img{
-	width: 80px;
-	height: 80px;
-	object-fit: cover;
-	border-radius: 50%;
-	border: 1px solid var(--white-lit-color);
-	margin-bottom: 20px;
-	padding: 5px;
+#wrapper #main-area .content-section.contact img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--white-lit-color);
+  margin-bottom: 20px;
+  padding: 5px;
 }
-#wrapper #main-area .content-section.contact .card{
-	padding: 10px 20px;
+#wrapper #main-area .content-section.contact .card {
+  padding: 10px 20px;
 }
-#wrapper #main-area .content-section.contact .card form{
-	margin-bottom: 20px;
-	margin-top: 15px;
-	color: var(--white-lit-color);
+#wrapper #main-area .content-section.contact .card form {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  color: var(--white-lit-color);
 }
-#wrapper #main-area .content-section .carousel .carousel-indicators{
-	bottom: -50px;
+#wrapper #main-area .content-section .carousel .carousel-indicators {
+  bottom: -50px;
 }
-#wrapper #main-area .content-section .carousel h5{
-	font-size: 14px;
-	color: var(--white-color);
+#wrapper #main-area .content-section .carousel h5 {
+  font-size: 14px;
+  color: var(--white-color);
 }
-@media only screen and (min-width: 320px) and (max-width: 520px){
-	#wrapper{
-		width: 100%;
-		height: auto;
-		margin:auto;
-		overflow: auto;
-		border-radius: unset;
-	}
-	#wrapper #sidebar{
-		width: 100%;
-		height: 140px;
-		padding: 20px;
-		overflow: hidden;
-		transition: 0.5s;
-		border-radius: 0px 0px 20px 20px;
-	}
-	.menu-height{
-		height: auto !important;
-		transition: height 0.5s;
-	}
-	#wrapper #sidebar .logo{
-		margin-bottom: 30px;
-	}
-	.nav-link {
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+  #wrapper {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: auto;
+    border-radius: unset;
+  }
+  #wrapper #sidebar {
+    width: 100%;
+    height: 140px;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .menu-height {
+    height: auto !important;
+    transition: height 0.5s;
+  }
+  #wrapper #sidebar .logo {
+    margin-bottom: 30px;
+  }
+  .nav-link {
     display: flex;
-    align-items: center; /* Alinea verticalmente el icono y el texto */
-    text-align: left;    /* Asegura que el texto comience a la izquierda */
-    justify-content: flex-start; /* Fuerza todo el contenido al inicio a la izquierda */
-    gap: 12px;           /* Espacio uniforme entre el icono y el texto */
-    width: 100%;         /* Asegura que el enlace ocupe todo el ancho disponible */
-    }
-	#wrapper #sidebar a {
-		width: unset !important;
-		margin-bottom: 10px;
-	}
-	#wrapper #sidebar a:hover, 
-	#wrapper #sidebar .active{
-		border: unset !important;
-	}
-	.copyright{
-		position: unset;
-		width: unset;
-	}
-	.copyright p{
-		margin-top: 15px;
-	}
-	.fa-ellipsis-v{
-		visibility: visible;
-	}
-	#wrapper #main-area{
-		border: 1px solid var(--main-color);
-	}
-	#wrapper #main-area .header-section{
-		margin-bottom: 20px;
-	}
-	#wrapper #main-area .header-section a, 
-	#wrapper #main-area .header-section .dropdown-menu a{
-		font-size: 12px;
-		margin: 5px;
-	}
-	#wrapper #main-area .footer {
-	    position: unset;
-	    margin-top: 10px;
-	    width: unset;
-	    text-align: center;
-	}
-	#wrapper #main-area .footer .social-links{
-	    display: flex;
-	    flex-direction: column;
-	    justify-content: center;
-	}
-	#wrapper #main-area .footer .social-links a{
-		font-size: 12px;
-		margin-bottom: 8px;
-		margin-right: unset;
-	}
-	#wrapper #main-area .footer .pagination{
-		float: unset;
-		margin-right: unset;
-		margin-top: 10px;
-		margin-bottom: 20px;
-	}
-	#wrapper #main-area .footer .pagination ul{
-		padding: unset;
-		margin: 0 auto;
-	}
-	#wrapper #main-area .footer .pagination ul li a {
-		font-size: 12px;
-	}
-	#wrapper #main-area .header-section.category .category-heading h2{
-		font-size: 18px;
-		text-align: center;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-	.carousel{
-		margin-bottom: 50px;
-	}
-	#wrapper #main-area .content-section.single .section-description{
-		text-align: justify;
-	}
-	#wrapper #main-area .content-section.contact .card-body{
-		padding: 0.75rem;
-	}
-	#wrapper #main-area .content-section.contact .card-body p{
-		font-size: 12px;
-	}
+    align-items: center;
+    text-align: left;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+  #wrapper #sidebar a {
+    width: unset !important;
+    margin-bottom: 10px;
+  }
+  #wrapper #sidebar a:hover,
+  #wrapper #sidebar .active {
+    border: unset !important;
+  }
+  .copyright {
+    position: unset;
+    width: unset;
+  }
+  .copyright p {
+    margin-top: 15px;
+  }
+  .fa-ellipsis-v {
+    visibility: visible;
+  }
+  #wrapper #main-area {
+    border: 1px solid var(--main-color);
+  }
+  #wrapper #main-area .header-section {
+    margin-bottom: 20px;
+  }
+  #wrapper #main-area .header-section a,
+  #wrapper #main-area .header-section .dropdown-menu a {
+    font-size: 12px;
+    margin: 5px;
+  }
+  #wrapper #main-area .footer {
+    position: unset;
+    margin-top: 10px;
+    width: unset;
+    text-align: center;
+  }
+  #wrapper #main-area .footer .social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #wrapper #main-area .footer .social-links a {
+    font-size: 12px;
+    margin-bottom: 8px;
+    margin-right: unset;
+  }
+  #wrapper #main-area .footer .pagination {
+    float: unset;
+    margin-right: unset;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #wrapper #main-area .footer .pagination ul {
+    padding: unset;
+    margin: 0 auto;
+  }
+  #wrapper #main-area .footer .pagination ul li a {
+    font-size: 12px;
+  }
+  #wrapper #main-area .header-section.category .category-heading h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .carousel {
+    margin-bottom: 50px;
+  }
+  #wrapper #main-area .content-section.single .section-description {
+    text-align: justify;
+  }
+  #wrapper #main-area .content-section.contact .card-body {
+    padding: 0.75rem;
+  }
+  #wrapper #main-area .content-section.contact .card-body p {
+    font-size: 12px;
+  }
 }
-@media only screen and (min-width: 768px) and (max-width: 920px){
-	#wrapper #sidebar a {
-		font-size: 12px;
-	}
-	#wrapper #main-area{
-		padding: 10px;
-	}
-	#wrapper #main-area .header-section{
-		margin-bottom: 30px;
-	}
-	#wrapper #main-area .header-section a, 
-	#wrapper #main-area .header-section .dropdown-menu a{
-		font-size: 12px;
-	}
-	#wrapper #main-area .footer {
-	    margin-top: 10px;
-	    text-align: center;
-	}
-	#wrapper #main-area .footer .social-links a{
-		font-size: 12px;
-	}
-	#wrapper #main-area .header-section.category .category-heading h2{
-		font-size: 18px;
-		margin-bottom: 20px;
-	}
-	#wrapper #main-area .content-section .section-heading{
-		margin-bottom: 20px;
-	}
-	#wrapper #main-area .content-section .card-body{
-		padding: 0.75rem;
-	}
-	#wrapper #main-area .content-section .card-body p{
-		font-size: 12px;
-	}
-	#wrapper #main-area .footer .pagination{
-		float: unset;
-		margin-right: unset;
-		margin-top: 15px;
-		margin-bottom: 15px;
-	}
-	#wrapper #main-area .footer .pagination ul{
-		padding: unset;
-		margin: 0 auto;
-	}
-	#wrapper #main-area .footer .pagination ul li a {
-		font-size: 12px;
-	}
-	#wrapper #main-area .content-section.contact .card{
-		padding: 8px;
-	}
-	#wrapper #main-area .content-section.contact .card-title{
-		font-size: 16px;
-	}
-	#wrapper #main-area .content-section.contact .section-description{
-		display: none;
-	}
-	#wrapper #main-area .content-section.single .related-video{
-		display: block;
-		text-align: center;
-		margin: 5px auto;
-	}
-	#wrapper #main-area .content-section.single .section-description p{
-		margin-bottom: 10px;
-	}
+@media only screen and (min-width: 768px) and (max-width: 920px) {
+  #wrapper #sidebar a {
+    font-size: 12px;
+  }
+  #wrapper #main-area {
+    padding: 10px;
+  }
+  #wrapper #main-area .header-section {
+    margin-bottom: 30px;
+  }
+  #wrapper #main-area .header-section a,
+  #wrapper #main-area .header-section .dropdown-menu a {
+    font-size: 12px;
+  }
+  #wrapper #main-area .footer {
+    margin-top: 10px;
+    text-align: center;
+  }
+  #wrapper #main-area .footer .social-links a {
+    font-size: 12px;
+  }
+  #wrapper #main-area .header-section.category .category-heading h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  #wrapper #main-area .content-section .section-heading {
+    margin-bottom: 20px;
+  }
+  #wrapper #main-area .content-section .card-body {
+    padding: 0.75rem;
+  }
+  #wrapper #main-area .content-section .card-body p {
+    font-size: 12px;
+  }
+  #wrapper #main-area .footer .pagination {
+    float: unset;
+    margin-right: unset;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #wrapper #main-area .footer .pagination ul {
+    padding: unset;
+    margin: 0 auto;
+  }
+  #wrapper #main-area .footer .pagination ul li a {
+    font-size: 12px;
+  }
+  #wrapper #main-area .content-section.contact .card {
+    padding: 8px;
+  }
+  #wrapper #main-area .content-section.contact .card-title {
+    font-size: 16px;
+  }
+  #wrapper #main-area .content-section.contact .section-description {
+    display: none;
+  }
+  #wrapper #main-area .content-section.single .related-video {
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+  }
+  #wrapper #main-area .content-section.single .section-description p {
+    margin-bottom: 10px;
+  }
 }
-@media only screen and (max-width: 1024px){
-	#wrapper #sidebar a {
-		width: unset;
-		font-size: 12px;
-	}
-	#wrapper #main-area{
-		padding: 10px;
-	}
-	#wrapper #main-area .header-section{
-		margin-bottom: 30px;
-	}
-	#wrapper #main-area .header-section a, 
-	#wrapper #main-area .header-section .dropdown-menu a{
-		font-size: 12px;
-	}
-	#wrapper #main-area .footer {
-	    margin-top: 10px;
-	    text-align: center;
-	}
-	#wrapper #main-area .footer .social-links a{
-		font-size: 12px;
-	}
-	#wrapper #main-area .header-section.category .category-heading h2{
-		font-size: 18px;
-	}
-	#wrapper #main-area .content-section .section-heading{
-		margin-bottom: 20px;
-	}
-	#wrapper #main-area .content-section .card-body{
-		padding: 0.75rem;
-	}
-	#wrapper #main-area .content-section .card-body p{
-		font-size: 12px;
-	}
-	#wrapper #main-area .footer .social-links a{
-		font-size: 10px;
-	}
-	
-	#wrapper #main-area .footer .pagination ul li a {
-		font-size: 12px;
-	}
-	#wrapper #main-area .content-section.contact .card{
-		padding: 15px;
-	}
-	#wrapper #main-area .content-section.contact .card-title{
-		font-size: 16px;
-	}
-	#wrapper #main-area .content-section.contact .section-description{
-		display: none;
-		margin-top: 10px;
-	}
-	#wrapper #main-area .content-section.single .section-description{
-		margin-top: 5px;
-	}
+@media only screen and (max-width: 1024px) {
+  #wrapper #sidebar a {
+    width: unset;
+    font-size: 12px;
+  }
+  #wrapper #main-area {
+    padding: 10px;
+  }
+  #wrapper #main-area .header-section {
+    margin-bottom: 30px;
+  }
+  #wrapper #main-area .header-section a,
+  #wrapper #main-area .header-section .dropdown-menu a {
+    font-size: 12px;
+  }
+  #wrapper #main-area .footer {
+    margin-top: 10px;
+    text-align: center;
+  }
+  #wrapper #main-area .footer .social-links a {
+    font-size: 12px;
+  }
+  #wrapper #main-area .header-section.category .category-heading h2 {
+    font-size: 18px;
+  }
+  #wrapper #main-area .content-section .section-heading {
+    margin-bottom: 20px;
+  }
+  #wrapper #main-area .content-section .card-body {
+    padding: 0.75rem;
+  }
+  #wrapper #main-area .content-section .card-body p {
+    font-size: 12px;
+  }
+  #wrapper #main-area .footer .social-links a {
+    font-size: 10px;
+  }
+
+  #wrapper #main-area .footer .pagination ul li a {
+    font-size: 12px;
+  }
+  #wrapper #main-area .content-section.contact .card {
+    padding: 15px;
+  }
+  #wrapper #main-area .content-section.contact .card-title {
+    font-size: 16px;
+  }
+  #wrapper #main-area .content-section.contact .section-description {
+    display: none;
+    margin-top: 10px;
+  }
+  #wrapper #main-area .content-section.single .section-description {
+    margin-top: 5px;
+  }
 }
 
-/* Badges de tecnología: Fondo transparente, borde y letra con color */
 .badge-tech {
-    background-color: transparent !important;
-    color: #00f2fe !important; /* Color turquesa/neón de las letras */
-    border: 1.5px solid #00f2fe !important; /* Color del borde */
-    padding: 7px 14px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    border-radius: 20px;
-    transition: all 0.3s ease; /* Transición suave para el efecto hover */
-    display: inline-block;
-    cursor: pointer;
+  background-color: transparent !important;
+  color: #00f2fe !important;
+  border: 1.5px solid #00f2fe !important;
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
 }
 
-/* Efecto al pasar el cursor (Hover) */
 .badge-tech:hover {
-    background-color: #00f2fe !important; /* El fondo se llena de color */
-    color: #0a1128 !important; /* La letra cambia a un tono oscuro contrastante */
-    box-shadow: 0 0 12px rgba(0, 242, 254, 0.6); /* Brillito neón */
-    transform: translateY(-2px); /* Pequeña elevación */
+  background-color: #00f2fe !important;
+  color: #0a1128 !important;
+  box-shadow: 0 0 12px rgba(0, 242, 254, 0.6);
+  transform: translateY(-2px);
 }
 
-
-/* Quita el scroll interno feo y ajusta el contenedor principal */
 #wrapper #main-area,
 .col-md-9 {
-    max-height: none !important;
-    overflow-y: visible !important;
+  max-height: none !important;
+  overflow-y: visible !important;
 }
 
-/* Fuerza a que el footer fluya después del contenido y NO flote encima */
 .footer {
-    position: relative !important;
-    bottom: auto !important;
-    margin-top: 40px !important;
-    clear: both !important;
+  position: relative !important;
+  bottom: auto !important;
+  margin-top: 40px !important;
+  clear: both !important;
 }
-/* Quita el fondo negro de las tablas y ajusta los colores */
+
 .card-info .table,
 .card-info .table-dark {
-    background-color: transparent !important;
-    color: #ffffff !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
 }
 
 .card-info table th,
 .card-info table td {
-    background: transparent !important;
-    border-color: rgba(255, 255, 255, 0.15) !important;
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
 }
 
-/* Corrección para que la tabla sea transparente y combine con el diseño */
-.table, 
+.table,
 .table > :not(caption) > * > * {
-    background-color: transparent !important;
-    color: #ffffff !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
 }
 
-/* Fuerza el estilo de tarjeta con borde azul en la tabla */
 .card-glass,
 .card-info {
-    background: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-radius: 15px !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 15px !important;
 }
 
-/* Color de las líneas divisoras dentro de la tabla */
-.table td, .table th {
-    border-color: rgba(255, 255, 255, 0.1) !important;
+.table td,
+.table th {
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-/* Fuerza el estilo de cristal/traslúcido en las tarjetas de contacto */
 .contact-card,
 .card {
-    background: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-radius: 15px !important;
-    color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 15px !important;
+  color: #ffffff !important;
 }
 
-/* Fuerza a que los textos y títulos dentro de las tarjetas sean blancos */
-.card h2, .card h5, .card p, .card label {
-    color: #ffffff !important;
+.card h2,
+.card h5,
+.card p,
+.card label {
+  color: #ffffff !important;
 }
 
-/* Contenedor del menú vertical */
-.sidebar-menu, ul.nav {
-    display: flex;
-    flex-direction: column;
-    gap: 12px; /* Controla la distancia EXACTA e igual entre cada opción */
-    padding: 0;
-    margin: 0;
+.sidebar-menu,
+ul.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
 }
 
-/* Elemento individual de la lista */
-.sidebar-menu li, ul.nav li {
-    margin: 0 !important; /* Elimina márgenes antiguos desiguales */
+.sidebar-menu li,
+ul.nav li {
+  margin: 0 !important;
 }
 
-/* Enlaces del menú */
-.sidebar-menu a, ul.nav a.nav-link {
-    display: flex;
-    align-items: center;
-    padding: 4px 8px;
-    line-height: 1.2; /* Mantiene apretados los textos de 2 líneas */
-    font-size: 0.85rem;
+.sidebar-menu a,
+ul.nav a.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  line-height: 1.2;
+  font-size: 0.85rem;
 }
 
-/* color mapa */
 .mapa-oscuro iframe {
-    /* Convierte la imagen a escala azulada e invierte colores con contraste neón */
-    filter: invert(90%) hue-rotate(190deg) brightness(85%) contrast(110%) sepia(20%) saturate(150%);
-    border-radius: 8px;
-    opacity: 0.85; /* Permite integrarse mejor con la transparencia del contenedor */
-    transition: opacity 0.3s ease, filter 0.3s ease;
+  filter: invert(90%) hue-rotate(190deg) brightness(85%) contrast(110%) sepia(20%) saturate(150%);
+  border-radius: 8px;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
 .mapa-oscuro iframe:hover {
-    opacity: 1;
-    filter: invert(90%) hue-rotate(190deg) brightness(95%) contrast(120%) saturate(180%);
+  opacity: 1;
+  filter: invert(90%) hue-rotate(190deg) brightness(95%) contrast(120%) saturate(180%);
 }
 
-/* Permite que la silueta neón se dibuje completa sin recortes */
 .header-section {
-    overflow: visible !important;
-    height: auto !important;
+  overflow: visible !important;
+  height: auto !important;
 }
 
-/* Fuerza el alto completo en los botones */
 .header-section .btn {
-    line-height: 1.5 !important;
-    box-sizing: border-box !important;
+  line-height: 1.5 !important;
+  box-sizing: border-box !important;
 }
 
-/* --- ESTILOS JUEGO DE 12 TARJETAS --- */
 .game-check {
-    display: none;
+  display: none;
 }
 
 .game-board-12 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 Columnas */
-    gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
 }
 
 .game-card {
-    height: 85px;
-    background: rgba(0, 210, 255, 0.1);
-    border: 1px solid rgba(0, 210, 255, 0.3);
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.8rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    user-select: none;
+  height: 85px;
+  background: rgba(0, 210, 255, 0.1);
+  border: 1px solid rgba(0, 210, 255, 0.3);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
 }
 
 .game-card:hover {
-    background: rgba(0, 210, 255, 0.25);
-    transform: translateY(-2px);
+  background: rgba(0, 210, 255, 0.25);
+  transform: translateY(-2px);
 }
 
 .card-back {
-    display: none;
+  display: none;
 }
 
-/* MOSTRAR CONTENIDO AL HACER CLIC (12 CARTAS) */
 #card1:checked ~ .game-board-12 .card-1 .card-front,
 #card2:checked ~ .game-board-12 .card-2 .card-front,
 #card3:checked ~ .game-board-12 .card-3 .card-front,
@@ -925,7 +878,7 @@ body {
 #card10:checked ~ .game-board-12 .card-10 .card-front,
 #card11:checked ~ .game-board-12 .card-11 .card-front,
 #card12:checked ~ .game-board-12 .card-12 .card-front {
-    display: none;
+  display: none;
 }
 
 #card1:checked ~ .game-board-12 .card-1 .card-back,
@@ -940,10 +893,9 @@ body {
 #card10:checked ~ .game-board-12 .card-10 .card-back,
 #card11:checked ~ .game-board-12 .card-11 .card-back,
 #card12:checked ~ .game-board-12 .card-12 .card-back {
-    display: inline;
+  display: inline;
 }
 
-/* Efecto de borde iluminado cuando la carta está descubierta */
 #card1:checked ~ .game-board-12 .card-1,
 #card2:checked ~ .game-board-12 .card-2,
 #card3:checked ~ .game-board-12 .card-3,
@@ -956,97 +908,203 @@ body {
 #card10:checked ~ .game-board-12 .card-10,
 #card11:checked ~ .game-board-12 .card-11,
 #card12:checked ~ .game-board-12 .card-12 {
-    border-color: #00d2ff;
-    box-shadow: 0 0 12px rgba(0, 210, 255, 0.6);
-    background: rgba(0, 210, 255, 0.2);
+  border-color: #00d2ff;
+  box-shadow: 0 0 12px rgba(0, 210, 255, 0.6);
+  background: rgba(0, 210, 255, 0.2);
 }
 
-/* --- LABERINTO COMPLEJO Y LIMPIO --- */
-
-/* Base de los tramos */
 .maze-board .maze-path {
-    background: rgba(0, 210, 255, 0.25);
-    position: absolute;
-    cursor: pointer;
-    transition: background 0.2s ease, box-shadow 0.2s ease;
-    user-select: none;
+  background: rgba(0, 210, 255, 0.25);
+  position: absolute;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
 }
 
-/* 1. Al pasar por INICIO (.p-start) */
 .p-start:hover {
-    background: #00d2ff !important;
-    box-shadow: 0 0 15px #00d2ff;
+  background: #00d2ff !important;
+  box-shadow: 0 0 15px #00d2ff;
 }
 
-/* 2. Iluminación en cadena progresiva */
-.p-start:hover ~ .p-down-1,  .p-down-1:hover  { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
-.p-down-1:hover ~ .p-right-1, .p-right-1:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
-.p-right-1:hover ~ .p-up-1,   .p-up-1:hover    { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
-.p-up-1:hover ~ .p-right-2,   .p-right-2:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
-.p-right-2:hover ~ .p-down-2, .p-down-2:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
-.p-down-2:hover ~ .p-left-1,  .p-left-1:hover  { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
-.p-left-1:hover ~ .p-down-3,  .p-down-3:hover  { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
-.p-down-3:hover ~ .p-right-3, .p-right-3:hover { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
-.p-right-3:hover ~ .p-up-2,   .p-up-2:hover    { background: #00d2ff !important; box-shadow: 0 0 15px #00d2ff; }
+.p-start:hover ~ .p-down-1,
+.p-down-1:hover {
+  background: #00d2ff !important;
+  box-shadow: 0 0 15px #00d2ff;
+}
+.p-down-1:hover ~ .p-right-1,
+.p-right-1:hover {
+  background: #00d2ff !important;
+  box-shadow: 0 0 15px #00d2ff;
+}
+.p-right-1:hover ~ .p-up-1,
+.p-up-1:hover {
+  background: #00d2ff !important;
+  box-shadow: 0 0 15px #00d2ff;
+}
+.p-up-1:hover ~ .p-right-2,
+.p-right-2:hover {
+  background: #00d2ff !important;
+  box-shadow: 0 0 15px #00d2ff;
+}
+.p-right-2:hover ~ .p-down-2,
+.p-down-2:hover {
+  background: #00d2ff !important;
+  box-shadow: 0 0 15px #00d2ff;
+}
+.p-down-2:hover ~ .p-left-1,
+.p-left-1:hover {
+  background: #00d2ff !important;
+  box-shadow: 0 0 15px #00d2ff;
+}
+.p-left-1:hover ~ .p-down-3,
+.p-down-3:hover {
+  background: #00d2ff !important;
+  box-shadow: 0 0 15px #00d2ff;
+}
+.p-down-3:hover ~ .p-right-3,
+.p-right-3:hover {
+  background: #00d2ff !important;
+  box-shadow: 0 0 15px #00d2ff;
+}
+.p-right-3:hover ~ .p-up-2,
+.p-up-2:hover {
+  background: #00d2ff !important;
+  box-shadow: 0 0 15px #00d2ff;
+}
 
-/* Meta / Fin */
 .p-finish {
-    background: rgba(40, 167, 69, 0.4) !important;
-    border-radius: 50%;
-    border: 2px solid #28a745;
+  background: rgba(40, 167, 69, 0.4) !important;
+  border-radius: 50%;
+  border: 2px solid #28a745;
 }
 
 .p-up-2:hover ~ .p-finish,
 .p-finish:hover {
-    background: #28a745 !important;
-    box-shadow: 0 0 25px #28a745, 0 0 40px rgba(40, 167, 69, 0.9) !important;
+  background: #28a745 !important;
+  box-shadow: 0 0 25px #28a745, 0 0 40px rgba(40, 167, 69, 0.9) !important;
 }
 
-/* --- COORDENADAS Y MEDIDAS EXACTAS DE LOS TRAMOS --- */
-.p-start  { top: 15px;  left: 15px;  width: 75px;  height: 35px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: #fff; }
-.p-down-1 { top: 15px;  left: 65px;  width: 25px;  height: 110px; }
-.p-right-1{ top: 100px; left: 65px;  width: 110px; height: 25px;  }
-.p-up-1   { top: 35px;  left: 150px; width: 25px;  height: 90px;  }
-.p-right-2{ top: 35px;  left: 150px; width: 140px; height: 25px;  }
-.p-down-2 { top: 35px;  left: 265px; width: 25px;  height: 180px; }
-.p-left-1 { top: 190px; left: 120px; width: 170px; height: 25px;  }
-.p-down-3 { top: 190px; left: 120px; width: 25px;  height: 85px;  }
-.p-right-3{ top: 250px; left: 120px; width: 220px; height: 25px;  }
-.p-up-2   { top: 130px; left: 315px; width: 25px;  height: 145px; }
-.p-finish { top: 105px; left: 350px; width: 75px;  height: 75px;  display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: bold; color: #fff; }
+.p-start {
+  top: 15px;
+  left: 15px;
+  width: 75px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+}
+.p-down-1 {
+  top: 15px;
+  left: 65px;
+  width: 25px;
+  height: 110px;
+}
+.p-right-1 {
+  top: 100px;
+  left: 65px;
+  width: 110px;
+  height: 25px;
+}
+.p-up-1 {
+  top: 35px;
+  left: 150px;
+  width: 25px;
+  height: 90px;
+}
+.p-right-2 {
+  top: 35px;
+  left: 150px;
+  width: 140px;
+  height: 25px;
+}
+.p-down-2 {
+  top: 35px;
+  left: 265px;
+  width: 25px;
+  height: 180px;
+}
+.p-left-1 {
+  top: 190px;
+  left: 120px;
+  width: 170px;
+  height: 25px;
+}
+.p-down-3 {
+  top: 190px;
+  left: 120px;
+  width: 25px;
+  height: 85px;
+}
+.p-right-3 {
+  top: 250px;
+  left: 120px;
+  width: 220px;
+  height: 25px;
+}
+.p-up-2 {
+  top: 130px;
+  left: 315px;
+  width: 25px;
+  height: 145px;
+}
+.p-finish {
+  top: 105px;
+  left: 350px;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #fff;
+}
 
-
-
-/* JUEGO DEL GUSANO */
 .bug {
-    position: absolute;
-    font-size: 2rem;
-    cursor: pointer;
-    user-select: none;
-    animation: moveBug 4s infinite alternate ease-in-out;
+  position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  animation: moveBug 4s infinite alternate ease-in-out;
 }
 
-/* Posiciones de inicio */
-.bug-1 { top: 30px; left: 40px; animation-delay: 0s; }
-.bug-2 { top: 70px; right: 50px; animation-delay: 1.2s; }
-.bug-3 { bottom: 80px; left: 150px; animation-delay: 2.4s; }
+.bug-1 {
+  top: 30px;
+  left: 40px;
+  animation-delay: 0s;
+}
+.bug-2 {
+  top: 70px;
+  right: 50px;
+  animation-delay: 1.2s;
+}
+.bug-3 {
+  bottom: 80px;
+  left: 150px;
+  animation-delay: 2.4s;
+}
 
-/* REGLA CLAVE: Al marcar el checkbox, oculta el label (gusano) correspondiente */
 .bug-check:checked + .bug {
-    display: none !important;
+  display: none !important;
 }
 
-/* Animación de movimiento */
 @keyframes moveBug {
-    0% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(30px, 20px) scale(1.1); }
-    100% { transform: translate(-20px, 35px) scale(0.95); }
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, 20px) scale(1.1);
+  }
+  100% {
+    transform: translate(-20px, 35px) scale(0.95);
+  }
 }
 
-/* Oculta los tres puntos en todas las páginas del sitio */
 .fa-ellipsis-v,
 #sidebar .fa-ellipsis-v {
   display: none !important;
   visibility: hidden !important;
 }
-

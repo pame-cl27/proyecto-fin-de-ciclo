@@ -1,287 +1,306 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Malla Curricular - Carrera de Desarrollo de Sistemas e Información">
-    <meta name="keywords" content="Malla Curricular, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
-    <meta name="author" content="ISTP Argentina">
-    <title>Malla Curricular | DSI - ISTP Argentina</title>
-    
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        /* Al pasar el mouse sobre el elemento li con clase dropdown, el menú se muestra automáticamente */
-        .nav-item.dropdown:hover .dropdown-menu {
-            display: block;
-            margin-top: 0; /* Evita saltos visuales incómodos */
-        }
-        
-        /* Ajustes opcionales para la maquetación de tarjetas */
-        .card-info {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Malla Curricular - Carrera de Desarrollo de Sistemas e Información">
+  <meta name="keywords" content="Malla Curricular, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
+  <meta name="author" content="ISTP Argentina">
+  <title>Malla Curricular | DSI - ISTP Argentina</title>
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+
+    .card-info {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  </style>
 </head>
+
 <body>
-    
-    <div class="container" id="wrapper">
-        <div class="row">
-            <!-- Sidebar -->
-            <div class="col-md-3" id="sidebar">
-                <!-- Imagen del logo -->
-                <div class="logo">
-                    <img src="img/logo-instituto.png" alt="logo-instituto-argentina">
-                    <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
-                    <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
-                    <p class="logo-text2">UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
+
+  <div class="container" id="wrapper">
+    <div class="row">
+      <div class="col-md-3" id="sidebar">
+        <div class="logo">
+          <img src="img/logo-instituto.png" alt="logo-instituto-argentina">
+          <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
+          <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
+          <p class="logo-text2">UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
+        </div>
+
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"><i class="fal fa-home"></i> Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aprendizaje-automatico.html"><i class="fal fa-robot"></i> Aprendizaje
+              Automático</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="red-neur.html"><i class="fal fa-info"></i> Redes Neuronales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="fal fa-envelope"></i> Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proc-len-nat.html"><i class="fal fa-comments"></i> Procesamiento del lenguaje
+              natural</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vis-comp.html"><i class="fal fa-eye"></i> Visión por computadora</a>
+          </li>
+        </ul>
+
+        <i class="far fa-ellipsis-v"></i>
+        <div class="copyright">
+          <p>&copy; 2026 | ISTP Argentina</p>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div id="main-area">
+          <div class="header-section">
+
+            <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+              <a href="documentos/Fundamentos-IW.pdf" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
+                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">SÍLABO
+                Y PLAN DE ESTUDIO</a>
+              <a href="libreria-ia.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
+                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">LIBRERIA
+                DE IA</a>
+              <a href="proy-innov.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
+                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">PROYECTOS
+                E INNOVACIÓN</a>
+
+              <details class="position-relative d-inline-block">
+                <summary class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap"
+                  style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">
+                  PROGRAMAS DE ESTUDIOS ▾
+                </summary>
+                <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3"
+                  style="min-width: 170px; background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.4); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
+
+                  <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
+                    href="vis-comp.html">Visión por Computadora</a>
+                  <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
+                    href="proc-len-nat.html">Procesamiento del Lenguaje Natural</a>
+                  <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
+                    href="red-neur.html">Redes Neuronales y Deep Learning</a>
+                  <hr class="my-1" style="border-color: rgba(0, 210, 255, 0.25);">
+                  <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
+                    href="malla-curr.html">Malla Curricular DSI</a>
+
+                  <hr class="my-1" style="border-color: rgba(0, 162, 255, 0.25);">
+
+                  <a class="dropdown-item-cristal py-1.5 px-3 rounded text-decoration-none d-block fs-7"
+                    href="mas.html                       ">Más</a>
                 </div>
-                
-                <ul class="nav flex-column">
-                    <li class="nav-item">       
-                        <a class="nav-link active" href="index.html"><i class="fal fa-home"></i> Nosotros</a>
-                    </li>
-                    <li class="nav-item">        
-                        <a class="nav-link" href="aprendizaje-automatico.html"><i class="fal fa-robot"></i> Aprendizaje Automático</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="red-neur.html"><i class="fal fa-info"></i> Redes Neuronales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html"><i class="fal fa-envelope"></i> Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="proc-len-nat.html"><i class="fal fa-comments"></i> Procesamiento del lenguaje natural</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="vis-comp.html"><i class="fal fa-eye"></i> Visión por computadora</a>
-                    </li>
-                </ul>
-                
-                <i class="far fa-ellipsis-v"></i>
-                <div class="copyright">
-                    <p>&copy; 2026 | ISTP Argentina</p>
+              </details>
+            </div>
+            <details class="dropdown-menu-portal">
+              <summary class="btn-buscador-custom">
+                <span><i class="fas fa-server me-2 text-info"></i>Estado del Portal</span>
+                <span class="badge bg-success ms-2">Activo</span>
+              </summary>
+
+              <div class="menu-desplegable-content p-3 text-white-50 fs-7">
+                <div class="d-flex justify-content-between mb-2">
+                  <span><i class="fas fa-microchip me-1 text-info"></i> Servidor IA:</span>
+                  <strong class="text-white">100% Activo</strong>
                 </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span><i class="fas fa-code-branch me-1 text-info"></i> Versión Web:</span>
+                  <strong class="text-white">v2.4 HTML5</strong>
+                </div>
+                <hr class="my-2" style="border-color: rgba(0, 153, 255, 0.308);">
+                <div class="text-center text-info small mt-1">
+                  <i class="fas fa-shield-alt me-1"></i> ISTP Argentina • 2026
+                </div>
+              </div>
+            </details>
+
+
+            <div class="row mt-4 mb-4">
+              <div class="col-12 text-center text-md-start mb-3">
+                <h5 class="text-white fw-bold">
+                  <i class="fal fa-sitemap text-info me-2"></i>Malla Curricular - Desarrollo de Sistemas e Información
+                </h5>
+                <p class="text-white-50 fs-7">
+                  Plan de estudios modular diseñado para dominar el desarrollo de software moderno y la integración de
+                  Inteligencia Artificial. Prepara a los estudiantes para construir arquitecturas robustas, automatizar
+                  procesos complejos e implementar modelos avanzados de análisis y visión por computadora, capacitando
+                  profesionales capaces de impulsar la innovación tecnológica en entornos digitales.
+                </p>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-lg"
+                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                  <div class="card-header bg-transparent border-bottom"
+                    style="border-color: rgba(0, 210, 255, 0.2) !important;">
+                    <span class="badge bg-info text-dark mb-1">Módulo I</span>
+                    <h6 class="text-white fw-bold mb-0">Desarrollo Web & Software</h6>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled text-white-50 fs-7 mb-0">
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Programación en Python / JS
+                      </li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Interfaces Web Interactivas
+                      </li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Base de Datos Relacionales</li>
+                      <li><i class="fal fa-check-circle text-info me-2"></i>Control de Versiones (Git)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-lg"
+                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                  <div class="card-header bg-transparent border-bottom"
+                    style="border-color: rgba(0, 210, 255, 0.2) !important;">
+                    <span class="badge bg-info text-dark mb-1">Módulo II</span>
+                    <h6 class="text-white fw-bold mb-0">Machine Learning & Visión</h6>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled text-white-50 fs-7 mb-0">
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Fundamentos de ML</li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Análisis de Datos con Pandas
+                      </li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Visión por Computadora (YOLOv8)
+                      </li>
+                      <li><i class="fal fa-check-circle text-info me-2"></i>Procesamiento de Imágenes</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-lg"
+                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                  <div class="card-header bg-transparent border-bottom"
+                    style="border-color: rgba(0, 210, 255, 0.2) !important;">
+                    <span class="badge bg-info text-dark mb-1">Módulo III</span>
+                    <h6 class="text-white fw-bold mb-0">Deep Learning & NLP</h6>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled text-white-50 fs-7 mb-0">
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Redes Neuronales Complejas</li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Procesamiento del Lenguaje
+                        Natural</li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Despliegue de Modelos Web</li>
+                      <li><i class="fal fa-check-circle text-info me-2"></i>Proyecto de Innovación Técnica</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
 
-                                    <div class="col-md-9">
-                            <div id="main-area">
-                                <div class="header-section">
-                                    
-                                            <!-- Menú Superior con Espaciado Completo -->
-                                                <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
-                                                    <a href="documentos/Fundamentos-IW.pdf" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">SÍLABO Y PLAN DE ESTUDIO</a>
-                                                    <a href="libreria-ia.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">LIBRERIA DE IA</a>
-                                                    <a href="proy-innov.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">PROYECTOS E INNOVACIÓN</a>
-                                                    
-                                                <!-- Menú Desplegable con Transparencia Estilo Cristal (100% HTML + CSS) -->
-                                                <details class="position-relative d-inline-block">
-                                                    <summary class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">
-                                                        PROGRAMAS DE ESTUDIOS ▾
-                                                    </summary>
-                                                    <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3" 
-                                                        style="min-width: 170px; 
-                                                                background: rgba(10, 25, 47, 0.75); 
-                                                                backdrop-filter: blur(10px); 
-                                                                -webkit-backdrop-filter: blur(10px); 
-                                                                border: 1px solid rgba(0, 210, 255, 0.4); 
-                                                                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
-                                                        
-                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="vis-comp.html">Visión por Computadora</a>
-                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="proc-len-nat.html">Procesamiento del Lenguaje Natural</a>
-                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="red-neur.html">Redes Neuronales y Deep Learning</a>
-                                                        <hr class="my-1" style="border-color: rgba(0, 210, 255, 0.25);">
-                                                        <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="malla-curr.html">Malla Curricular DSI</a>
-                                                        
-                                                        <hr class="my-1" style="border-color: rgba(0, 162, 255, 0.25);">
-                                                        
-                                                        <a class="dropdown-item-cristal py-1.5 px-3 rounded text-decoration-none d-block fs-7" href="mas.html                       ">Más</a>
-                                                    </div>
-                                                </details>
-                                                </div>
-                                        <!-- PANEL DE ESTADO INTERACTIVO  -->
-                                        <details class="dropdown-menu-portal">
-                                        <summary class="btn-buscador-custom">
-                                        <span><i class="fas fa-server me-2 text-info"></i>Estado del Portal</span>
-                                        <span class="badge bg-success ms-2">Activo</span>
-                                        </summary>
+            <div class="row mt-3">
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-lg"
+                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                  <div class="card-header bg-transparent border-bottom"
+                    style="border-color: rgba(0, 210, 255, 0.2) !important;">
+                    <span class="badge bg-info text-dark mb-1">Módulo IV</span>
+                    <h6 class="text-white fw-bold mb-0">DevOps & Arquitectura Cloud</h6>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled text-white-50 fs-7 mb-0">
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Despliegue en la Nube (AWS /
+                        Azure)</li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Contenedores con Docker</li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Integración Continua (CI/CD)
+                      </li>
+                      <li><i class="fal fa-check-circle text-info me-2"></i>Monitoreo y Mantenimiento</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-lg"
+                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                  <div class="card-header bg-transparent border-bottom"
+                    style="border-color: rgba(0, 210, 255, 0.2) !important;">
+                    <span class="badge bg-info text-dark mb-1">Módulo V</span>
+                    <h6 class="text-white fw-bold mb-0">Arquitectura de APIs & Datos</h6>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled text-white-50 fs-7 mb-0">
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Desarrollo de APIs RESTful</li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Bases de Datos NoSQL (MongoDB)
+                      </li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Microservicios para IA</li>
+                      <li><i class="fal fa-check-circle text-info me-2"></i>Optimización de Consultas</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-lg"
+                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                  <div class="card-header bg-transparent border-bottom"
+                    style="border-color: rgba(0, 210, 255, 0.2) !important;">
+                    <span class="badge bg-info text-dark mb-1">Módulo VI</span>
+                    <h6 class="text-white fw-bold mb-0">Seguridad & Gestión Ágil</h6>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled text-white-50 fs-7 mb-0">
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Ciberseguridad y Protección de
+                        Datos</li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Metodologías Ágiles (Scrum)
+                      </li>
+                      <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Ética en Inteligencia
+                        Artificial</li>
+                      <li><i class="fal fa-check-circle text-info me-2"></i>Gestión de Proyectos Tecnológicos</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-                                        <div class="menu-desplegable-content p-3 text-white-50 fs-7">
-                                        <div class="d-flex justify-content-between mb-2">
-                                            <span><i class="fas fa-microchip me-1 text-info"></i> Servidor IA:</span>
-                                            <strong class="text-white">100% Activo</strong>
-                                        </div>
-                                        <div class="d-flex justify-content-between mb-2">
-                                            <span><i class="fas fa-code-branch me-1 text-info"></i> Versión Web:</span>
-                                            <strong class="text-white">v2.4 HTML5</strong>
-                                        </div>
-                                        <hr class="my-2" style="border-color: rgba(0, 153, 255, 0.308);">
-                                        <div class="text-center text-info small mt-1">
-                                            <i class="fas fa-shield-alt me-1"></i> ISTP Argentina • 2026
-                                        </div>
-                                        </div>
-                                        </details>
+            </div>
 
-                                                <!-- FIN DE MENU -->
+            <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                <div class="d-flex flex-wrap align-items-center gap-3 fs-7 text-white-50">
+                  <span class="d-flex align-items-center">
+                    <i class="fal fa-university text-info me-1"></i> ISTP "Argentina"
+                  </span>
 
-                                                <!-- Sección Malla Curricular DSI -->
-                                                <div class="row mt-4 mb-4">
-                                                    <div class="col-12 text-center text-md-start mb-3">
-                                                        <h5 class="text-white fw-bold">
-                                                            <i class="fal fa-sitemap text-info me-2"></i>Malla Curricular - Desarrollo de Sistemas e Información
-                                                        </h5>
-                                                        <p class="text-white-50 fs-7">
-                                                            Plan de estudios modular diseñado para dominar el desarrollo de software moderno y la integración de Inteligencia Artificial. Prepara a los estudiantes para construir arquitecturas robustas, automatizar procesos complejos e implementar modelos avanzados de análisis y visión por computadora, capacitando profesionales capaces de impulsar la innovación tecnológica en entornos digitales.
-                                                        </p>
-                                                    </div>
+                  <a href="mailto:jair.morenom@istpargentina.edu.pe"
+                    class="text-white-50 text-decoration-none d-flex align-items-center">
+                    <i class="fal fa-envelope text-info me-1"></i> jair.morenom@istpargentina.edu.pe
+                  </a>
 
-                                                    <!-- Módulo 1 -->
-                                                    <div class="col-md-4 mb-3">
-                                                        <div class="card h-100 shadow-lg" style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
-                                                            <div class="card-header bg-transparent border-bottom" style="border-color: rgba(0, 210, 255, 0.2) !important;">
-                                                                <span class="badge bg-info text-dark mb-1">Módulo I</span>
-                                                                <h6 class="text-white fw-bold mb-0">Desarrollo Web & Software</h6>
-                                                            </div>
-                                                            <div class="card-body">
-                                                                <ul class="list-unstyled text-white-50 fs-7 mb-0">
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Programación en Python / JS</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Interfaces Web Interactivas</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Base de Datos Relacionales</li>
-                                                                    <li><i class="fal fa-check-circle text-info me-2"></i>Control de Versiones (Git)</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Módulo 2 -->
-                                                    <div class="col-md-4 mb-3">
-                                                        <div class="card h-100 shadow-lg" style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
-                                                            <div class="card-header bg-transparent border-bottom" style="border-color: rgba(0, 210, 255, 0.2) !important;">
-                                                                <span class="badge bg-info text-dark mb-1">Módulo II</span>
-                                                                <h6 class="text-white fw-bold mb-0">Machine Learning & Visión</h6>
-                                                            </div>
-                                                            <div class="card-body">
-                                                                <ul class="list-unstyled text-white-50 fs-7 mb-0">
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Fundamentos de ML</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Análisis de Datos con Pandas</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Visión por Computadora (YOLOv8)</li>
-                                                                    <li><i class="fal fa-check-circle text-info me-2"></i>Procesamiento de Imágenes</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Módulo 3 -->
-                                                    <div class="col-md-4 mb-3">
-                                                        <div class="card h-100 shadow-lg" style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
-                                                            <div class="card-header bg-transparent border-bottom" style="border-color: rgba(0, 210, 255, 0.2) !important;">
-                                                                <span class="badge bg-info text-dark mb-1">Módulo III</span>
-                                                                <h6 class="text-white fw-bold mb-0">Deep Learning & NLP</h6>
-                                                            </div>
-                                                            <div class="card-body">
-                                                                <ul class="list-unstyled text-white-50 fs-7 mb-0">
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Redes Neuronales Complejas</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Procesamiento del Lenguaje Natural</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Despliegue de Modelos Web</li>
-                                                                    <li><i class="fal fa-check-circle text-info me-2"></i>Proyecto de Innovación Técnica</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>                                                
-
-                                                <!-- 2DO GRUPO DE SECCIONES -->
-                                                <div class="row mt-3">
-
-                                                    <!-- Módulo IV / Card 4 -->
-                                                    <div class="col-md-4 mb-3">
-                                                        <div class="card h-100 shadow-lg" style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
-                                                            <div class="card-header bg-transparent border-bottom" style="border-color: rgba(0, 210, 255, 0.2) !important;">
-                                                                <span class="badge bg-info text-dark mb-1">Módulo IV</span>
-                                                                <h6 class="text-white fw-bold mb-0">DevOps & Arquitectura Cloud</h6>
-                                                            </div>
-                                                            <div class="card-body">
-                                                                <ul class="list-unstyled text-white-50 fs-7 mb-0">
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Despliegue en la Nube (AWS / Azure)</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Contenedores con Docker</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Integración Continua (CI/CD)</li>
-                                                                    <li><i class="fal fa-check-circle text-info me-2"></i>Monitoreo y Mantenimiento</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Módulo V / Card 5 -->
-                                                    <div class="col-md-4 mb-3">
-                                                        <div class="card h-100 shadow-lg" style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
-                                                            <div class="card-header bg-transparent border-bottom" style="border-color: rgba(0, 210, 255, 0.2) !important;">
-                                                                <span class="badge bg-info text-dark mb-1">Módulo V</span>
-                                                                <h6 class="text-white fw-bold mb-0">Arquitectura de APIs & Datos</h6>
-                                                            </div>
-                                                            <div class="card-body">
-                                                                <ul class="list-unstyled text-white-50 fs-7 mb-0">
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Desarrollo de APIs RESTful</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Bases de Datos NoSQL (MongoDB)</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Microservicios para IA</li>
-                                                                    <li><i class="fal fa-check-circle text-info me-2"></i>Optimización de Consultas</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Módulo VI / Card 6 -->
-                                                    <div class="col-md-4 mb-3">
-                                                        <div class="card h-100 shadow-lg" style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
-                                                            <div class="card-header bg-transparent border-bottom" style="border-color: rgba(0, 210, 255, 0.2) !important;">
-                                                                <span class="badge bg-info text-dark mb-1">Módulo VI</span>
-                                                                <h6 class="text-white fw-bold mb-0">Seguridad & Gestión Ágil</h6>
-                                                            </div>
-                                                            <div class="card-body">
-                                                                <ul class="list-unstyled text-white-50 fs-7 mb-0">
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Ciberseguridad y Protección de Datos</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Metodologías Ágiles (Scrum)</li>
-                                                                    <li class="mb-2"><i class="fal fa-check-circle text-info me-2"></i>Ética en Inteligencia Artificial</li>
-                                                                    <li><i class="fal fa-check-circle text-info me-2"></i>Gestión de Proyectos Tecnológicos</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                    <!-- Pie de página horizontal  -->
-                                    <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
-                                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
-                                            
-                                            <!-- nombre del instituto -->
-                                            <div class="d-flex flex-wrap align-items-center gap-3 fs-7 text-white-50">
-                                                <span class="d-flex align-items-center">
-                                                    <i class="fal fa-university text-info me-1"></i> ISTP "Argentina"
-                                                </span>
-                                                
-                                                <a href="mailto:jair.morenom@istpargentina.edu.pe" class="text-white-50 text-decoration-none d-flex align-items-center">
-                                                    <i class="fal fa-envelope text-info me-1"></i> jair.morenom@istpargentina.edu.pe
-                                                </a>
-                                                
-                                                <a href="mailto:pamela.tipulah@istpargentina.edu.pe" class="text-white-50 text-decoration-none d-flex align-items-center">
-                                                    <i class="fal fa-envelope text-info me-1"></i> pamela.tipulah@istpargentina.edu.pe
-                                                </a>
-                                            </div>
+                  <a href="mailto:pamela.tipulah@istpargentina.edu.pe"
+                    class="text-white-50 text-decoration-none d-flex align-items-center">
+                    <i class="fal fa-envelope text-info me-1"></i> pamela.tipulah@istpargentina.edu.pe
+                  </a>
+                </div>
 
 
-                                        </div>
-                                    </footer>
+              </div>
+            </footer>
 
 
-                </div> <!-- Fin #main-area -->
-            </div> 
-        </div> 
-    </div> 
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
+
 </html>

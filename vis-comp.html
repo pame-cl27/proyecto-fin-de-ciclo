@@ -1,253 +1,267 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portal educativo de Visión por Computadora - Carrera de Desarrollo de Sistemas e Información">
-    <meta name="keywords" content="Visión por Computadora, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
-    <meta name="author" content="ISTP Argentina">
-    <title>Visión por Computadora | DSI - ISTP Argentina</title>
-
-    <!-- FontAwesome & Bootstrap 5 -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-    <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portal educativo de Visión por Computadora - Carrera de Desarrollo de Sistemas e Información">
+  <meta name="keywords" content="Visión por Computadora, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
+  <meta name="author" content="ISTP Argentina">
+  <title>Visión por Computadora | DSI - ISTP Argentina</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="container" id="wrapper">
-        <div class="row">
+  <div class="container" id="wrapper">
+    <div class="row">
 
-            <!-- SIDEBAR BARRA LATERAL -->
-            <div class="col-md-3" id="sidebar">
-                <div class="logo">
-                    <img src="img/logo-instituto.png" alt="Instituto Superior Tecnológico Público Argentina">
-                    <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
-                    <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
-                    <p class="logo-text2">UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
-                </div>
-
-                <ul class="nav flex-column">
-                    <li class="nav-item">       
-                        <a class="nav-link" href="index.html"><i class="fal fa-home"></i> Nosotros</a>
-                    </li>
-                    <li class="nav-item">        
-                        <a class="nav-link" href="aprendizaje-automatico.html"><i class="fal fa-robot"></i> Aprendizaje Automático</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="red-neur.html"><i class="fal fa-info"></i> Redes Neuronales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html"><i class="fal fa-envelope"></i> Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="proc-len-nat.html"><i class="fal fa-comments"></i> Procesamiento del Lenguaje Natural</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="vis-comp.html"><i class="fal fa-eye"></i> Visión por Computadora</a>
-                    </li>
-                </ul>
-
-                <div class="copyright">
-                    <p>&copy; 2026 | ISTP Argentina</p>
-                </div>
-            </div>
-
-            <!-- ÁREA PRINCIPAL -->
-            <div class="col-md-9">
-                <div id="main-area">
-                    <div class="header-section">
-
-                        <!-- Menú Superior Horizontal -->
-                        <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
-                            <a href="documentos/Fundamentos-IW.pdf" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">SÍLABO Y PLAN DE ESTUDIO</a>
-                            <a href="libreria-ia.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">LIBRERÍA DE IA</a>
-                            <a href="proy-innov.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">PROYECTOS E INNOVACIÓN</a>
-                            
-                            <!-- Menú Desplegable "Programas de Estudios" -->
-                            <details class="position-relative d-inline-block">
-                                <summary class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap" style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">
-                                    PROGRAMAS DE ESTUDIOS ▾
-                                </summary>
-                                <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3" 
-                                     style="min-width: 170px; background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.4); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
-                                    <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="vis-comp.html">Visión por Computadora</a>
-                                    <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="proc-len-nat.html">Procesamiento del Lenguaje Natural</a>
-                                    <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="red-neur.html">Redes Neuronales y Deep Learning</a>
-                                    <hr class="my-1" style="border-color: rgba(0, 210, 255, 0.25);">
-                                    <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7" href="malla-curr.html">Malla Curricular DSI</a>
-                                    <hr class="my-1" style="border-color: rgba(0, 162, 255, 0.25);">
-                                    <a class="dropdown-item-cristal py-1.5 px-3 rounded text-decoration-none d-block fs-7" href="mas.html">Más</a>
-                                </div>
-                            </details>
-                        </div>
-
-                        <!-- Panel de Estado del Portal -->
-                        <details class="dropdown-menu-portal mb-3">
-                            <summary class="btn-buscador-custom">
-                                <span><i class="fas fa-server me-2 text-info"></i>Estado del Portal</span>
-                                <span class="badge bg-success ms-2">Activo</span>
-                            </summary>
-
-                            <div class="menu-desplegable-content p-3 text-white-50 fs-7">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span><i class="fas fa-microchip me-1 text-info"></i> Servidor IA:</span>
-                                    <strong class="text-white">100% Activo</strong>
-                                </div>
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span><i class="fas fa-code-branch me-1 text-info"></i> Versión Web:</span>
-                                    <strong class="text-white">v2.4 HTML5</strong>
-                                </div>
-                                <hr class="my-2" style="border-color: rgba(0, 153, 255, 0.308);">
-                                <div class="text-center text-info small mt-1">
-                                    <i class="fas fa-shield-alt me-1"></i> ISTP Argentina • 2026
-                                </div>
-                            </div>
-                        </details>
-
-                        <!-- Sección: Arquitecturas y Modelos -->
-                        <div class="row mt-3 mb-1">
-                            <div class="col-12 text-center text-md-start">
-                                <h5 class="text-white fw-bold mb-1">
-                                    <i class="fal fa-eye text-info me-2"></i>Arquitecturas y Modelos
-                                </h5>
-                            </div>
-                        </div>
-
-                        <div class="row text-center mb-3">
-                            <div class="col-md-4 mb-3">
-                                <div class="card-info p-3 h-100">
-                                    <h6 class="text-info">CNNs (Redes Convolucionales)</h6>
-                                    <p class="small text-light mb-0">Base fundamental para la extracción automática de características mediante capas de convolución.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card-info p-3 h-100">
-                                    <h6 class="text-info">YOLO (You Only Look Once)</h6>
-                                    <p class="small text-light mb-0">Algoritmo de detección de objetos en tiempo real optimizado para alta velocidad y precisión.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="card-info p-3 h-100">
-                                    <h6 class="text-info">Vision Transformers (ViT)</h6>
-                                    <p class="small text-light mb-0">Aplicación de mecanismos de atención directa sobre parches de imágenes para clasificación avanzada.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Sección: Tareas Principales -->
-                        <div class="row mt-4 mb-0">
-                            <div class="col-12 text-center text-md-start">
-                                <h5 class="text-white fw-bold mb-1">
-                                    <i class="fal fa-eye text-info me-2"></i>Tareas Principales de Visión Artificial
-                                </h5>
-                            </div>
-                        </div>
-
-                        <div class="row text-center mt-1">
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card-info p-3">
-                                    <div class="mb-3">
-                                        <i class="fal fa-image fa-2x text-info"></i>
-                                    </div>
-                                    <h5 class="text-white">Clasificación de Imágenes</h5>
-                                    <p class="small text-light">
-                                        Asignación de una categoría o etiqueta global a una imagen digital (ej. determinar si una foto contiene un gato o un perro).
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card-info p-3">
-                                    <div class="mb-3">
-                                        <i class="fal fa-vector-square fa-2x text-info"></i>
-                                    </div>
-                                    <h5 class="text-white">Detección de Objetos</h5>
-                                    <p class="small text-light">
-                                        Localización precisa de múltiples elementos mediante cajas delimitadoras (Bounding Boxes) en tiempo real (ej. YOLO).
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card-info p-3">
-                                    <div class="mb-3">
-                                        <i class="fal fa-th-large fa-2x text-info"></i>
-                                    </div>
-                                    <h5 class="text-white">Segmentación Semántica</h5>
-                                    <p class="small text-light">
-                                        Clasificación píxel por píxel para delimitar contornos exactos de objetos en vehículos autónomos e imágenes médicas.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Badges Tecnologías -->
-                        <div class="mt-3 text-center">
-                            <small class="text-uppercase text-light d-block mb-3" style="letter-spacing: 1px;">
-                                <i class="fal fa-camera"></i> Tecnologías de Procesamiento de Imagen
-                            </small>
-                            <span class="badge-tech m-1">OpenCV</span>
-                            <span class="badge-tech m-1">YOLOv8</span>
-                            <span class="badge-tech m-1">PIL / Pillow</span>
-                            <span class="badge-tech m-1">Torchvision</span>
-                        </div>
-
-                        <!-- Casos de Uso e Impacto -->
-                        <div class="mt-4 p-3 card-info mb-5">
-                            <h6 class="text-white text-center mb-3">
-                                <i class="fal fa-eye"></i> Casos de Uso e Impacto
-                            </h6>
-                            <div class="row text-start small">
-                                <div class="col-md-4 mb-2">
-                                    <div class="p-2 border border-secondary rounded">
-                                        <strong style="color: #00f2fe;"><i class="fal fa-id-card me-1"></i> Reconocimiento Facial:</strong>
-                                        <p class="mb-0 text-light mt-1">Sistemas de autenticación biométrica y control de acceso seguro.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-2">
-                                    <div class="p-2 border border-secondary rounded">
-                                        <strong style="color: #00f2fe;"><i class="fal fa-car-side me-1"></i> Conducción Autónoma:</strong>
-                                        <p class="mb-0 text-light mt-1">Detección de peatones, carriles y señales de tránsito en milisegundos.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-2">
-                                    <div class="p-2 border border-secondary rounded">
-                                        <strong style="color: #00f2fe;"><i class="fal fa-notes-medical me-1"></i> Diagnóstico Médico:</strong>
-                                        <p class="mb-0 text-light mt-1">Análisis de radiografías y resonancias para la detección temprana de anomalías.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- PIE DE PÁGINA -->
-                        <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
-                            <div class="row w-100 justify-content-center text-center g-3 my-1">
-                                <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
-                                    <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
-                                        <i class="fas fa-user-graduate text-info me-2"></i>Jair Moreno Moreyra
-                                    </div>
-                                    <div class="text-white-50 d-flex align-items-center fs-7">
-                                        <i class="fal fa-envelope text-info me-2"></i>jair.morenom@istpargentina.edu.pe
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
-                                    <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
-                                        <i class="fas fa-user-graduate text-info me-2"></i>Pamela Tipula Huaman
-                                    </div>
-                                    <div class="text-white-50 d-flex align-items-center fs-7">
-                                        <i class="fal fa-envelope text-info me-2"></i>pamela.tipulah@istpargentina.edu.pe
-                                    </div>
-                                </div>
-                            </div>
-                        </footer>
-
-                    </div>
-                </div>
-            </div>
-
+      <div class="col-md-3" id="sidebar">
+        <div class="logo">
+          <img src="img/logo-instituto.png" alt="Instituto Superior Tecnológico Público Argentina">
+          <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
+          <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
+          <p class="logo-text2">UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
         </div>
+
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fal fa-home"></i> Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aprendizaje-automatico.html"><i class="fal fa-robot"></i> Aprendizaje
+              Automático</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="red-neur.html"><i class="fal fa-info"></i> Redes Neuronales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="fal fa-envelope"></i> Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proc-len-nat.html"><i class="fal fa-comments"></i> Procesamiento del Lenguaje
+              Natural</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="vis-comp.html"><i class="fal fa-eye"></i> Visión por Computadora</a>
+          </li>
+        </ul>
+
+        <div class="copyright">
+          <p>&copy; 2026 | ISTP Argentina</p>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div id="main-area">
+          <div class="header-section">
+
+            <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+              <a href="documentos/Fundamentos-IW.pdf" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
+                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">SÍLABO
+                Y PLAN DE ESTUDIO</a>
+              <a href="libreria-ia.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
+                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">LIBRERÍA
+                DE IA</a>
+              <a href="proy-innov.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
+                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">PROYECTOS
+                E INNOVACIÓN</a>
+
+              <details class="position-relative d-inline-block">
+                <summary class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap"
+                  style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">
+                  PROGRAMAS DE ESTUDIOS ▾
+                </summary>
+                <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3"
+                  style="min-width: 170px; background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.4); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
+                  <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
+                    href="vis-comp.html">Visión por Computadora</a>
+                  <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
+                    href="proc-len-nat.html">Procesamiento del Lenguaje Natural</a>
+                  <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
+                    href="red-neur.html">Redes Neuronales y Deep Learning</a>
+                  <hr class="my-1" style="border-color: rgba(0, 210, 255, 0.25);">
+                  <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
+                    href="malla-curr.html">Malla Curricular DSI</a>
+                  <hr class="my-1" style="border-color: rgba(0, 162, 255, 0.25);">
+                  <a class="dropdown-item-cristal py-1.5 px-3 rounded text-decoration-none d-block fs-7"
+                    href="mas.html">Más</a>
+                </div>
+              </details>
+            </div>
+
+            <details class="dropdown-menu-portal mb-3">
+              <summary class="btn-buscador-custom">
+                <span><i class="fas fa-server me-2 text-info"></i>Estado del Portal</span>
+                <span class="badge bg-success ms-2">Activo</span>
+              </summary>
+
+              <div class="menu-desplegable-content p-3 text-white-50 fs-7">
+                <div class="d-flex justify-content-between mb-2">
+                  <span><i class="fas fa-microchip me-1 text-info"></i> Servidor IA:</span>
+                  <strong class="text-white">100% Activo</strong>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span><i class="fas fa-code-branch me-1 text-info"></i> Versión Web:</span>
+                  <strong class="text-white">v2.4 HTML5</strong>
+                </div>
+                <hr class="my-2" style="border-color: rgba(0, 153, 255, 0.308);">
+                <div class="text-center text-info small mt-1">
+                  <i class="fas fa-shield-alt me-1"></i> ISTP Argentina • 2026
+                </div>
+              </div>
+            </details>
+
+            <div class="row mt-3 mb-1">
+              <div class="col-12 text-center text-md-start">
+                <h5 class="text-white fw-bold mb-1">
+                  <i class="fal fa-eye text-info me-2"></i>Arquitecturas y Modelos
+                </h5>
+              </div>
+            </div>
+
+            <div class="row text-center mb-3">
+              <div class="col-md-4 mb-3">
+                <div class="card-info p-3 h-100">
+                  <h6 class="text-info">CNNs (Redes Convolucionales)</h6>
+                  <p class="small text-light mb-0">Base fundamental para la extracción automática de características
+                    mediante capas de convolución.</p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card-info p-3 h-100">
+                  <h6 class="text-info">YOLO (You Only Look Once)</h6>
+                  <p class="small text-light mb-0">Algoritmo de detección de objetos en tiempo real optimizado para alta
+                    velocidad y precisión.</p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card-info p-3 h-100">
+                  <h6 class="text-info">Vision Transformers (ViT)</h6>
+                  <p class="small text-light mb-0">Aplicación de mecanismos de atención directa sobre parches de
+                    imágenes para clasificación avanzada.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4 mb-0">
+              <div class="col-12 text-center text-md-start">
+                <h5 class="text-white fw-bold mb-1">
+                  <i class="fal fa-eye text-info me-2"></i>Tareas Principales de Visión Artificial
+                </h5>
+              </div>
+            </div>
+
+            <div class="row text-center mt-1">
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card-info p-3">
+                  <div class="mb-3">
+                    <i class="fal fa-image fa-2x text-info"></i>
+                  </div>
+                  <h5 class="text-white">Clasificación de Imágenes</h5>
+                  <p class="small text-light">
+                    Asignación de una categoría o etiqueta global a una imagen digital (ej. determinar si una foto
+                    contiene un gato o un perro).
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card-info p-3">
+                  <div class="mb-3">
+                    <i class="fal fa-vector-square fa-2x text-info"></i>
+                  </div>
+                  <h5 class="text-white">Detección de Objetos</h5>
+                  <p class="small text-light">
+                    Localización precisa de múltiples elementos mediante cajas delimitadoras (Bounding Boxes) en tiempo
+                    real (ej. YOLO).
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card-info p-3">
+                  <div class="mb-3">
+                    <i class="fal fa-th-large fa-2x text-info"></i>
+                  </div>
+                  <h5 class="text-white">Segmentación Semántica</h5>
+                  <p class="small text-light">
+                    Clasificación píxel por píxel para delimitar contornos exactos de objetos en vehículos autónomos e
+                    imágenes médicas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3 text-center">
+              <small class="text-uppercase text-light d-block mb-3" style="letter-spacing: 1px;">
+                <i class="fal fa-camera"></i> Tecnologías de Procesamiento de Imagen
+              </small>
+              <span class="badge-tech m-1">OpenCV</span>
+              <span class="badge-tech m-1">YOLOv8</span>
+              <span class="badge-tech m-1">PIL / Pillow</span>
+              <span class="badge-tech m-1">Torchvision</span>
+            </div>
+
+            <div class="mt-4 p-3 card-info mb-5">
+              <h6 class="text-white text-center mb-3">
+                <i class="fal fa-eye"></i> Casos de Uso e Impacto
+              </h6>
+              <div class="row text-start small">
+                <div class="col-md-4 mb-2">
+                  <div class="p-2 border border-secondary rounded">
+                    <strong style="color: #00f2fe;"><i class="fal fa-id-card me-1"></i> Reconocimiento Facial:</strong>
+                    <p class="mb-0 text-light mt-1">Sistemas de autenticación biométrica y control de acceso seguro.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                  <div class="p-2 border border-secondary rounded">
+                    <strong style="color: #00f2fe;"><i class="fal fa-car-side me-1"></i> Conducción Autónoma:</strong>
+                    <p class="mb-0 text-light mt-1">Detección de peatones, carriles y señales de tránsito en
+                      milisegundos.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                  <div class="p-2 border border-secondary rounded">
+                    <strong style="color: #00f2fe;"><i class="fal fa-notes-medical me-1"></i> Diagnóstico
+                      Médico:</strong>
+                    <p class="mb-0 text-light mt-1">Análisis de radiografías y resonancias para la detección temprana de
+                      anomalías.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
+              <div class="row w-100 justify-content-center text-center g-3 my-1">
+                <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
+                  <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
+                    <i class="fas fa-user-graduate text-info me-2"></i>Jair Moreno Moreyra
+                  </div>
+                  <div class="text-white-50 d-flex align-items-center fs-7">
+                    <i class="fal fa-envelope text-info me-2"></i>jair.morenom@istpargentina.edu.pe
+                  </div>
+                </div>
+                <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
+                  <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
+                    <i class="fas fa-user-graduate text-info me-2"></i>Pamela Tipula Huaman
+                  </div>
+                  <div class="text-white-50 d-flex align-items-center fs-7">
+                    <i class="fal fa-envelope text-info me-2"></i>pamela.tipulah@istpargentina.edu.pe
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </body>
+
 </html>
