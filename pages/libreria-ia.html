@@ -2,35 +2,31 @@
 <html lang="es">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Librería IA - Carrera de Desarrollo de Sistemas e Información">
+  <meta name="keywords" content="Librería IA, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
+  <meta name="author" content="ISTP Argentina">
+  <title>Librería IA | DSI - ISTP Argentina</title>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Librería IA - Carrera de Desarrollo de Sistemas e Información">
-    <meta name="keywords" content="Librería IA, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
-    <meta name="author" content="ISTP Argentina">
-    <title>Librería IA | DSI - ISTP Argentina</title>
+  <!-- Librerías externas: iconos y grid -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/style.css">
-
-    <style>
-      .nav-item.dropdown:hover .dropdown-menu {
-        display: block;
-        margin-top: 0;
-      }
-    </style>
-  </head>
+  <!-- Estilos propios del proyecto -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
 
 <body>
   <div class="container" id="wrapper">
     <div class="row">
+
+      <!-- Barra lateral: logo, datos de la carrera y navegación principal -->
       <div class="col-md-3" id="sidebar">
         <div class="logo">
-          <img src="../assets/images/logo-instituto.png" alt="logo-instituto-argentina">
+          <img data-route="logo" alt="logo-instituto-argentina">
           <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
           <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
           <p class="logo-text2"><strong></strong>UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
@@ -38,24 +34,24 @@
         </div>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="../index.html"><i class="fal fa-home"></i> Nosotros</a>
+            <a class="nav-link active" data-route="home"><i class="fal fa-home"></i> Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="aprendizaje-automatico.html"><i class="fal fa-robot"></i> Aprendizaje
+            <a class="nav-link" data-route="aprendizajeAutomatico"><i class="fal fa-robot"></i> Aprendizaje
               Automático</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="red-neur.html"><i class="fal fa-info"></i> Redes Neuronales</a>
+            <a class="nav-link" data-route="redNeuronal"><i class="fal fa-info"></i> Redes Neuronales</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html"><i class="fal fa-envelope"></i> Contacto</a>
+            <a class="nav-link" data-route="contacto"><i class="fal fa-envelope"></i> Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="proc-len-nat.html"><i class="fal fa-comments"></i> Procesamiento del lenguaje
-              natural</a>
+            <a class="nav-link" data-route="procesamientoLenguaje"><i class="fal fa-comments"></i> Procesamiento del
+              lenguaje natural</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="vis-comp.html"><i class="fal fa-eye"></i> Visión por computadora</a>
+            <a class="nav-link" data-route="visionComputadora"><i class="fal fa-eye"></i> Visión por computadora</a>
           </li>
         </ul>
         <i class="far fa-ellipsis-v"></i>
@@ -64,46 +60,47 @@
         </div>
       </div>
 
+      <!-- Contenido principal -->
       <div class="col-md-9">
         <div id="main-area">
           <div class="header-section">
 
+            <!-- Accesos rápidos: sílabo, librería de IA, proyectos y submenú de programas -->
             <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
-              <a href="../documentos/Fundamentos-IW.pdf" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
-                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">SÍLABO
+              <a data-route="pdfFundamentos" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 btn-pill-outline">SÍLABO
                 Y PLAN DE ESTUDIO</a>
-              <a href="libreria-ia.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
-                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">LIBRERIA
+              <a data-route="libreriaIA" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 btn-pill-outline">LIBRERIA
                 DE IA</a>
-              <a href="proy-innov.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
-                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">PROYECTOS
+              <a data-route="proyectosInnovacion"
+                class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 btn-pill-outline">PROYECTOS
                 E INNOVACIÓN</a>
 
               <details class="position-relative d-inline-block">
-                <summary class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap"
-                  style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">
+                <summary
+                  class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap btn-pill-outline">
                   PROGRAMAS DE ESTUDIOS ▾
                 </summary>
-                <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3"
-                  style="min-width: 170px; background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.4); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
+                <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3 dropdown-panel-glass">
 
                   <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
-                    href="vis-comp.html">Visión por Computadora</a>
+                    data-route="visionComputadora">Visión por Computadora</a>
                   <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
-                    href="proc-len-nat.html">Procesamiento del Lenguaje Natural</a>
+                    data-route="procesamientoLenguaje">Procesamiento del Lenguaje Natural</a>
                   <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
-                    href="red-neur.html">Redes Neuronales y Deep Learning</a>
-                  <hr class="my-1" style="border-color: rgba(0, 210, 255, 0.25);">
+                    data-route="redNeuronal">Redes Neuronales y Deep Learning</a>
+                  <hr class="my-1 divider-cyan-soft">
                   <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
-                    href="malla-curr.html">Malla Curricular DSI</a>
+                    data-route="mallaCurricular">Malla Curricular DSI</a>
 
-                  <hr class="my-1" style="border-color: rgba(0, 162, 255, 0.25);">
+                  <hr class="my-1 divider-blue-soft">
 
                   <a class="dropdown-item-cristal py-1.5 px-3 rounded text-decoration-none d-block fs-7"
-                    href="mas.html">Más</a>
+                    data-route="masOpciones">Más</a>
                 </div>
               </details>
             </div>
+
+            <!-- Estado del portal (panel informativo) -->
             <details class="dropdown-menu-portal">
               <summary class="btn-buscador-custom">
                 <span><i class="fas fa-server me-2 text-info"></i>Estado del Portal</span>
@@ -119,14 +116,14 @@
                   <span><i class="fas fa-code-branch me-1 text-info"></i> Versión Web:</span>
                   <strong class="text-white">v2.4 HTML5</strong>
                 </div>
-                <hr class="my-2" style="border-color: rgba(0, 153, 255, 0.308);">
+                <hr class="my-2 divider-status">
                 <div class="text-center text-info small mt-1">
                   <i class="fas fa-shield-alt me-1"></i> ISTP Argentina • 2026
                 </div>
               </div>
             </details>
 
-
+            <!-- APIs de IA -->
             <div class="row mt-4 mb-4">
               <div class="col-12 text-center text-md-start mb-3">
                 <h5 class="text-white fw-bold">
@@ -136,42 +133,38 @@
 
               <!-- 1. Roboflow API -->
               <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card h-100 shadow-lg"
-                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                <div class="card h-100 shadow-lg card-glass-cyan">
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
                       <h5 class="card-title text-white fw-bold mb-2">
                         <i class="fal fa-eye text-info me-2"></i>Roboflow API
                       </h5>
                       <p class="card-text text-white-50 fs-7">
-                        API para consumir modelos de Visión Computacional personalizados y datasets etiquetados para la
-                        web.
+                        API para consumir modelos de Visión Computacional personalizados y datasets etiquetados para
+                        la web.
                       </p>
                     </div>
                     <a href="https://roboflow.com/" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100"
-                      style="border: 1px solid #00d2ff !important;">
+                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100 btn-outline-cyan-thin">
                       Roboflow Hub <i class="fal fa-external-link ms-1"></i>
                     </a>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card h-100 shadow-lg"
-                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                <div class="card h-100 shadow-lg card-glass-cyan">
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
                       <h5 class="card-title text-white fw-bold mb-2">
                         <i class="fal fa-eye text-info me-2"></i>Roboflow API
                       </h5>
                       <p class="card-text text-white-50 fs-7">
-                        API para consumir modelos de Visión Computacional personalizados y datasets etiquetados para la
-                        web.
+                        API para consumir modelos de Visión Computacional personalizados y datasets etiquetados para
+                        la web.
                       </p>
                     </div>
                     <a href="https://universe.roboflow.com/" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100"
-                      style="border: 1px solid #00d2ff !important;">
+                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100 btn-outline-cyan-thin">
                       Roboflow Hub <i class="fal fa-external-link ms-1"></i>
                     </a>
                   </div>
@@ -179,21 +172,19 @@
               </div>
 
               <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card h-100 shadow-lg"
-                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                <div class="card h-100 shadow-lg card-glass-cyan">
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
                       <h5 class="card-title text-white fw-bold mb-2">
                         <i class="fal fa-cloud text-info me-2"></i>Cloud Vision API
                       </h5>
                       <p class="card-text text-white-50 fs-7">
-                        Servicio en la nube de Google para OCR (reconocimiento de texto), detección facial y etiquetado
-                        automático.
+                        Servicio en la nube de Google para OCR (reconocimiento de texto), detección facial y
+                        etiquetado automático.
                       </p>
                     </div>
                     <a href="https://cloud.google.com/vision" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100"
-                      style="border: 1px solid #00d2ff !important;">
+                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100 btn-outline-cyan-thin">
                       Ver Cloud Vision <i class="fal fa-external-link ms-1"></i>
                     </a>
                   </div>
@@ -201,21 +192,19 @@
               </div>
 
               <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card h-100 shadow-lg"
-                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                <div class="card h-100 shadow-lg card-glass-cyan">
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
                       <h5 class="card-title text-white fw-bold mb-2">
                         <i class="fal fa-terminal text-info me-2"></i>Replicate API
                       </h5>
                       <p class="card-text text-white-50 fs-7">
-                        Plataforma para correr modelos de IA de código abierto en la nube con una API REST rápida para
-                        aplicaciones web.
+                        Plataforma para correr modelos de IA de código abierto en la nube con una API REST rápida
+                        para aplicaciones web.
                       </p>
                     </div>
                     <a href="https://replicate.com/" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100"
-                      style="border: 1px solid #00d2ff !important;">
+                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100 btn-outline-cyan-thin">
                       Probar Replicate <i class="fal fa-external-link ms-1"></i>
                     </a>
                   </div>
@@ -223,6 +212,7 @@
               </div>
             </div>
 
+            <!-- Librerías y frameworks -->
             <div class="row mt-4 mb-4">
               <div class="col-12 text-center text-md-start mb-3">
                 <h5 class="text-white fw-bold">
@@ -231,8 +221,7 @@
               </div>
 
               <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card h-100 shadow-lg"
-                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                <div class="card h-100 shadow-lg card-glass-cyan">
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
                       <h5 class="card-title text-white fw-bold mb-2">
@@ -244,8 +233,7 @@
                       </p>
                     </div>
                     <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100"
-                      style="border: 1px solid #00d2ff !important;">
+                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100 btn-outline-cyan-thin">
                       Documentación <i class="fal fa-external-link ms-1"></i>
                     </a>
                   </div>
@@ -254,43 +242,39 @@
 
               <!-- 2. Ultralytics YOLOv8 -->
               <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card h-100 shadow-lg"
-                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                <div class="card h-100 shadow-lg card-glass-cyan">
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
                       <h5 class="card-title text-white fw-bold mb-2">
                         <i class="fal fa-object-group text-info me-2"></i>YOLOv8
                       </h5>
                       <p class="card-text text-white-50 fs-7">
-                        Modelo de última generación para detección de objetos, segmentación de instancias y estimación
-                        de poses a alta velocidad.
+                        Modelo de última generación para detección de objetos, segmentación de instancias y
+                        estimación de poses a alta velocidad.
                       </p>
                     </div>
                     <a href="https://www.ultralytics.com/es/blog/object-detection-and-tracking-with-ultralytics-yolov8"
                       target="_blank" rel="noopener noreferrer"
-                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100"
-                      style="border: 1px solid #00d2ff !important;">
+                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100 btn-outline-cyan-thin">
                       Ver YOLOv8 <i class="fal fa-external-link ms-1"></i>
                     </a>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card h-100 shadow-lg"
-                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                <div class="card h-100 shadow-lg card-glass-cyan">
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
                       <h5 class="card-title text-white fw-bold mb-2">
                         <i class="fal fa-object-group text-info me-2"></i>YOLOv8
                       </h5>
                       <p class="card-text text-white-50 fs-7">
-                        Modelo de última generación para detección de objetos, segmentación de instancias y estimación
-                        de poses a alta velocidad.
+                        Modelo de última generación para detección de objetos, segmentación de instancias y
+                        estimación de poses a alta velocidad.
                       </p>
                     </div>
                     <a href="https://docs.ultralytics.com/" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100"
-                      style="border: 1px solid #00d2ff !important;">
+                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100 btn-outline-cyan-thin">
                       Ver YOLOv8 <i class="fal fa-external-link ms-1"></i>
                     </a>
                   </div>
@@ -298,21 +282,19 @@
               </div>
 
               <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card h-100 shadow-lg"
-                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                <div class="card h-100 shadow-lg card-glass-cyan">
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
                       <h5 class="card-title text-white fw-bold mb-2">
                         <i class="fal fa-brain text-info me-2"></i>Torchvision
                       </h5>
                       <p class="card-text text-white-50 fs-7">
-                        Paquete con arquitecturas preentrenadas (ResNet, ViT), datasets estándar y transformaciones para
-                        Deep Learning.
+                        Paquete con arquitecturas preentrenadas (ResNet, ViT), datasets estándar y transformaciones
+                        para Deep Learning.
                       </p>
                     </div>
                     <a href="https://pytorch.org/vision/stable/" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100"
-                      style="border: 1px solid #00d2ff !important;">
+                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100 btn-outline-cyan-thin">
                       Explorar API <i class="fal fa-external-link ms-1"></i>
                     </a>
                   </div>
@@ -320,21 +302,19 @@
               </div>
 
               <div class="col-md-6 col-sm-6 mb-3">
-                <div class="card h-100 shadow-lg"
-                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                <div class="card h-100 shadow-lg card-glass-cyan">
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
                       <h5 class="card-title text-white fw-bold mb-2">
                         <i class="fal fa-code text-info me-2"></i>TensorFlow.js
                       </h5>
                       <p class="card-text text-white-50 fs-7">
-                        Permite entrenar y ejecutar modelos de Machine Learning e Inteligencia Artificial directamente
-                        dentro del navegador web.
+                        Permite entrenar y ejecutar modelos de Machine Learning e Inteligencia Artificial
+                        directamente dentro del navegador web.
                       </p>
                     </div>
                     <a href="https://www.tensorflow.org/js" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100"
-                      style="border: 1px solid #00d2ff !important;">
+                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100 btn-outline-cyan-thin">
                       Aprender TF.js <i class="fal fa-external-link ms-1"></i>
                     </a>
                   </div>
@@ -342,21 +322,19 @@
               </div>
 
               <div class="col-md-6 col-sm-12 mb-3">
-                <div class="card h-100 shadow-lg"
-                  style="background: rgba(10, 25, 47, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(0, 210, 255, 0.3);">
+                <div class="card h-100 shadow-lg card-glass-cyan">
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div>
                       <h5 class="card-title text-white fw-bold mb-2">
                         <i class="fal fa-smile text-info me-2"></i>Hugging Face
                       </h5>
                       <p class="card-text text-white-50 fs-7">
-                        Repositorio principal para acceder a miles de modelos open-source de Procesamiento del Lenguaje
-                        Natural (PLN) y Visión.
+                        Repositorio principal para acceder a miles de modelos open-source de Procesamiento del
+                        Lenguaje Natural (PLN) y Visión.
                       </p>
                     </div>
                     <a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100"
-                      style="border: 1px solid #00d2ff !important;">
+                      class="btn btn-outline-info btn-sm rounded-pill mt-3 w-100 btn-outline-cyan-thin">
                       Hub de Modelos <i class="fal fa-external-link ms-1"></i>
                     </a>
                   </div>
@@ -364,7 +342,8 @@
               </div>
             </div>
 
-            <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
+            <!-- Pie de página -->
+            <footer class="w-100 mt-4 pt-3 border-top divider-cyan">
               <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
                 <div class="row w-100 justify-content-center text-center g-3 my-1">
 
@@ -393,9 +372,11 @@
           </div>
         </div>
       </div>
-</body>
+    </div>
+  </div>
 
-</html>
+  <!-- Administrador de rutas (magic strings) -->
+  <script src="../assets/js/routes.js"></script>
 </body>
 
 </html>

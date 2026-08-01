@@ -2,64 +2,55 @@
 <html lang="es">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprendizaje Automático - Carrera de Desarrollo de Sistemas e Información">
+  <meta name="keywords" content="Aprendizaje Automático, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
+  <meta name="author" content="ISTP Argentina">
+  <title>Aprendizaje Automático | DSI - ISTP Argentina</title>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aprendizaje Automático - Carrera de Desarrollo de Sistemas e Información">
-    <meta name="keywords" content="Aprendizaje Automático, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
-    <meta name="author" content="ISTP Argentina">
-    <title>Aprendizaje Automático | DSI - ISTP Argentina</title>
+  <!-- Librerías externas: iconos y grid -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/style.css">
-
-    <title>Aprendizaje Automático</title>
-
-    <style>
-      .nav-item.dropdown:hover .dropdown-menu {
-        display: block;
-        margin-top: 0;
-
-      }
-    </style>
-  </head>
+  <!-- Estilos propios del proyecto -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
 
 <body>
   <div class="container" id="wrapper">
     <div class="row">
-      <div class="col-md-3" id="sidebar">
 
+      <!-- Barra lateral: logo, datos de la carrera y navegación principal -->
+      <div class="col-md-3" id="sidebar">
         <div class="logo">
-          <img src="../assets/images/logo-instituto.png" alt="logo-instituto-argentina">
+          <img data-route="logo" alt="logo-instituto-argentina">
           <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
           <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
           <p class="logo-text2"><strong></strong>UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
-
         </div>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="../index.html"><i class="fal fa-home"></i> Nosotros</a>
+            <a class="nav-link active" data-route="home"><i class="fal fa-home"></i> Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="aprendizaje-automatico.html"><i class="fal fa-robot"></i> Aprendizaje
+            <a class="nav-link" data-route="aprendizajeAutomatico"><i class="fal fa-robot"></i> Aprendizaje
               Automático</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="red-neur.html"><i class="fal fa-info"></i> Redes Neuronales</a>
+            <a class="nav-link" data-route="redNeuronal"><i class="fal fa-info"></i> Redes Neuronales</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html"><i class="fal fa-envelope"></i> Contacto</a>
+            <a class="nav-link" data-route="contacto"><i class="fal fa-envelope"></i> Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="proc-len-nat.html"><i class="fal fa-comments"></i> Procesamiento del lenguaje
-              natural</a>
+            <a class="nav-link" data-route="procesamientoLenguaje"><i class="fal fa-comments"></i> Procesamiento del
+              lenguaje natural</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="vis-comp.html"><i class="fal fa-eye"></i> Visión por computadora</a>
+            <a class="nav-link" data-route="visionComputadora"><i class="fal fa-eye"></i> Visión por computadora</a>
           </li>
         </ul>
         <i class="far fa-ellipsis-v"></i>
@@ -68,54 +59,47 @@
         </div>
       </div>
 
+      <!-- Contenido principal -->
       <div class="col-md-9">
         <div id="main-area">
           <div class="header-section">
 
-
+            <!-- Accesos rápidos: sílabo, librería de IA, proyectos y submenú de programas -->
             <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
-              <a href="../documentos/Fundamentos-IW.pdf" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
-                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">SÍLABO
+              <a data-route="pdfFundamentos" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 btn-pill-outline">SÍLABO
                 Y PLAN DE ESTUDIO</a>
-              <a href="libreria-ia.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
-                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">LIBRERIA
+              <a data-route="libreriaIA" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 btn-pill-outline">LIBRERIA
                 DE IA</a>
-              <a href="proy-innov.html" class="btn btn-outline-info btn-sm rounded-pill px-3 py-1"
-                style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">PROYECTOS
+              <a data-route="proyectosInnovacion"
+                class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 btn-pill-outline">PROYECTOS
                 E INNOVACIÓN</a>
 
-
               <details class="position-relative d-inline-block">
-                <summary class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap"
-                  style="border: 1px solid #00d2ff !important; display: inline-flex !important; align-items: center !important;">
+                <summary
+                  class="btn btn-outline-info btn-sm rounded-pill px-3 py-1 text-nowrap btn-pill-outline">
                   PROGRAMAS DE ESTUDIOS ▾
                 </summary>
-                <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3" style="min-width: 170px; 
-                                                                background: rgba(10, 25, 47, 0.75); 
-                                                                backdrop-filter: blur(10px); 
-                                                                -webkit-backdrop-filter: blur(10px); 
-                                                                border: 1px solid rgba(0, 210, 255, 0.4); 
-                                                                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
+                <div class="position-absolute start-0 mt-2 p-2 rounded shadow-lg z-3 dropdown-panel-glass">
 
                   <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
-                    href="vis-comp.html">Visión por Computadora</a>
+                    data-route="visionComputadora">Visión por Computadora</a>
                   <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
-                    href="proc-len-nat.html">Procesamiento del Lenguaje Natural</a>
+                    data-route="procesamientoLenguaje">Procesamiento del Lenguaje Natural</a>
                   <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
-                    href="red-neur.html">Redes Neuronales y Deep Learning</a>
-                  <hr class="my-1" style="border-color: rgba(0, 210, 255, 0.25);">
+                    data-route="redNeuronal">Redes Neuronales y Deep Learning</a>
+                  <hr class="my-1 divider-cyan-soft">
                   <a class="dropdown-item-cristal py-1 px-3 rounded text-decoration-none d-block fs-7"
-                    href="malla-curr.html">Malla Curricular DSI</a>
+                    data-route="mallaCurricular">Malla Curricular DSI</a>
 
-                  <hr class="my-1" style="border-color: rgba(0, 162, 255, 0.25);">
+                  <hr class="my-1 divider-blue-soft">
 
                   <a class="dropdown-item-cristal py-1.5 px-3 rounded text-decoration-none d-block fs-7"
-                    href="mas.html">Más</a>
+                    data-route="masOpciones">Más</a>
                 </div>
               </details>
             </div>
 
-
+            <!-- Estado del portal (panel informativo) -->
             <details class="dropdown-menu-portal">
               <summary class="btn-buscador-custom">
                 <span><i class="fas fa-server me-2 text-info"></i>Estado del Portal</span>
@@ -131,20 +115,16 @@
                   <span><i class="fas fa-code-branch me-1 text-info"></i> Versión Web:</span>
                   <strong class="text-white">v2.4 HTML5</strong>
                 </div>
-                <hr class="my-2" style="border-color: rgba(0, 153, 255, 0.308);">
+                <hr class="my-2 divider-status">
                 <div class="text-center text-info small mt-1">
                   <i class="fas fa-shield-alt me-1"></i> ISTP Argentina • 2026
                 </div>
               </div>
             </details>
 
-
-
-
-
+            <!-- Tipos de aprendizaje automático -->
             <div class="mt-4">
               <div class="row text-center">
-
 
                 <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card-info p-3">
@@ -159,7 +139,6 @@
                   </div>
                 </div>
 
-
                 <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card-info p-3">
                     <div class="mb-3">
@@ -172,7 +151,6 @@
                     </p>
                   </div>
                 </div>
-
 
                 <div class="col-lg-4 col-md-12 mb-4">
                   <div class="card-info p-3">
@@ -190,9 +168,9 @@
               </div>
             </div>
 
-
+            <!-- Flujo de trabajo en Machine Learning -->
             <div class="mt-5 text-center">
-              <small class="text-uppercase text-light d-block mb-3" style="letter-spacing: 1px;">
+              <small class="text-uppercase text-light d-block mb-3 tracking-wide">
                 <i class="fal fa-cogs"></i> Flujo de Trabajo en Machine Learning
               </small>
 
@@ -228,32 +206,31 @@
               </div>
             </div>
 
-
-
+            <!-- Guía rápida de algoritmos -->
             <div class="mt-4 p-3 card-glass">
               <h6 class="text-white text-center mb-3"><i class="fal fa-table"></i> Guía Rápida de Algoritmos</h6>
               <div class="table-responsive">
-                <table class="table text-light align-middle mb-0" style="background: transparent;">
+                <table class="table text-light align-middle mb-0 table-transparent-bg">
                   <thead>
-                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+                    <tr class="table-row-divider--head">
                       <th class="text-white">Algoritmo</th>
                       <th class="text-white">Tipo</th>
                       <th class="text-white">Uso Principal</th>
                     </tr>
                   </thead>
                   <tbody class="small">
-                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
-                      <td><strong style="color: #00f2fe;">Regresión Lineal</strong></td>
+                    <tr class="table-row-divider">
+                      <td><strong class="text-accent-cyan">Regresión Lineal</strong></td>
                       <td class="text-light">Supervisado</td>
                       <td class="text-light">Predicción de valores numéricos continuos.</td>
                     </tr>
-                    <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
-                      <td><strong style="color: #00f2fe;">K-Means</strong></td>
+                    <tr class="table-row-divider">
+                      <td><strong class="text-accent-cyan">K-Means</strong></td>
                       <td class="text-light">No Supervisado</td>
                       <td class="text-light">Agrupación de clientes o segmentación de datos.</td>
                     </tr>
                     <tr>
-                      <td><strong style="color: #00f2fe;">Random Forest</strong></td>
+                      <td><strong class="text-accent-cyan">Random Forest</strong></td>
                       <td class="text-light">Supervisado</td>
                       <td class="text-light">Clasificación compleja y prevención de sobreajuste.</td>
                     </tr>
@@ -262,11 +239,10 @@
               </div>
             </div>
 
-
-            <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
+            <!-- Pie de página -->
+            <footer class="w-100 mt-4 pt-3 border-top divider-cyan">
               <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
                 <div class="row w-100 justify-content-center text-center g-3 my-1">
-
 
                   <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
                     <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
@@ -276,7 +252,6 @@
                       <i class="fal fa-envelope text-info me-2"></i>jair.morenom@istpargentina.edu.pe
                     </div>
                   </div>
-
 
                   <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
                     <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
@@ -288,16 +263,16 @@
                   </div>
 
                 </div>
-
               </div>
             </footer>
 
           </div>
         </div>
       </div>
-</body>
+    </div>
+  </div>
 
-</html>
+  <script src="../assets/js/routes.js"></script>
 </body>
 
 </html>

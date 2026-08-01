@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contáctanos - Carrera de Desarrollo de Sistemas e Información">
+  <meta name="keywords" content="Contáctanos, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
+  <meta name="author" content="ISTP Argentina">
+  <title>Contáctanos | DSI - ISTP Argentina</title>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contáctanos - Carrera de Desarrollo de Sistemas e Información">
-    <meta name="keywords" content="Contáctanos, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
-    <meta name="author" content="ISTP Argentina">
-    <title>Contáctanos | DSI - ISTP Argentina</title>
+  <!-- Librerías externas: iconos y grid -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/style.css">
-
-    <style>
-      .nav-item.dropdown:hover .dropdown-menu {
-        display: block;
-        margin-top: 0;
-      }
-    </style>
-  </head>
+  <!-- Estilos propios del proyecto -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
 
 <body>
   <div class="container" id="wrapper">
     <div class="row">
+
+      <!-- Barra lateral: logo, datos de la carrera y navegación principal -->
       <div class="col-md-3" id="sidebar">
 
         <div class="logo">
-          <img src="../assets/images/logo-instituto.png" alt="logo-instituto-argentina">
+          <img data-route="logo" alt="logo-instituto-argentina">
           <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
           <p class="logo-text1"><strong>CARRERA: Desarrollo de Sistemas e Información</strong></p>
           <p class="logo-text2"><strong></strong>UNIDAD DIDÁCTICA: Fundamentos de Interfaces Web Interactivas</p>
@@ -39,24 +35,24 @@
         </div>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="../index.html"><i class="fal fa-home"></i> Nosotros</a>
+            <a class="nav-link active" data-route="home"><i class="fal fa-home"></i> Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="aprendizaje-automatico.html"><i class="fal fa-robot"></i> Aprendizaje
+            <a class="nav-link" data-route="aprendizajeAutomatico"><i class="fal fa-robot"></i> Aprendizaje
               Automático</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="red-neur.html"><i class="fal fa-info"></i> Redes Neuronales</a>
+            <a class="nav-link" data-route="redNeuronal"><i class="fal fa-info"></i> Redes Neuronales</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html"><i class="fal fa-envelope"></i> Contacto</a>
+            <a class="nav-link" data-route="contacto"><i class="fal fa-envelope"></i> Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="proc-len-nat.html"><i class="fal fa-comments"></i> Procesamiento del lenguaje
-              natural</a>
+            <a class="nav-link" data-route="procesamientoLenguaje"><i class="fal fa-comments"></i> Procesamiento del
+              lenguaje natural</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="vis-comp.html"><i class="fal fa-eye"></i> Visión por computadora</a>
+            <a class="nav-link" data-route="visionComputadora"><i class="fal fa-eye"></i> Visión por computadora</a>
           </li>
         </ul>
         <i class="far fa-ellipsis-v"></i>
@@ -65,13 +61,13 @@
         </div>
       </div>
 
-
-
+      <!-- Contenido principal -->
       <div class="col-md-9">
         <div id="main-area">
           <div>
             <div class="row">
 
+              <!-- Aviso de atención en línea -->
               <div class="col-12 mb-3">
                 <div class="card-info p-3 d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center">
@@ -86,32 +82,31 @@
                 </div>
               </div>
 
+              <!-- Datos institucionales y mapa -->
               <div class="col-md-5 order-md-2">
 
-                <div class="card" style="width: 100%;">
+                <div class="card card-full-width">
                   <div class="card-body">
                     <h5 class="card-title">Atención e Información Institucional</h5>
-                    <img src="../assets/images/logo-instituto-blanco.png" alt="Instituto Argentina" class="card-img-top"
-                      style="width: 100px; height: auto;">
+                    <img data-route="logoBlanco" alt="Instituto Argentina" class="card-img-top card-logo-sm">
                     <p class="card-text">
                       <i class="fal fa-envelope"></i> <a href="mailto:webmaster@istpargentina.edu.pe"
-                        style="color: #fff;">webmaster@istpargentina.edu.pe</a>
+                        class="link-white">webmaster@istpargentina.edu.pe</a>
                     </p>
                     <p class="card-text">
-                      <a href="https://web.facebook.com/instituto.argentina" style="color: white;">
+                      <a href="https://web.facebook.com/instituto.argentina" class="link-white">
                         <i class="fab fa-facebook"></i> Síguenos en Facebook
                       </a>
                     </p>
                     <p class="card-text">
-                      <a href="https://istpargentina.edu.pe" style="color: white;">
+                      <a href="https://istpargentina.edu.pe" class="link-white">
                         <i class="fal fa-globe"></i> Visítanos en nuestra página web
                       </a>
                     </p>
                   </div>
                 </div>
 
-
-                <div class="card mt-3" style="width: 100%;">
+                <div class="card mt-3 card-full-width">
                   <div class="card-body">
                     <h6 class="text-white mb-2">
                       <i class="fal fa-map-marker-alt text-info me-2"></i>Ubicación
@@ -120,7 +115,7 @@
                     <div class="mapa-oscuro">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.4705030225648!2d-77.0418768!3d-12.0523304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8cf7f857d4f%3A0xa442b001cf5154c6!2sInstituto%20de%20Educaci%C3%B3n%20Superior%20Tecnol%C3%B3gico%20P%C3%BAblico%20Argentina!5e0!3m2!1ses!2spe!4v1721836320000!5m2!1ses!2spe"
-                        width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen=""
+                        width="100%" height="200" class="map-embed" allowfullscreen=""
                         loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                       </iframe>
                     </div>
@@ -129,12 +124,11 @@
 
               </div>
 
-
+              <!-- Formulario de contacto -->
               <div class="col-lg-7 col-md-7 order-lg-1">
 
-                <div class="card p-3 p-md-4" style="width: 100%;">
+                <div class="card p-3 p-md-4 card-full-width">
                   <div class="card-body p-0">
-
 
                     <div class="section-description mb-3">
                       <h2 class="display-4"><i class="fal fa-pencil"></i> Estamos para ayudarte</h2>
@@ -169,6 +163,7 @@
 
             </div>
 
+            <!-- Preguntas frecuentes -->
             <div class="row mt-4">
               <div class="col-md-4 mb-3">
                 <div class="card-info p-3">
@@ -187,18 +182,16 @@
               <div class="col-md-4 mb-3">
                 <div class="card-info p-3">
                   <h6 class="text-info">Atención Presencial</h6>
-                  <p class="small text-light">Puedes acudir a nuestras instalaciones respetando el horario de atención
-                    institucional.</p>
+                  <p class="small text-light">Puedes acudir a nuestras instalaciones respetando el horario de
+                    atención institucional.</p>
                 </div>
               </div>
             </div>
 
-
-
-            <footer class="w-100 mt-4 pt-3 border-top" style="border-color: rgba(0, 210, 255, 0.2) !important;">
+            <!-- Pie de página -->
+            <footer class="w-100 mt-4 pt-3 border-top divider-cyan">
               <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
                 <div class="row w-100 justify-content-center text-center g-3 my-1">
-
 
                   <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
                     <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
@@ -208,7 +201,6 @@
                       <i class="fal fa-envelope text-info me-2"></i>jair.morenom@istpargentina.edu.pe
                     </div>
                   </div>
-
 
                   <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
                     <div class="text-white fw-bold d-flex align-items-center mb-1 fs-7">
@@ -220,14 +212,16 @@
                   </div>
 
                 </div>
-
               </div>
             </footer>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <!-- Administrador de rutas (magic strings) -->
+  <script src="../assets/js/routes.js"></script>
 </body>
 
 </html>
