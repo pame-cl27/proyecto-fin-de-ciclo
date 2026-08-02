@@ -486,234 +486,15 @@ body {
   font-size: 14px;
   color: var(--white-color);
 }
-@media only screen and (min-width: 320px) and (max-width: 520px) {
-  #wrapper {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    overflow: auto;
-    border-radius: unset;
-  }
-  #wrapper #sidebar {
-    width: 100%;
-    height: 140px;
-    padding: 20px;
-    overflow: hidden;
-    transition: 0.5s;
-    border-radius: 0px 0px 20px 20px;
-  }
-  .menu-height {
-    height: auto !important;
-    transition: height 0.5s;
-  }
-  #wrapper #sidebar .logo {
-    margin-bottom: 30px;
-  }
-  .nav-link {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    justify-content: flex-start;
-    gap: 12px;
-    width: 100%;
-  }
-  #wrapper #sidebar a {
-    width: unset !important;
-    margin-bottom: 10px;
-  }
-  #wrapper #sidebar a:hover,
-  #wrapper #sidebar .active {
-    border: unset !important;
-  }
-  .copyright {
-    position: unset;
-    width: unset;
-  }
-  .copyright p {
-    margin-top: 15px;
-  }
-  .fa-ellipsis-v {
-    visibility: visible;
-  }
-  #wrapper #main-area {
-    border: 1px solid var(--main-color);
-  }
-  #wrapper #main-area .header-section {
-    margin-bottom: 20px;
-  }
-  #wrapper #main-area .header-section a,
-  #wrapper #main-area .header-section .dropdown-menu a {
-    font-size: 12px;
-    margin: 5px;
-  }
-  #wrapper #main-area .footer {
-    position: unset;
-    margin-top: 10px;
-    width: unset;
-    text-align: center;
-  }
-  #wrapper #main-area .footer .social-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #wrapper #main-area .footer .social-links a {
-    font-size: 12px;
-    margin-bottom: 8px;
-    margin-right: unset;
-  }
-  #wrapper #main-area .footer .pagination {
-    float: unset;
-    margin-right: unset;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  #wrapper #main-area .footer .pagination ul {
-    padding: unset;
-    margin: 0 auto;
-  }
-  #wrapper #main-area .footer .pagination ul li a {
-    font-size: 12px;
-  }
-  #wrapper #main-area .header-section.category .category-heading h2 {
-    font-size: 18px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .carousel {
-    margin-bottom: 50px;
-  }
-  #wrapper #main-area .content-section.single .section-description {
-    text-align: justify;
-  }
-  #wrapper #main-area .content-section.contact .card-body {
-    padding: 0.75rem;
-  }
-  #wrapper #main-area .content-section.contact .card-body p {
-    font-size: 12px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 920px) {
-  #wrapper #sidebar a {
-    font-size: 12px;
-  }
-  #wrapper #main-area {
-    padding: 10px;
-  }
-  #wrapper #main-area .header-section {
-    margin-bottom: 30px;
-  }
-  #wrapper #main-area .header-section a,
-  #wrapper #main-area .header-section .dropdown-menu a {
-    font-size: 12px;
-  }
-  #wrapper #main-area .footer {
-    margin-top: 10px;
-    text-align: center;
-  }
-  #wrapper #main-area .footer .social-links a {
-    font-size: 12px;
-  }
-  #wrapper #main-area .header-section.category .category-heading h2 {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  #wrapper #main-area .content-section .section-heading {
-    margin-bottom: 20px;
-  }
-  #wrapper #main-area .content-section .card-body {
-    padding: 0.75rem;
-  }
-  #wrapper #main-area .content-section .card-body p {
-    font-size: 12px;
-  }
-  #wrapper #main-area .footer .pagination {
-    float: unset;
-    margin-right: unset;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  #wrapper #main-area .footer .pagination ul {
-    padding: unset;
-    margin: 0 auto;
-  }
-  #wrapper #main-area .footer .pagination ul li a {
-    font-size: 12px;
-  }
-  #wrapper #main-area .content-section.contact .card {
-    padding: 8px;
-  }
-  #wrapper #main-area .content-section.contact .card-title {
-    font-size: 16px;
-  }
-  #wrapper #main-area .content-section.contact .section-description {
-    display: none;
-  }
-  #wrapper #main-area .content-section.single .related-video {
-    display: block;
-    text-align: center;
-    margin: 5px auto;
-  }
-  #wrapper #main-area .content-section.single .section-description p {
-    margin-bottom: 10px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  #wrapper #sidebar a {
-    width: unset;
-    font-size: 12px;
-  }
-  #wrapper #main-area {
-    padding: 10px;
-  }
-  #wrapper #main-area .header-section {
-    margin-bottom: 30px;
-  }
-  #wrapper #main-area .header-section a,
-  #wrapper #main-area .header-section .dropdown-menu a {
-    font-size: 12px;
-  }
-  #wrapper #main-area .footer {
-    margin-top: 10px;
-    text-align: center;
-  }
-  #wrapper #main-area .footer .social-links a {
-    font-size: 12px;
-  }
-  #wrapper #main-area .header-section.category .category-heading h2 {
-    font-size: 18px;
-  }
-  #wrapper #main-area .content-section .section-heading {
-    margin-bottom: 20px;
-  }
-  #wrapper #main-area .content-section .card-body {
-    padding: 0.75rem;
-  }
-  #wrapper #main-area .content-section .card-body p {
-    font-size: 12px;
-  }
-  #wrapper #main-area .footer .social-links a {
-    font-size: 10px;
-  }
 
-  #wrapper #main-area .footer .pagination ul li a {
-    font-size: 12px;
-  }
-  #wrapper #main-area .content-section.contact .card {
-    padding: 15px;
-  }
-  #wrapper #main-area .content-section.contact .card-title {
-    font-size: 16px;
-  }
-  #wrapper #main-area .content-section.contact .section-description {
-    display: none;
-    margin-top: 10px;
-  }
-  #wrapper #main-area .content-section.single .section-description {
-    margin-top: 5px;
-  }
-}
+/* Los 3 bloques @media de la plantilla original que estaban aquí se
+   eliminaron: apuntaban a clases (.pagination, .content-section.single,
+   .carousel-indicators, etc.) que no existen en las páginas reales del
+   proyecto, y uno de ellos recortaba el #sidebar a 140px de alto sin que
+   existiera el botón hamburguesa que lo expandía. El responsive real vive
+   ahora al final del archivo, en la sección RESPONSIVE: MÓVIL, TABLET Y
+   ESCRITORIO. */
+
 
 .badge-tech {
   background-color: transparent !important;
@@ -1280,5 +1061,118 @@ ul.nav a.nav-link {
   }
   100% {
     transform: translateX(0%);
+  }
+}
+
+/* =========================================================================
+   RESPONSIVE: MÓVIL, TABLET Y ESCRITORIO
+   Enfoque mobile-first. El layout de escritorio (sidebar a la izquierda +
+   contenido a la derecha) se activa desde 992px con las clases col-lg-*
+   del HTML. Aquí solo se ajusta la apariencia para pantallas más chicas,
+   donde el sidebar pasa de columna lateral a franja superior.
+   ========================================================================= */
+
+/* --- Hasta 991px (tablet y móvil): sidebar apilado arriba del contenido --- */
+@media (max-width: 991.98px) {
+  #wrapper {
+    margin: 10px auto;
+  }
+  #wrapper #sidebar {
+    border-radius: 20px 20px 0 0;
+    padding: 25px 20px;
+    text-align: center;
+  }
+  #wrapper #sidebar .logo img {
+    width: 120px;
+  }
+  /* La lista de navegación pasa de vertical a una fila que se ajusta sola */
+  #wrapper #sidebar ul.nav {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  #wrapper #sidebar ul.nav .nav-link {
+    width: auto;
+    margin: 0;
+  }
+  .copyright {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+  #wrapper #main-area {
+    margin: 0;
+    padding: 20px;
+  }
+  /* Centra los botones de accesos rápidos (SÍLABO, LIBRERÍA, PROYECTOS...) */
+  #wrapper #main-area .header-section .d-flex.flex-wrap {
+    justify-content: center;
+  }
+}
+
+/* --- Tablet (576px – 991px): un poco más de aire que en móvil --- */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  #wrapper #sidebar a {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+/* --- Móvil (menos de 576px): todo compacto en una sola columna --- */
+@media (max-width: 575.98px) {
+  #wrapper {
+    margin: 0;
+    border-radius: 0;
+  }
+  #wrapper #sidebar {
+    border-radius: 0;
+    padding: 20px 15px;
+  }
+  #wrapper #sidebar a {
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+  .logo-text,
+  .logo-text1 {
+    font-size: 15px;
+  }
+  .logo-text2 {
+    font-size: 13px;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  .display-1 {
+    font-size: 2.5rem;
+  }
+  .btn-pill-outline {
+    font-size: 11px;
+    padding: 6px 10px !important;
+  }
+  /* El panel del laberinto y el de virus tienen ancho fijo en px; se
+     reducen para que quepan en pantallas angostas sin generar scroll lateral */
+  .maze-board {
+    width: 100%;
+    max-width: 320px;
+    height: 260px;
+  }
+  .game-panel-virus {
+    width: 100%;
+    max-width: 320px;
+    height: 220px;
+  }
+  .css-carousel {
+    max-height: 220px;
+  }
+  .css-carousel-slide img {
+    height: 220px;
+  }
+  .game-card {
+    height: 65px;
+    font-size: 1.4rem;
+  }
+  .game-board-12 {
+    gap: 8px;
   }
 }

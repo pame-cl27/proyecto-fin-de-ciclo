@@ -8,6 +8,7 @@
     content="Portal educativo de Redes Neuronales y Deep Learning - Carrera de Desarrollo de Sistemas e Información">
   <meta name="keywords" content="Redes Neuronales, Deep Learning, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
   <meta name="author" content="ISTP Argentina">
+  <link rel="shortcut icon" data-route="logo" type="image/png">
   <title>Redes Neuronales | DSI - ISTP Argentina</title>
 
   <!-- Librerías externas: iconos y grid -->
@@ -24,7 +25,7 @@
     <div class="row">
 
       <!-- Barra lateral: logo, datos de la carrera y navegación principal -->
-      <div class="col-md-3" id="sidebar">
+      <div class="col-12 col-lg-3" id="sidebar">
         <div class="logo">
           <img data-route="logo" alt="logo-instituto-argentina">
           <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
@@ -61,7 +62,7 @@
       </div>
 
       <!-- Contenido principal -->
-      <div class="col-md-9">
+      <div class="col-12 col-lg-9">
         <div id="main-area">
           <div class="header-section">
 
@@ -122,7 +123,7 @@
 
             <!-- Estructura de una red neuronal -->
             <div class="row text-center mt-4">
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-12 col-lg-4 col-md-6 mb-4">
                 <div class="card-info p-3">
                   <div class="mb-3">
                     <i class="fal fa-sign-in-alt fa-2x text-info"></i>
@@ -135,7 +136,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-12 col-lg-4 col-md-6 mb-4">
                 <div class="card-info p-3">
                   <div class="mb-3">
                     <i class="fal fa-layer-group fa-2x text-info"></i>
@@ -148,7 +149,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-12 col-lg-4 col-md-6 mb-4">
                 <div class="card-info p-3">
                   <div class="mb-3">
                     <i class="fal fa-paper-plane fa-2x text-info"></i>
@@ -178,25 +179,25 @@
               <div class="col-12 mb-2">
                 <h5 class="text-white">¿Cómo aprende una Red Neuronal?</h5>
               </div>
-              <div class="col-md-3 mb-2">
+              <div class="col-12 col-md-3 mb-2">
                 <div class="p-2 border rounded">
                   <strong class="d-block text-info">1. Feedforward</strong>
                   <span class="small text-light">Paso de datos de entrada a la salida.</span>
                 </div>
               </div>
-              <div class="col-md-3 mb-2">
+              <div class="col-12 col-md-3 mb-2">
                 <div class="p-2 border rounded">
                   <strong class="d-block text-info">2. Función de Pérdida</strong>
                   <span class="small text-light">Cálculo del error cometido.</span>
                 </div>
               </div>
-              <div class="col-md-3 mb-2">
+              <div class="col-12 col-md-3 mb-2">
                 <div class="p-2 border rounded">
                   <strong class="d-block text-info">3. Backpropagation</strong>
                   <span class="small text-light">Propagación del error hacia atrás.</span>
                 </div>
               </div>
-              <div class="col-md-3 mb-2">
+              <div class="col-12 col-md-3 mb-2">
                 <div class="p-2 border rounded">
                   <strong class="d-block text-info">4. Optimización (SGD/Adam)</strong>
                   <span class="small text-light">Ajuste de pesos y sesgos.</span>
@@ -210,20 +211,20 @@
                 <i class="fal fa-wave-sine"></i> Funciones de Activación Comunes
               </h6>
               <div class="row text-start small">
-                <div class="col-md-4 mb-2">
+                <div class="col-12 col-md-4 mb-2">
                   <div class="p-2 border border-secondary rounded">
                     <strong class="text-accent-cyan">ReLU:</strong> $f(x) = \max(0, x)$
                     <p class="mb-0 text-light mt-1">La más usada en capas ocultas por su eficiencia en redes profundas.
                     </p>
                   </div>
                 </div>
-                <div class="col-md-4 mb-2">
+                <div class="col-12 col-md-4 mb-2">
                   <div class="p-2 border border-secondary rounded">
                     <strong class="text-accent-cyan">Sigmoide:</strong> $\sigma(x) = \frac{1}{1 + e^{-x}}$
                     <p class="mb-0 text-light mt-1">Escala la salida entre 0 y 1. Ideal para clasificación binaria.</p>
                   </div>
                 </div>
-                <div class="col-md-4 mb-2">
+                <div class="col-12 col-md-4 mb-2">
                   <div class="p-2 border border-secondary rounded">
                     <strong class="text-accent-cyan">Softmax:</strong> Probabilidades
                     <p class="mb-0 text-light mt-1">Utilizada en la capa de salida para problemas multiclase.</p>

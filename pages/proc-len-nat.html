@@ -9,6 +9,7 @@
   <meta name="keywords"
     content="Procesamiento del Lenguaje Natural, DSI, ISTP Argentina, Interfaces Web Interactivas, IA">
   <meta name="author" content="ISTP Argentina">
+  <link rel="shortcut icon" data-route="logo" type="image/png">
   <title>Procesamiento del Lenguaje Natural | DSI - ISTP Argentina</title>
 
   <!-- Librerías externas: iconos y grid -->
@@ -25,7 +26,7 @@
     <div class="row">
 
       <!-- Barra lateral: logo, datos de la carrera y navegación principal -->
-      <div class="col-md-3" id="sidebar">
+      <div class="col-12 col-lg-3" id="sidebar">
         <div class="logo">
           <img data-route="logo" alt="logo-instituto-argentina">
           <p class="logo-text"><strong>Instituto Superior Tecnológico Público Argentina</strong></p>
@@ -63,7 +64,7 @@
       </div>
 
       <!-- Contenido principal -->
-      <div class="col-md-9">
+      <div class="col-12 col-lg-9">
         <div id="main-area">
           <div class="header-section">
 
@@ -138,7 +139,7 @@
             </div>
 
             <div class="row text-center mb-4">
-              <div class="col-md-4 mb-3">
+              <div class="col-12 col-md-4 mb-3">
                 <div class="card-info p-3 h-100">
                   <h6 class="text-info">BLEU / ROUGE</h6>
                   <p class="small text-light mb-0">Métricas estándar para evaluar la calidad en traducción automática
@@ -146,7 +147,7 @@
                 </div>
               </div>
 
-              <div class="col-md-4 mb-3">
+              <div class="col-12 col-md-4 mb-3">
                 <div class="card-info p-3 h-100">
                   <h6 class="text-info">Perplejidad (Perplexity)</h6>
                   <p class="small text-light mb-0">Mide qué tan bien un modelo de lenguaje predice una muestra de
@@ -155,7 +156,7 @@
                 </div>
               </div>
 
-              <div class="col-md-4 mb-3">
+              <div class="col-12 col-md-4 mb-3">
                 <div class="card-info p-3 h-100">
                   <h6 class="text-info">F1-Score / Accuracy</h6>
                   <p class="small text-light mb-0">Evaluación de precisión en tareas de clasificación de texto y
@@ -172,7 +173,7 @@
             </div>
 
             <div class="row text-center mt-4">
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-12 col-lg-4 col-md-6 mb-4">
                 <div class="card-info p-3">
                   <div class="mb-3">
                     <i class="fal fa-filter fa-2x text-info"></i>
@@ -185,7 +186,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-12 col-lg-4 col-md-6 mb-4">
                 <div class="card-info p-3">
                   <div class="mb-3">
                     <i class="fal fa-code-branch fa-2x text-info"></i>
@@ -198,7 +199,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="col-12 col-lg-4 col-md-6 mb-4">
                 <div class="card-info p-3">
                   <div class="mb-3">
                     <i class="fal fa-robot fa-2x text-info"></i>
@@ -217,26 +218,26 @@
               <div class="col-12 mb-2">
                 <h5 class="text-white">Pipeline Clásico de PLN</h5>
               </div>
-              <div class="col-md-3 mb-2">
+              <div class="col-12 col-md-3 mb-2">
                 <div class="p-2 border rounded">
                   <strong class="d-block text-info">1. Tokenización</strong>
                   <span class="small text-light">División del texto en unidades mínimas (palabras o subpalabras).</span>
                 </div>
               </div>
-              <div class="col-md-3 mb-2">
+              <div class="col-12 col-md-3 mb-2">
                 <div class="p-2 border rounded">
                   <strong class="d-block text-info">2. Normalización</strong>
                   <span class="small text-light">Minúsculas, eliminación de signos y <i>stemming</i> /
                     lematización.</span>
                 </div>
               </div>
-              <div class="col-md-3 mb-2">
+              <div class="col-12 col-md-3 mb-2">
                 <div class="p-2 border rounded">
                   <strong class="d-block text-info">3. Vectorización</strong>
                   <span class="small text-light">Transformación a representación numérica (Embeddings).</span>
                 </div>
               </div>
-              <div class="col-md-3 mb-2">
+              <div class="col-12 col-md-3 mb-2">
                 <div class="p-2 border rounded">
                   <strong class="d-block text-info">4. Inferencia / Modelo</strong>
                   <span class="small text-light">Predicción con transformers o modelos estadísticos.</span>
@@ -251,7 +252,7 @@
               </h6>
 
               <div class="row text-start small">
-                <div class="col-md-4 mb-2">
+                <div class="col-12 col-md-4 mb-2">
                   <div class="p-2 border border-secondary rounded">
                     <strong class="text-accent-cyan"><i class="fal fa-smile me-1"></i> Análisis de
                       Sentimientos:</strong>
@@ -259,7 +260,7 @@
                       o negativas.</p>
                   </div>
                 </div>
-                <div class="col-md-4 mb-2">
+                <div class="col-12 col-md-4 mb-2">
                   <div class="p-2 border border-secondary rounded">
                     <strong class="text-accent-cyan"><i class="fal fa-language me-1"></i> Traducción
                       Automática:</strong>
@@ -268,7 +269,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-md-4 mb-2">
+                <div class="col-12 col-md-4 mb-2">
                   <div class="p-2 border border-secondary rounded">
                     <strong class="text-accent-cyan"><i class="fal fa-user-robot me-1"></i> Chatbots
                       Conversacionales:</strong>
