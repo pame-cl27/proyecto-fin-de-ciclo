@@ -135,22 +135,24 @@
                       <h2 class="display-4"><i class="fal fa-pencil"></i> Estamos para ayudarte</h2>
                     </div>
 
-                    <form>
+                    <form id="form-contacto" novalidate>
                       <div class="form-group mb-3">
-                        <label>¿Cómo te llamas?</label>
-                        <input type="text" class="form-control">
+                        <label for="contacto-nombre">¿Cómo te llamas?</label>
+                        <input type="text" class="form-control" id="contacto-nombre" name="nombre" required>
                       </div>
 
                       <div class="form-group mb-3">
-                        <label>Correo electrónico de contacto</label>
-                        <input type="email" class="form-control">
+                        <label for="contacto-correo">Correo electrónico de contacto</label>
+                        <input type="email" class="form-control" id="contacto-correo" name="correo" required>
                         <small class="form-text text-muted">Tu información está segura con nosotros.</small>
                       </div>
 
                       <div class="form-group mb-3">
-                        <label>¿En qué te podemos colaborar hoy?</label>
-                        <textarea class="form-control" rows="4"></textarea>
+                        <label for="contacto-mensaje">¿En qué te podemos colaborar hoy?</label>
+                        <textarea class="form-control" id="contacto-mensaje" name="mensaje" rows="4" required></textarea>
                       </div>
+
+                      <div id="contacto-feedback" class="small mb-2" role="status"></div>
 
                       <div class="text-center mt-3">
                         <button type="submit" class="btn btn-primary btn-sm">Enviar consulta</button>
@@ -199,7 +201,7 @@
                       <i class="fas fa-user-graduate text-info me-2"></i>Jair Moreno Moreyra
                     </div>
                     <div class="text-white-50 d-flex align-items-center fs-7">
-                      <i class="fal fa-envelope text-info me-2"></i>jair.morenom@istpargentina.edu.pe
+                      <i class="fal fa-envelope text-info me-2"></i><a href="mailto:jair.morenom@istpargentina.edu.pe" class="link-white text-decoration-none">jair.morenom@istpargentina.edu.pe</a>
                     </div>
                   </div>
 
@@ -208,7 +210,7 @@
                       <i class="fas fa-user-graduate text-info me-2"></i>Pamela Tipula Huaman
                     </div>
                     <div class="text-white-50 d-flex align-items-center fs-7">
-                      <i class="fal fa-envelope text-info me-2"></i>pamela.tipulah@istpargentina.edu.pe
+                      <i class="fal fa-envelope text-info me-2"></i><a href="mailto:pamela.tipulah@istpargentina.edu.pe" class="link-white text-decoration-none">pamela.tipulah@istpargentina.edu.pe</a>
                     </div>
                   </div>
 
@@ -223,6 +225,8 @@
 
   <!-- Administrador de rutas (magic strings) -->
   <script src="../assets/js/routes.js"></script>
+  <!-- Formulario de contacto: arma un mailto: con lo escrito y abre el correo -->
+  <script src="../assets/js/contacto.js"></script>
 </body>
 
 </html>

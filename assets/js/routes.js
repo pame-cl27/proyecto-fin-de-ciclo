@@ -22,6 +22,7 @@
     proyectosInnovacion: BASE + "pages/proy-innov.html",
     mallaCurricular: BASE + "pages/malla-curr.html",
     masOpciones: BASE + "pages/mas.html",
+    error404: BASE + "404.html",
   };
 
   function aplicarRutas() {
